@@ -1,0 +1,643 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Abramowitz}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5ffec58f26b0e058ca9ea4e288a8c595}{%
+           family={Milton\bibnamedelima Abramowitz},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Irene\bibnamedelimb A.\bibnamedelimi Stegun},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \strng{fullhash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \strng{bibnamehash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \strng{authorbibnamehash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \strng{authornamehash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \strng{authorfullhash}{5ffec58f26b0e058ca9ea4e288a8c595}
+      \field{labelalpha}{Mil65}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0486612720}
+      \field{title}{Handbook of Mathematical Functions: with Formulas, Graphs, and Mathematical Tables}
+      \field{year}{1965}
+      \true{nocite}
+    \endentry
+    \entry{Pearson}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b69135425e9c9d6adc927b94c33421d4}{%
+           family={Pearson},
+           familyi={P\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Lubrecht}%
+        {Cramer Ltd}%
+      }
+      \strng{namehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{fullhash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{bibnamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authorbibnamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authornamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authorfullhash}{b69135425e9c9d6adc927b94c33421d4}
+      \field{labelalpha}{Pea68}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521059220}
+      \field{title}{Tables of Incomplete Beta Function}
+      \field{year}{1968}
+      \true{nocite}
+    \endentry
+    \entry{silverman}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1aac8980e2eebb785552ae79cae04ece}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover}%
+      }
+      \strng{namehash}{1aac8980e2eebb785552ae79cae04ece}
+      \strng{fullhash}{1aac8980e2eebb785552ae79cae04ece}
+      \strng{bibnamehash}{1aac8980e2eebb785552ae79cae04ece}
+      \strng{authorbibnamehash}{1aac8980e2eebb785552ae79cae04ece}
+      \strng{authornamehash}{1aac8980e2eebb785552ae79cae04ece}
+      \strng{authorfullhash}{1aac8980e2eebb785552ae79cae04ece}
+      \field{labelalpha}{Sil73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0486646862}
+      \field{series}{Dover Publications}
+      \field{title}{Introductory Complex Analysis}
+      \field{year}{1973}
+    \endentry
+    \entry{Conway}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ced6afb930e46916a73bfa9880ca41cb}{%
+           family={Conway},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ced6afb930e46916a73bfa9880ca41cb}
+      \strng{fullhash}{ced6afb930e46916a73bfa9880ca41cb}
+      \strng{bibnamehash}{ced6afb930e46916a73bfa9880ca41cb}
+      \strng{authorbibnamehash}{ced6afb930e46916a73bfa9880ca41cb}
+      \strng{authornamehash}{ced6afb930e46916a73bfa9880ca41cb}
+      \strng{authorfullhash}{ced6afb930e46916a73bfa9880ca41cb}
+      \field{labelalpha}{Con78}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd Edition}
+      \field{isbn}{978-0387903286}
+      \field{series}{Graduate texts in mathematics}
+      \field{title}{Functions of One Complex Variable}
+      \field{year}{1978}
+    \endentry
+    \entry{ahlfors}{book}{}
+      \name{author}{1}{}{%
+        {{hash=334876c58f819ca13776125e13ef13a0}{%
+           family={Ahlfors},
+           familyi={A\bibinitperiod},
+           given={Lars\bibnamedelima V.},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{334876c58f819ca13776125e13ef13a0}
+      \strng{fullhash}{334876c58f819ca13776125e13ef13a0}
+      \strng{bibnamehash}{334876c58f819ca13776125e13ef13a0}
+      \strng{authorbibnamehash}{334876c58f819ca13776125e13ef13a0}
+      \strng{authornamehash}{334876c58f819ca13776125e13ef13a0}
+      \strng{authorfullhash}{334876c58f819ca13776125e13ef13a0}
+      \field{labelalpha}{Ahl79}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd Edition}
+      \field{isbn}{978-0070006577}
+      \field{title}{Complex analysis}
+      \field{year}{1979}
+      \true{nocite}
+    \endentry
+    \entry{marsden}{book}{}
+      \name{author}{1}{}{%
+        {{hash=13ee5486f50e6bead947e81e571a6ce4}{%
+           family={Jerrold\bibnamedelimb E.\bibnamedelimi Marsden},
+           familyi={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Michael\bibnamedelimb J.\bibnamedelimi Hoffman},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {W. H. Freeman}%
+      }
+      \strng{namehash}{13ee5486f50e6bead947e81e571a6ce4}
+      \strng{fullhash}{13ee5486f50e6bead947e81e571a6ce4}
+      \strng{bibnamehash}{13ee5486f50e6bead947e81e571a6ce4}
+      \strng{authorbibnamehash}{13ee5486f50e6bead947e81e571a6ce4}
+      \strng{authornamehash}{13ee5486f50e6bead947e81e571a6ce4}
+      \strng{authorfullhash}{13ee5486f50e6bead947e81e571a6ce4}
+      \field{labelalpha}{Jer98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{978-1464152191}
+      \field{title}{Basic Complex Analysis}
+      \field{year}{1998}
+    \endentry
+    \entry{Driscoll}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6813aa7a221d124cd227bb7504e46738}{%
+           family={Tobin\bibnamedelimb A.\bibnamedelimi Driscoll},
+           familyi={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Lloyd\bibnamedelimb N.\bibnamedelimi Trefethen},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{6813aa7a221d124cd227bb7504e46738}
+      \strng{fullhash}{6813aa7a221d124cd227bb7504e46738}
+      \strng{bibnamehash}{6813aa7a221d124cd227bb7504e46738}
+      \strng{authorbibnamehash}{6813aa7a221d124cd227bb7504e46738}
+      \strng{authornamehash}{6813aa7a221d124cd227bb7504e46738}
+      \strng{authorfullhash}{6813aa7a221d124cd227bb7504e46738}
+      \field{labelalpha}{Tob02}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st Edition}
+      \field{isbn}{978-0521807265}
+      \field{series}{Cambridge monographs on applied and computational mathematics 8}
+      \field{title}{Schwarz-Christoffel Mapping}
+      \field{year}{2002}
+      \true{nocite}
+    \endentry
+    \entry{Shaw-A}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db15750a73e80a61fc272a1df2344422}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={William\bibnamedelima T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{fullhash}{db15750a73e80a61fc272a1df2344422}
+      \strng{bibnamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authorbibnamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authornamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authorfullhash}{db15750a73e80a61fc272a1df2344422}
+      \field{extraname}{1}
+      \field{labelalpha}{Sha04}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Society for Industrial and Applied Mathematics}
+      \field{number}{4}
+      \field{title}{Recovering Holomorphic Functions from Their Real or Imaginary Parts without the Cauchy Riemann Equations}
+      \field{volume}{46}
+      \field{year}{2004}
+      \field{pages}{717\bibrangedash 728}
+      \range{pages}{12}
+    \endentry
+    \entry{shaw}{book}{}
+      \name{author}{1}{}{%
+        {{hash=db15750a73e80a61fc272a1df2344422}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={William\bibnamedelima T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university Press}%
+      }
+      \strng{namehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{fullhash}{db15750a73e80a61fc272a1df2344422}
+      \strng{bibnamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authorbibnamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authornamehash}{db15750a73e80a61fc272a1df2344422}
+      \strng{authorfullhash}{db15750a73e80a61fc272a1df2344422}
+      \field{extraname}{2}
+      \field{labelalpha}{Sha08}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521836265}
+      \field{title}{Complex Analysis with Mathematica}
+      \field{year}{2008}
+    \endentry
+    \entry{Churchill}{book}{}
+      \name{author}{1}{}{%
+        {{hash=cc55e6a0ff68131ecfc28aa6b0933f10}{%
+           family={Churchill},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelimb Ward\bibnamedelimb Brown;\bibnamedelimb Ruel\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \strng{fullhash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \strng{bibnamehash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \strng{authorbibnamehash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \strng{authornamehash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \strng{authorfullhash}{cc55e6a0ff68131ecfc28aa6b0933f10}
+      \field{labelalpha}{Chu14}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9th Edition}
+      \field{isbn}{978-0073383170}
+      \field{title}{Complex variables and applications}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{ComplexVector}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{1}
+      \field{labelalpha}{Mat17}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/ComplexVectorPlot.html}}
+      \field{title}{ComplexVectorPlot}
+      \field{year}{2017}
+      \true{nocite}
+    \endentry
+    \entry{GeometryJo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{2}
+      \field{labelalpha}{Mat17}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://demonstrations.wolfram.com/JoukowskiAirfoilGeometry}}
+      \field{title}{Joukowski Airfoil: Geometry}
+      \field{year}{2017}
+    \endentry
+    \entry{rajeev}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aa042cb9f3780a5e58c9877528d79c25}{%
+           family={Rajeev},
+           familyi={R\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{aa042cb9f3780a5e58c9877528d79c25}
+      \strng{fullhash}{aa042cb9f3780a5e58c9877528d79c25}
+      \strng{bibnamehash}{aa042cb9f3780a5e58c9877528d79c25}
+      \strng{authorbibnamehash}{aa042cb9f3780a5e58c9877528d79c25}
+      \strng{authornamehash}{aa042cb9f3780a5e58c9877528d79c25}
+      \strng{authorfullhash}{aa042cb9f3780a5e58c9877528d79c25}
+      \field{labelalpha}{Raj18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st Edition}
+      \field{isbn}{978-0198805038}
+      \field{title}{Fluid Mechanics : A Geometrical Point of View}
+      \field{year}{2018}
+      \true{nocite}
+    \endentry
+    \entry{ComplexRegionPlot}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=388cefe18850b63e2bcf2cfe5683c883}{%
+           family={Language},
+           familyi={L\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=268c41dafbc578d3980d61445de8e86a}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={System\bibnamedelima Documentation},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{41da5edd8253f43a7638c401708ade6d}
+      \strng{fullhash}{41da5edd8253f43a7638c401708ade6d}
+      \strng{bibnamehash}{41da5edd8253f43a7638c401708ade6d}
+      \strng{authorbibnamehash}{41da5edd8253f43a7638c401708ade6d}
+      \strng{authornamehash}{41da5edd8253f43a7638c401708ade6d}
+      \strng{authorfullhash}{41da5edd8253f43a7638c401708ade6d}
+      \field{labelalpha}{LC20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/ComplexRegionPlot.html}}
+      \field{title}{ComplexRegionPlot}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{tarlok}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e09b547cbb76f15b5ca795cd82ba0b96}{%
+           family={Shorey},
+           familyi={S\bibinitperiod},
+           given={Tarlok\bibnamedelima Nath},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \strng{fullhash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \strng{bibnamehash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \strng{authorbibnamehash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \strng{authornamehash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \strng{authorfullhash}{e09b547cbb76f15b5ca795cd82ba0b96}
+      \field{labelalpha}{Sho20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-9811590993}
+      \field{series}{Infosys Science Foundation Series}
+      \field{title}{Complex Analysis with Applications to Number	Theory}
+      \field{year}{2020}
+    \endentry
+    \entry{ComplexContourPlot}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{3}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/ComplexPlot3D.html}}
+      \field{title}{ComplexContourPlot}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{ComplexPlot}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{4}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/ComplexPlot.html}}
+      \field{title}{ComplexPlot}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{ComplexPlot3D}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{5}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/ComplexPlot3D.html}}
+      \field{title}{ComplexPlot3D}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{Elliptic}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{6}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/guide/EllipticIntegrals.html}}
+      \field{title}{Elliptic Integrals}
+      \field{year}{2023}
+    \endentry
+    \entry{Hypergeometric2F1}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{7}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/language/ref/Hypergeometric2F1.html}}
+      \field{title}{Hypergeometric2F1}
+      \field{year}{2023}
+    \endentry
+    \entry{Beta}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{8}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://mathworld.wolfram.com/BetaFunction.html}}
+      \field{title}{Incomplete Beta Function}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{BetaInc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{9}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://mathworld.wolfram.com/IncompleteBetaFunction.html}}
+      \field{title}{Incomplete Beta Function}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{BetaR}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=708ad183c589d445f285b9f6a55615cb}{%
+           family={MathWorld},
+           familyi={M\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{fullhash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{bibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorbibnamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authornamehash}{708ad183c589d445f285b9f6a55615cb}
+      \strng{authorfullhash}{708ad183c589d445f285b9f6a55615cb}
+      \field{extraname}{10}
+      \field{labelalpha}{Mat23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://reference.wolfram.com/legacy/language/v13.1/ref/BetaRegularized.html?v=13.1}}
+      \field{title}{Incomplete Beta Function}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
