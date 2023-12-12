@@ -1110,7 +1110,6 @@ Podemos tener una mirada más detallada a lo que hace este mapeo usando las func
 	 cartesianMap[func_, xrange_, yrange_, options___] := \\ParametricPlot[Evaluate[Through[\{Re, Im\}[func]]],\\xrange, yrange, options]
 \end{mmaCell}
 
-\newpage
 \begin{mmaCell}{Input}
 	 cartesianConformal[func_, xrange_, yrange_, options___] :=\\Show[GraphicsGrid[\{\{cartesianMap[x + I*y, xrange, yrange,\\options,DisplayFunction -> Identity],\\cartesianMap[W[x + I*y],xrange, yrange, options,\\DisplayFunction -> Identity]\}\}],\\DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}

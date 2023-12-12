@@ -195,6 +195,14 @@ En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{Com
 	\]
 \end{defi}
 
+\begin{teor}
+	Sea $f\colon \Omega\to\C$ una función holomorfa
+	y sea $a$ un punto interior del dominio $\Omega$.
+	Supongamos que $a$ es un cero de $f$ de orden $m$.
+	Entonces, existe $R>0$ tal que para cada $r$ que satisface $0<r<R$,
+	la función $A_{f,a,r}$ recorre $m$ veces los valores de $-\pi$ a $\pi$.
+\end{teor}
+
 \noindent Usando la función \textbf{Plot3D} de \textbf{Mathematica} podemos visualizar el mapeo como una función de $\R^2 \rightarrow \R$ como sigue
 \begin{mmaCell}[functionlocal=y]{Code}
 	  Plot3D[x^2 + y^2, {x, -10, 10}, {y, -10, 10}]
