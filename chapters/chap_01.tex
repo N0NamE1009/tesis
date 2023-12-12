@@ -493,12 +493,27 @@ Este ejemplo resulta ser muy sencillo, pero en ocasiones podemos encontrarnos al
 por ende de $f$ no son tan sencillos por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
 Este ejemplo lo estudiaremos más adelante utilizando un Teorema que en seguida se enunciara.\\
-El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $v$ a partir de $u$ o viceversa de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.
+El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $v$ a partir de $u$ o viceversa de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
+\noindent Sean $f(z)$ una función diferenciable en una vecindad en el origen y $\tilde{u}:\C^2\rightarrow\C$ dada por
+\begin{equation}\label{AS1}
+	\title{u}(w_1,w_2)=\dfrac{1}{2}[f(w_+i_w2)+\hat{f}(w_1-iw_2)],
+\end{equation}
+en donde  $\hat{f}$ es la reflexión, $\hat{f}:\C\rightarrow\C$ dada por $\hat{f}(z)=\overline{f(\overline{z})}$.\\
+\noindent Note que, si  hacemos el cambio de variable 
+\begin{equation}\label{AS2}
+	w_1=\dfrac{z}{2},\;\;\;w_2=\dfrac{z}{2i},
+\end{equation}
+donde $z\in\C$, obtenemos 
+\begin{equation}\label{AS3}
+	\tilde{u}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)=\dfrac{1}{2}[f(z)+\hat{f}(0)]=\dfrac{1}{2}[f(z)+\overline{f(0)}]
+\end{equation}
+
+
 
 
 \begin{teor}[Ahlfors-Struble para vecindades en torno al origen]\label{TAS1}
 	Sea $f(z)$ diferenciable en una vecindad del origen, con parte real $u(x, y)$ y parte imaginaria $v(x, y)$, donde 
-	$z = x + iy$. Entonces, extendiendo  $u$ (o $v$) a $\C^2$ se tiene
+	$z = x + iy$. Entonces, se tiene
 	\[
 		\begin{array}{ccl}
 			f(z)&=&2u\left(\dfrac{z}{2},\dfrac{z}{2i}\right)-\overline{f(0)}\\
