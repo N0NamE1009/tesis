@@ -637,6 +637,28 @@
       \field{year}{2023}
       \true{nocite}
     \endentry
+    \entry{Domain_coloring}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ec87b22bdf25a4548a4058ae444e0ce2}{%
+           family={Archive},
+           familyi={A\bibinitperiod},
+           given={Algorithm},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \strng{fullhash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \strng{bibnamehash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \strng{authorbibnamehash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \strng{authornamehash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \strng{authorfullhash}{ec87b22bdf25a4548a4058ae444e0ce2}
+      \field{labelalpha}{Arc}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.algorithm-archive.org/contents/domain_coloring/domain_coloring.html}}
+      \field{title}{Domain coloring}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
