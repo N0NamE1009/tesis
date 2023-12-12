@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.30)  11 DEC 2023 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.30)  11 DEC 2023 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1814,7 +1814,7 @@ LaTeX Info: Redefining \% on input line 476.
 LaTeX Info: Redefining \. on input line 518.
 LaTeX Info: Redefining \% on input line 518.
  [15]
-<img/8_1.png, id=432, 361.35pt x 361.35pt>
+<img/8_1.png, id=431, 361.35pt x 361.35pt>
 File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
 Package pdftex.def Info: img/8_1.png  used on input line 540.
@@ -1825,10 +1825,10 @@ File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
 File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
-LaTeX Info: Redefining \. on input line 557.
-LaTeX Info: Redefining \% on input line 557.
+LaTeX Info: Redefining \. on input line 549.
+LaTeX Info: Redefining \% on input line 549.
  [16 <./img/8_1.png (PNG copy)>]
-<img/9_1.png, id=441, 361.35pt x 355.92975pt>
+<img/9_1.png, id=440, 361.35pt x 355.92975pt>
 File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
 Package pdftex.def Info: img/9_1.png  used on input line 565.
@@ -1839,10 +1839,10 @@ File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
 File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
-LaTeX Info: Redefining \. on input line 597.
-LaTeX Info: Redefining \% on input line 597.
+LaTeX Info: Redefining \. on input line 589.
+LaTeX Info: Redefining \% on input line 589.
  [17 <./img/9_1.png (PNG copy)>]
-<img/11_1.png, id=450, 542.025pt x 532.389pt>
+<img/11_1.png, id=449, 542.025pt x 532.389pt>
 File: img/11_1.png Graphic file (type png)
 <use img/11_1.png>
 Package pdftex.def Info: img/11_1.png  used on input line 616.
@@ -1853,13 +1853,13 @@ File: img/11_1.png Graphic file (type png)
 <use img/11_1.png>
 File: img/11_1.png Graphic file (type png)
 <use img/11_1.png>
-LaTeX Info: Redefining \. on input line 619.
-LaTeX Info: Redefining \% on input line 619.
+LaTeX Info: Redefining \. on input line 617.
+LaTeX Info: Redefining \% on input line 617.
 
-[18 <./img/11_1.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 652.
-LaTeX Info: Redefining \% on input line 652.
- [19]
+[18]
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+ [19 <./img/11_1.png (PNG copy)>]
 <img/11_2.png, id=465, 542.025pt x 528.17325pt>
 File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
@@ -1871,10 +1871,10 @@ File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
 File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
-LaTeX Info: Redefining \. on input line 677.
-LaTeX Info: Redefining \% on input line 677.
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
  [20 <./img/11_2.png (PNG copy)>]
-<img/12_1.png, id=473, 614.295pt x 613.0905pt>
+<img/12_1.png, id=471, 614.295pt x 613.0905pt>
 File: img/12_1.png Graphic file (type png)
 <use img/12_1.png>
 Package pdftex.def Info: img/12_1.png  used on input line 685.
@@ -1888,8 +1888,8 @@ File: img/12_1.png Graphic file (type png)
 LaTeX Info: Redefining \. on input line 694.
 LaTeX Info: Redefining \% on input line 694.
  [21 <./img/12_1.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 729.
-LaTeX Info: Redefining \% on input line 729.
+LaTeX Info: Redefining \. on input line 724.
+LaTeX Info: Redefining \% on input line 724.
  [22]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/sl' in size <12> not available
 (Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 732.
@@ -2551,7 +2551,7 @@ Package logreq Info: Writing requests to 'tesis.run.xml'.
 Here is how much of TeX's memory you used:
  40537 strings out of 474587
  739853 string characters out of 5755508
- 1956558 words of memory out of 5000000
+ 1952558 words of memory out of 5000000
  61787 multiletter control sequences out of 15000+600000
  686022 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2575,7 +2575,7 @@ KTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/lm/lmtko10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tesis.pdf (99 pages, 6236270 bytes).
+Output written on tesis.pdf (99 pages, 6236364 bytes).
 PDF statistics:
  1159 PDF objects out of 1200 (max. 8388607)
  291 named destinations out of 1000 (max. 500000)
