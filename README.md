@@ -7,9 +7,8 @@ cálculo simbólico, para visualizar el comportamiento gráfico de las funciones
 En el primer capítulo, presentamos de manera concisa los conceptos de diferenciación
 compleja, como la regla de la cadena y las ecuaciones de Cauchy-Riemann. Posteriormente, se exponen resultados de la teoría de funciones analíticas, como el Teorema de
 Identidad para Funciones Analíticas, que establece cuándo dos funciones son iguales
-en un dominio Ω. Se muestra de manera resumida cómo podemos usar Mathematica
-para graficar funciones complejas utilizando la función ComplexPlot de Mathema-
-tica. Esta forma de graficar funciones nos permite observar ciertos comportamientos
+en un dominio $\Omega$. Se muestra de manera resumida cómo podemos usar Mathematica
+para graficar funciones complejas utilizando la función ComplexPlot de Mathematica. Esta forma de graficar funciones nos permite observar ciertos comportamientos
 alrededor de los polos y singularidades de las funciones complejas. Para finalizar este
 capítulo, se presenta el Teorema de Ahlfors-Struble. A pesar de su simplicidad, este
 teorema es de gran ayuda, ya que permite obtener una función analítica a partir de
