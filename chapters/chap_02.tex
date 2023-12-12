@@ -685,22 +685,7 @@ Bajo ciertas condiciones la función que se enuncia en el Teorema \ref{TMR} es �
 	para alguna $z_{0}\in D$ fija y $\theta \in [0, 2\pi[$; más aún, cualquier $T$ de esta forma es un mapeo conforme de $D$ sobre $D$, y además $T$ es único. 
 	\proof
 	La demostración la podemos consultar en \cite{marsden}, ver la Proposición  5.2.2. \endproof
-	\begin{comment}
-		Primero verificaremos que para $T$ de esta forma, $|z| = 1$ 	implica que $|T(z)| = 1$ . En efecto,
-		$$|T(z)|=\left|\dfrac{z-z_{0}}{1-\bar{z_{0}}z}\right|=\dfrac{|z-z_{0}|}{|z||z^{-1}-\bar{z_{0}}|}$$
-		pero $|z|=1$, por  lo que $z^{-1}=\bar{z}$, de donde obtenemos 
-		$$|T(z)|=\dfrac{|z-z_{0}|}{|\bar{z}-\bar{z_{0}}|}=1$$
-		ya que $|\bar{z}|=|z|$. La única singularidad de $T$ está en $z =z_{0}^{-1}$ , que está fuera del círculo unitario.\\
-		Entonces, por el Teorema del módulo máximo (\ref{modmx}), $T$ transforma $D$ en $D$. Pero por
-		la Proposición \ref{prop3},
-		$$T^{-1}(w)=e^{-i\theta}\left[\dfrac{w-(-e^{i\theta}z_{0})}{1-(-e^{-i\theta}\bar{z_{0}})w}\right]$$
-		la cual resulta ser un mapeo conforme de $D$ sobre $D$. Así que $T$ es conforme de $D$ sobre $D$.\\
-		Sea $S: D \rightarrow D$ cualquier mapeo conforme. Sea $z_0 = S^{-1}(0)$ y sea $\theta = \mbox{arg} S'(z_0)$. Se afirma que el mapeo $T$ cumple $\theta = \mbox{arg} T'(z_0)$ y $T(z_0)=0$; en efecto,
-		$$T'(z)=e^{i\theta}\left[\dfrac{1-|z_0|^2}{(1-\bar{z_{0}}z)^2}\right]$$
-		Si tomamos $z=z_0$, se tiene 
-		$$T'(z_0)=e^{i\theta}\left(\dfrac{1}{1-|z_0|^2}\right)$$
-		una constante real por $e^{i\theta}$. Por el Corolario \ref{coroRiemman} se tiene que $S=T$.
-	\end{comment}
+
 \end{prop}
 Notemos que la transformación lineal entera $w = az+b$ $(a\neq 0)$ claramente preserva círculos, ya que el mapeo $w$ es solo una traslación  (si $a = 1)$, o una traslación combinada con un estiramiento (si $a\neq 1$).
 \begin{lema}\label{lema1}
