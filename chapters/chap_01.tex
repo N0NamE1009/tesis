@@ -186,7 +186,15 @@ Acabamos de introducir los términos de singularidad aislada, removible, esencia
 \end{figure}
 \\Y la forma de usar esta función es \textbf{ComplexPlot[$f$,$\{z,z_{min},z_{max}\}$]}, cabe aclarar que esta función genera un grafico de $\mathbf{\operatorname{Arg}[f]}$ sobre el rectángulo en el plano complejo con esquinas $z_{min}$ y $z_{max}$, cabe mencionar que la intensidad de los colores esta determinado por el valor absoluto (modulo) de $f$, es decir,  $\mathbf{\operatorname{Abs}[f]}$. El funcionamiento de \textbf{ComplexPlot3D}  es análogo.\\
 En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{ComplexContourPlot} la cual traza los contornos de una función real sobre los complejos. La forma de usar es \textbf{ComplexContourPlot[$f$,$\{z,z_{min},z_{max}\}$]} y además en las posiciones donde $f$ no se evalúa como un número real, se dejan agujeros para que se vea el fondo del gráfico de contorno. La función $f$ generalmente incluirá funciones como Re, Im, Abs y Arg que extraen componentes reales de números complejos para propósitos de comparación.\\\\
-\noindent Al lector interesado le sugerimos revisar \cite{Domain_coloring}, allí encontrará una explicación más detallada acerca de la visualización de funciones complejas usando colores.\\\\
+\noindent Al lector interesado le sugerimos revisar \cite{Domain_coloring}, allí encontrará una explicación más detallada, sin llegar a ser teórica, acerca de la visualización de funciones complejas usando colores.\\
+
+\begin{defi}
+	Sean $f\colon \Omega\to\C$ una función, $a$ un punto interior de $\Omega$ y $r>0$ tal que la cerradura del disco $D(a,r)$ está contenida en $\Omega$. Definimos $A_{f,a,r}\colon[0,2\pi)\to\R$,
+	\[
+	A_{f,a,r}(\theta) = \operatorname{Arg}(f(a+re^{i\alpha})).
+	\]
+\end{defi}
+
 \noindent Usando la función \textbf{Plot3D} de \textbf{Mathematica} podemos visualizar el mapeo como una función de $\R^2 \rightarrow \R$ como sigue
 \begin{mmaCell}[functionlocal=y]{Code}
 	  Plot3D[x^2 + y^2, {x, -10, 10}, {y, -10, 10}]
