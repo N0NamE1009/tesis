@@ -41,7 +41,6 @@
 \contentsline {section}{\numberline {2.7}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}{74}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}El hexágono}{74}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}El $n$-ágono regular}{75}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Miscelánea}{76}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Aplicaciones}{77}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducción}{77}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Flujo de fluidos}{77}{section.3.2}%
