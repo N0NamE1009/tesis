@@ -147,7 +147,7 @@ Una función holomorfa en todo $\C$   es llamada una función \textbf{entera}.
 	Ahora, consideremos  $f(z)=|z|^{2}$ como un mapeo de $\C\rightarrow\C$.
 	Tenemos que si $z=x+iy$, entonces 
 	$$f(z)=|z|^2=|x+iy|^2=x^2+y^2,$$
-	si $u(x,y)=\mbox{Re }f(z)$ y $v(x,y)=\mbox{Im }f(z)$, entonces $u(x,y)=x^2+y^2$ y $v(x,y)=0$.\\ 
+	luego, si $u(x,y)=\mbox{Re }f(z)$ y $v(x,y)=\mbox{Im }f(z)$, entonces $u(x,y)=x^2+y^2$ y $v(x,y)=0$.\\ 
 	Además
 	\[
 	\begin{array}{ccl}
@@ -157,16 +157,16 @@ Una función holomorfa en todo $\C$   es llamada una función \textbf{entera}.
 		\dfrac{\partial v}{\partial x}&=&0.
 	\end{array}
 	\]
-	Observamos que las ecuaciones de Cauchy-Riemann se cumplen solo si $(x,y)=(0,0)$, es decir, $f(z)$ es complejo diferenciable solo en $(0,0)$. Por otro lado, si $z_0\in \C\setminus\{0\}$, entonces 
+	Notemos que las ecuaciones de Cauchy-Riemann se cumplen solo si $(x,y)=(0,0)$, es decir, $f(z)$ es complejo diferenciable solo en $(0,0)$. Por otro lado, si $z_0\in \C\setminus\{0\}$, entonces 
 	\[
 	\begin{array}{ccl}
 		\displaystyle	\lim_{z\rightarrow z_0}\dfrac{|z|^2-|z_0|^2}{z-z_0}&=&\displaystyle\lim_{z\rightarrow z_0}\dfrac{|z|-|z_0|}{z-z_0}(|z|+|z_0|),
 	\end{array}
 	\]
-	si $z$ tiende a $z_0$ a lo largo del rayo $\{\alpha z_0\mid \alpha\in (1,\infty)\}$, entonces 
+	luego, si $z$ tiende a $z_0$ a lo largo del rayo $\{\alpha z_0\mid \alpha\in (1,\infty)\}$, entonces 
 	el límite anterior es $2z_0\neq 0$. Por tanto, no existe un abierto $\Omega\subset \C$ en el que $f(z)$ sea holomorfa.\endproof
 \end{Ejem}
-El ejemplo anterior ilustra una función que puede ser diferenciable en términos reales pero no en términos complejos. Esto destaca la distinción entre la diferenciabilidad en el contexto de los números reales y los números complejos.
+El ejemplo anterior ilustra una función que puede ser diferenciable en términos reales, pero no en términos complejos. Esto resalta la distinción entre la diferenciabilidad en el contexto de los números reales y los números complejos.
 \begin{teor}[De Identidad para Funciones Analíticas]\label{TIFA}
 	Si dos funciones analíticas reales $f(z)$ y $g(z)$, definidas en un dominio $\Omega$,
 	coinciden en un conjunto $E \subset \Omega$ con punto límite $z_0 \in \Omega$, entonces $f(z)$ y $g(z)$ coinciden en todo el dominio $\Omega$.\\
@@ -177,15 +177,15 @@ El ejemplo anterior ilustra una función que puede ser diferenciable en término
 	\textbf{singularidad esencial}.\\Sea $a$ un polo de $f$, el mínimo número natural $m$ tal que $f(z)(z-a)^m$ tiene una singularidad removible en $a$ será llamado el \textbf{orden del polo} en $a$.
 \end{defi}
 Acabamos de introducir los términos de singularidad aislada, removible, esencial y polo.  A partir de \textbf{Mathematica 12.0}, se incluyeron dos funciones que  nos permiten graficar mapeos complejos:  \textbf{ComplexPlot} y \textbf{ComplexPlot3D}. A continuación explicamos brevemente estas funciones.\\
-\textbf{ComplexPlot} utiliza una función de color cíclica sobre Arg[$f$] para identificar características como ceros, polos y singularidades esenciales. La función de color va de $-\pi$ a $\pi$ en sentido contrario a las agujas del reloj alrededor de los ceros, en el sentido de las agujas del reloj alrededor de los polos y ciclos infinitos cerca de las singularidades esenciales. Por convención los colores van en el siguiente orden rojo, verde, azul, siguiendo un patrón RGB, el argumento es el que determina el color.
+\textbf{ComplexPlot} utiliza una función de color cíclica sobre Arg[$f$] para identificar características como ceros, polos y singularidades esenciales. La función de color va de $-\pi$ a $\pi$ en sentido contrario a las agujas del reloj alrededor de los ceros, en el sentido de las agujas del reloj alrededor de los polos, y ciclos infinitos cerca de las singularidades esenciales. Por convención los colores van en el siguiente orden: rojo, verde, azul, siguiendo un patrón RGB, el argumento es el que determina el color.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\linewidth]{img/plotco}
 	\caption{Ejemplo gráfico del comportamiento de los ceros, polos y singularidades cuando se usa la función ComplexPlot3D}
 	\label{fig:plotco}
 \end{figure}
-\\Y la forma de usar esta función es \textbf{ComplexPlot[$f$,$\{z,z_{min},z_{max}\}$]}, cabe aclarar que esta función genera un grafico de $\mathbf{\operatorname{Arg}[f]}$ sobre el rectángulo en el plano complejo con esquinas $z_{min}$ y $z_{max}$, cabe mencionar que la intensidad de los colores esta determinado por el valor absoluto (modulo) de $f$, es decir,  $\mathbf{\operatorname{Abs}[f]}$. El funcionamiento de \textbf{ComplexPlot3D}  es análogo.\\
-En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{ComplexContourPlot} la cual traza los contornos de una función real sobre los complejos. La forma de usar es \textbf{ComplexContourPlot[$f$,$\{z,z_{min},z_{max}\}$]} y además en las posiciones donde $f$ no se evalúa como un número real, se dejan agujeros para que se vea el fondo del gráfico de contorno. La función $f$ generalmente incluirá funciones como Re, Im, Abs y Arg que extraen componentes reales de números complejos para propósitos de comparación.\\\\
+\\Y la forma de usar esta función es \textbf{ComplexPlot[$f$,$\{z,z_{min},z_{max}\}$]}, cabe aclarar que esta función genera un grafico de $\mathbf{\operatorname{Arg}[f]}$ sobre el rectángulo en el plano complejo con esquinas $z_{min}$ y $z_{max}$, además que,  la intensidad de los colores esta determinada por el valor absoluto (módulo) de $f$, es decir,  $\mathbf{\operatorname{Abs}[f]}$. El funcionamiento de \textbf{ComplexPlot3D}  es análogo.\\
+En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{ComplexContourPlot}, la cual traza los contornos de una función real sobre los complejos. La forma de usar es \textbf{ComplexContourPlot[$f$,$\{z,z_{min},z_{max}\}$]} y además en las posiciones donde $f$ no se evalúa como un número real, se dejan agujeros para que se vea el fondo del gráfico de contorno. La función $f$ generalmente incluirá funciones como Re, Im, Abs y Arg que extraen componentes reales de números complejos para propósitos de comparación.\\\\
 \noindent Al lector interesado le sugerimos revisar \cite{Domain_coloring}, allí encontrará una explicación más detallada, sin llegar a ser teórica, acerca de la visualización de funciones complejas usando colores.\\
 
 \begin{defi}
@@ -229,7 +229,7 @@ Tratando esta función como mapeo de $\C$ a $\C$ y utilizando las funciones \tex
 \begin{mmaCell}[moregraphics={moreig={scale=.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{1_2.png}}{}
 \end{mmaCell}
-Como podemos ver al ser $|z|^2$ una función que tiene por codominio los reales \textbf{Mathematica} la interpreta como un función real al momento de graficarla, y esto último lo podemos comprobar cuando usamos \textbf{ComplexContourPlot} donde observamos como solo se grafican las curvas de nivel de la componente real y no se gráfica alguna componente compleja.
+Como podemos ver, al ser $|z|^2$ una función que tiene por codominio los reales, \textbf{Mathematica} la interpreta como un función real al momento de graficarla, y esto último lo podemos comprobar cuando usamos \textbf{ComplexContourPlot}, donde observamos como solo se grafican las curvas de nivel de la componente real y no se gráfica alguna componente compleja.
 \begin{mmaCell}{Input}
 	 ComplexContourPlot[\{Re[Abs[z]*Abs[z]], Im[Abs[z]*Abs[z]]\},\\\{z, 20\}, PlotLegends -> "Expressions"]
 \end{mmaCell}
@@ -327,10 +327,10 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 	\end{mmaCell}
 	
 	\begin{mmaCell}{Input}
-		punto = ComplexListPlot[\{Conjugate[1+1I]\},PlotStyle->Red]\\Show[ComplexContourPlot[\{Re[Conjugate[z]], Im[Conjugate[z]]\},\\\{z, 2\},FrameLabel -> \{Style["Re z", 16], Style["Im z", 16]\}],\\punto]
+		punto = ComplexListPlot[\{Conjugate[1+1I]\},PlotStyle->Red]\\Show[ComplexContourPlot[\{Re[Conjugate[z]],Im[Conjugate[z]]\},\\\{z, 2\},FrameLabel -> \{Style["Re z",16], Style["Im z",16]\}],\\punto]
 	\end{mmaCell}
 	
-	Las figuras obtenidas se muestran en la figura \ref{fig:ej_5D}.
+	Las graficas obtenidas se muestran en la figura \ref{fig:ej_5D}.
 	
 	\begin{figure}[htbp!]
 	\centering
@@ -359,17 +359,17 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 			0,&\mbox{ sí }&z=0.
 		\end{array} \right. 
 		\] 
-	 Sí $z=x+iy$, tenemos que $$z^5=x^5+5ix^4y-10x^3y^2-10ix^2y^3+5xy^4+iy^5,$$ y $$|z|^4=x^4+2 x^2 y^2+y^4.$$
-	 Entonces $$u(x,y)=\dfrac{x^5 - 10 x^3 y^2  + 5 x y^4 }{x^4 + 2 x^2 y^2 + y^4}$$ y $$v(x,y)=\dfrac{ 5  x^4 y  - 10  x^2 y^3 +  y^5}{x^4 + 2 x^2 y^2 + y^4}.$$
+	 Sí $z=x+iy$, tenemos que $$z^5=x^5+5ix^4y-10x^3y^2-10ix^2y^3+5xy^4+iy^5,$$ así como $$|z|^4=x^4+2 x^2 y^2+y^4.$$
+	 Entonces $$u(x,y)=\dfrac{x^5 - 10 x^3 y^2  + 5 x y^4 }{x^4 + 2 x^2 y^2 + y^4},$$  $$v(x,y)=\dfrac{ 5  x^4 y  - 10  x^2 y^3 +  y^5}{x^4 + 2 x^2 y^2 + y^4}.$$
 	 Tenemos
 	\[
 		\begin{array}{c}
 			u_x=\dfrac{5 x^4-30 x^2 y^2+5 y^4}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^3+4 x y^2\right) \left(x^5-10 x^3 y^2+5 x y^4\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\\\
 			u_y = \dfrac{20 x y^3-20 x^3 y}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^2 y+4 y^3\right) \left(x^5-10 x^3 y^2+5 x y^4\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\
 			v_x=\dfrac{20 x^3 y-20 x y^3}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^3+4 x y^2\right) \left(5 x^4 y-10 x^2 y^3+y^5\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\\\
-			v_y=\dfrac{5 x^4-30 x^2 y^2+5 y^4}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^2 y+4 y^3\right) \left(5 x^4 y-10 x^2 y^3+y^5\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},
+			v_y=\dfrac{5 x^4-30 x^2 y^2+5 y^4}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^2 y+4 y^3\right) \left(5 x^4 y-10 x^2 y^3+y^5\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2}.
 		\end{array}
-	\]se desprende que $u(0,0)=v(0,0)=0$ de la definición de $f$.\\
+	\] De lo anterior se desprende que $u(0,0)=v(0,0)=0$, debido a la definición de $f$.\\
 	Entonces 
 	\[
 		\begin{array}{ccl}
@@ -402,7 +402,7 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 			&=&e^{i4\theta}.
 		\end{array}
 	\]
-	Por otro lado,  $u_x(0,0)+iv_x(0,0)=1$, por lo tanto $f'(0)$ no puede existir. \\
+	Por otro parte,  $u_x(0,0)+iv_x(0,0)=1$, por lo tanto $f'(0)$ no puede existir. \\
 	Usando \textbf{Mathematica}
 	\begin{mmaCell}{Input}
 		ComplexPlot[(z)^5/((Abs[z])^4), \{z, -2 - 2 I, 2 + 2 I\}]
@@ -415,7 +415,7 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 	\begin{mmaCell}{Input}
 		ComplexContourPlot[\{Re[(z)^5/((Abs[z])^4)],\\Im[(z)^5/((Abs[z])^4)]\}, \{z, 2\},\\PlotLegends -> "Expressions"]
 	\end{mmaCell}
-	Obtenemos las figuras mostradas en la figura \ref{fig:ej_6}.\\	
+	obtenemos las graficas mostradas en la figura \ref{fig:ej_6}.\\	
 	\begin{figure}[htbp!]
 		\centering
 		\begin{subfigure}{0.2\textwidth}
@@ -437,37 +437,37 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 		\label{fig:ej_6}
 	\end{figure}
 	
-	En las figuras \ref{fig:ej_4_1} y \ref{fig:ej_4_2} podemos ver que la función $f(z)=z$ tiene un cero en $z=0$, mientras que en la figura \ref{fig:ej_4_3} vemos que la función identidad no deforma el plano.
+	En las figuras \ref{fig:ej_6_1} y \ref{fig:ej_6_2} podemos ver que la función $f(z)=\frac{(z)^5}{|z|^4}$ tiene un cero de orden 5 en $z=0$, mientras que en la figura \ref{fig:ej_6_3} vemos que la se mapean las componentes reales e imaginarias.
 \end{Ejem} 
 
-Hay algunas consecuencias básicas de las ecuaciones de Cauchy-Riemann que se derivan fácilmente y que tienen consecuencias muy importantes, especialmente en el desarrollo de aplicaciones en matemáticas aplicadas.\\
-Considere las curvas $u(x,y)=\mbox{cte}$, $v(x,y)=\mbox{cte}$. La normal a la curva $u(x,y)=\mbox{cte}$ $\mbox{grad } u$
+Hay algunas consecuencias básicas de las ecuaciones de Cauchy-Riemann, las cuales se derivan fácilmente y que tienen consecuencias muy importantes, especialmente en el desarrollo de aplicaciones en matemáticas aplicadas.\\
+Considere las curvas $u(x,y)=\mbox{cte}$, $v(x,y)=\mbox{cte}$. El gradiente, $\mbox{grad } u$ es
 \[
 	\mbox{grad } u=\left(\begin{array}{c}
 		\dpartial{u}{x}\\\\
 		\dpartial{u}{y}
-	\end{array}\right),
+	\end{array}\right).
 \]
-y similarmente para $v$. Las ecuaciones de Cauchy-Riemann implican que 
+Similarmente para $v$. Las ecuaciones de Cauchy-Riemann implican que 
 $$\left(\dpartial{u}{x}\right)^2+\left(\dpartial{u}{y}\right)^2=\left(\dpartial{v}{x}\right)^2+\left(\dpartial{v}{x}\right)^2,$$
 y $$\dpartial{u}{x}\dpartial{v}{x}+\dpartial{u}{y}\dpartial{v}{y}=0.$$
-Ahora, usando el siguiente
+
 \begin{teor}\label{Teor8.5silv}
 	Si $f(z)$ es analítica en un dominio G, entonces $f(z)$ tiene derivadas de todos los ordenes en $G$, más aun toda derivada $$f^{n}(z)=\dfrac{d^n f(z)}{dz^n},$$ es analítica en $G$ para toda $n=0,1,2,\ldots$.\\
 	Una demostración de este teorema puede encontrarla en \cite{silverman}, más precisamente el Teorema 8.5. 
 \end{teor}
-Podemos derivar nuevamente y también intercambiar el orden de diferenciación, además usar las ecuaciones de Cauchy-Riemann para derivar un resultado importante.
+Ahora, usando el Teorema \ref{Teor8.5silv}, podemos derivar nuevamente y también intercambiar el orden de diferenciación, además de usar las ecuaciones de Cauchy-Riemann para obtener que
 $$\dpartial{^2 u}{x^2}=\dfrac{\partial}{\partial x}\left(\dpartial{u}{x}\right)=\dfrac{\partial}{\partial x}\left(\dpartial{v}{x}\right)=\dfrac{\partial}{\partial y}\left(\dpartial{v}{x}\right)=-\dfrac{\partial}{\partial y}\left(\dpartial{u}{y}\right)=-\dpartial{^2u}{y^2},$$
 luego
 $$\dpartial{^2 u}{x^2}+\dpartial{^2u}{y^2}=0,$$
-luego $u$ satisface la ecuación de Laplace, en este caso diremos que la función es armónica. Similarmente para $v$.
+entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la función es armónica. Similarmente para $v$.
 
 \section{El Teorema de Ahlfors-Struble}
  Sean $z = x + iy$ y $f(z) = u(x, y)+iv(x, y)$. Entonces dada una función $u(x, y)$, a menudo surge la pregunta de cómo encontrar la función $v(x,y)$ correspondiente y, por tanto, el mapeo  $f(z)$. En la mayoría de las veces el problema se soluciona resolviendo las ecuaciones de Cauchy-Riemann. Tenga en cuenta que un paso preliminar y muy sensato es comprobar que $u(x,y)$  satisface la ecuación de Laplace, esto se ilustra en el siguiente ejemplo.
  \begin{Ejem}\label{EjCR}
  	Sea $u(x,y)=x^2-y^2$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+v(x,y)$ sea complejo diferenciable.
  	\solu
- 	En primer lugar, planteamos nuestro sistema de ecuaciones de Cauchy-Riemann
+ 	\noindent En primer lugar, planteamos nuestro sistema de ecuaciones de Cauchy-Riemann
  	\[
  		\begin{array}{c}
  			\dpartial{u}{x}=\dpartial{v}{y}=2x,\\\\
@@ -481,14 +481,14 @@ luego $u$ satisface la ecuación de Laplace, en este caso diremos que la funció
  			v(x,y)=2yx+h(y),
  		\end{array}
  	\]
- 	donde $g,h$ son funciones arbitrarias. Igualando las dos expresiones anteriores se tiene que $g(x)=h(y)$, es decir, $g$ y $h$ deben de ser constantes. Luego $v=2xy+c$ para alguna constante $c$, por tanto 
+ 	donde $g,h$ son funciones arbitrarias. Igualando las dos expresiones anteriores, se tiene que $g(x)=h(y)$, es decir, $g$ y $h$ deben de ser constantes. Luego $v=2xy+c$ para alguna constante $c$, por tanto 
  	$$f(z)=x^2-y^2+2ixy+ic=(x+iy)^2+ic=z^2+ic.$$\endproof
  \end{Ejem}
 Este ejemplo resulta ser muy sencillo, pero en ocasiones podemos encontrarnos algunos en los cuales la obtención  de $v$ y
-por ende de $f$ no son tan sencillos por ejemplo  la función 
+por ende de $f$ no son tan sencillos, por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
 Este ejemplo lo estudiaremos más adelante utilizando un Teorema que en seguida se enunciara.\\
-El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $v$ a partir de $u$ o viceversa de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
+El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ o a paertir de $v$ de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
 \noindent Se tiene la siguiente definición
 \begin{defi}
 	Sea $u:\R^2\rightarrow\R$ una función real, por una extensión natural de $u$ nos referiremos a un función $u_{ex}:\C^2\rightarrow\C$ que se obtiene al sustituir $x,y\in\R$ en $u$ por $w_1,w_2\in\C$.
@@ -539,7 +539,7 @@ Consideremos nuevamente el ejemplo \ref{EjCR}, pero ahora lo resolveremos usando
 \begin{Ejem}	
 	Sea $u(x,y)=x^2-y^2$, encuentre  $f(z)$ usando el Teorema \ref{TAS1}.
 	\solu
-	Note que $u(0, 0) = 0$, por lo que $f(0) = i\beta$ para alguna $\beta\in\R$. Aplicando el Teorema \ref{TAS1}
+	\noindent Note que $u(0, 0) = 0$, por lo que $f(0) = i\beta$ para alguna $\beta\in\R$. Aplicando el Teorema \ref{TAS1}
 	\[
 		\begin{array}{ccl}
 			f(z)&=&2u\left(\dfrac{z}{2},\dfrac{z}{2i}\right)-\overline{f(0)}\\
@@ -562,7 +562,7 @@ Consideremos nuevamente el ejemplo \ref{EjCR}, pero ahora lo resolveremos usando
 \begin{Ejem}	
 	Sea $u(x,y)=e^{x} \cos(y)$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+v(x,y)$ sea complejo diferenciable.
 	\solu
-	Vemos que $u(0,0)=1$, luego $f(0)=1+i\beta$ para  alguna $\beta\in\R$. Recordemos que 
+	\noindent Vemos que $u(0,0)=1$, luego $f(0)=1+i\beta$ para  alguna $\beta\in\R$. Recordemos que 
 	$$\cos p=\dfrac{1}{2}(e^{ip}+e^{-ip}).$$
 	Entonces 
 	\[
@@ -581,12 +581,12 @@ Consideremos nuevamente el ejemplo \ref{EjCR}, pero ahora lo resolveremos usando
 	\begin{mmaCell}[moregraphics={moreig={scale=.25}}]{Output}
 		\mmaFrac{ \mmaGraphics{9_1.png}}{}
 	\end{mmaCell}
-Usando el comando \textbf{Solve} podemos encontrar las soluciones  de la función $f(z)$
+Usando el comando \textbf{Solve} podemos encontrar las soluciones  de la función $f(z)$,
 \begin{mmaCell}{Input}
 	 Solve[Exp[z] == -I, z]
 \end{mmaCell}
-De lo anterior obtenemos que las soluciones son $$\left\{z\mid -\dfrac{i\pi}{2} +2 i \pi  k\text{ si }k\in \Z\right\}.$$
-Usando un bucle \textbf{For} obtenemos numéricamente las 3 soluciones que se muestran en la imagen.
+de lo anterior obtenemos que las soluciones son $$\left\{z\mid -\dfrac{i\pi}{2} +2 i \pi  k\text{ si }k\in \Z\right\}.$$
+Usando un bucle \textbf{For}, obtenemos numéricamente las 3 soluciones que se muestran en la imagen.
 \begin{mmaCell}{Input}
 	 For[i = -1, i < 2, i++, Print[-0.5*(I*Pi) + 2*I*Pi*i]]
 \end{mmaCell}
@@ -632,7 +632,7 @@ los cuales resultan ser $-7.85398 i,  -1.5708 i$ y $4.71239i$ para $k=-1,0,1$ re
 	\begin{mmaCell}[moregraphics={moreig={scale=.25}}]{Output}
 		\mmaFrac{ \mmaGraphics{11_1.png}}{}
 	\end{mmaCell}
-En la imagen anterior podemos ver el comportamiento de los colores alrededor del origen. Este comportamiento, es decir, cuando el sentido en el que giran los colores alrededor de un punto se invierte se da cuando la función tiene un polo en dicho punto. \endproof
+En la imagen anterior, podemos ver el comportamiento de los colores alrededor del origen. Este comportamiento, es decir, cuando el sentido en el que giran los colores alrededor de un punto se invierte se da cuando la función tiene un polo en dicho punto. \endproof
 \end{Ejem}
 \begin{teor}[Teorema Grande de Picard]\label{GTP}
 	Sea $a$ una singularidad esencial de $f$ en alguna vecindad agujerada. Entonces para cada vecindad agujerada de $a$, $f(z)$ asume todos los números complejos, con una posible excepción, un número infinito de veces.
@@ -675,8 +675,8 @@ En la imagen anterior podemos ver el comportamiento de los colores alrededor del
 	\begin{mmaCell}[moregraphics={moreig={scale=.25}}]{Output}
 		\mmaFrac{ \mmaGraphics{11_2.png}}{}
 	\end{mmaCell}
-La función anterior es bastante interesante, ya que al representarla con colores podemos ver que no hay ningún punto en el cual los colores giren en torno a él, pero justo en el punto $z=0$ vemos como los colores se van alternando infinitamente hasta acercarse  al $0$, este comportamiento de los colores se da cuando se tiene una singularidad esencial.\\
-Visualmente lo que podemos ver en la figura es que la función $e^{\frac{1}{z}}$ toma todos los valores complejos, excepto el $0$, en cualquier vecindad del origen; es decir esta función satisface el Teorema \ref{GTP}.\endproof
+La función anterior es bastante interesante, ya que al representarla con colores podemos ver que no hay ningún punto en el cual los colores giren en torno a él, pero justo en el punto $z=0$, vemos como los colores se van alternando infinitamente hasta acercarse  al $0$, este comportamiento de los colores se da cuando se tiene una singularidad esencial.\\
+Visualmente lo que podemos ver en la figura, es que la función $e^{\frac{1}{z}}$ toma todos los valores complejos, excepto el $0$, en cualquier vecindad del origen; es decir, esta función satisface el Teorema \ref{GTP}.\endproof
 \end{Ejem}
 
 
@@ -702,7 +702,7 @@ Visualmente lo que podemos ver en la figura es que la función $e^{\frac{1}{z}}$
 		\mmaFrac{ \mmaGraphics{12_1.png}}{}
 	\end{mmaCell}
 \end{Ejem}
-Notemos que en la imagen anterior hay un punto en donde todos los colores se juntan y además la secuencia de colores va en sentido antihorario (azul, rojo, verde), es decir, la función $f(z)$ se anula en dicho punto el cual resulta ser en el punto $z=1$. Además podemos observar como a la izquierda se juntan algunos colores en una línea  y esto ocurre en torno al cero, podemos ver que el logaritmo presenta ''problemas'' de continuidad, lo anterior está relacionado con las ramas del logaritmo y el punto $z=0$ es un punto de ramificación del logaritmo.\endproof
+Notemos que, en la imagen anterior hay un punto en donde todos los colores se juntan y además la secuencia de colores va en sentido antihorario (azul, rojo, verde), es decir, la función $f(z)$ se anula en dicho punto, el cual resulta ser en el punto $z=1$. Además podemos observar como a la izquierda se juntan algunos colores en una línea  y esto ocurre en torno al cero, podemos ver que el logaritmo presenta ''problemas'' de continuidad, lo anterior está relacionado con las ramas del logaritmo y el punto $z=0$ es un punto de ramificación del logaritmo.\endproof
 
 \subsection{Implementación del algoritmo en Mathematica }
 Como expusimos antes, la formula  del Teorema \ref{TAS1} nos permite encontrar $f(z)$ a partir de $u$ o $v$ de forma algebraica. Es por ello que nos proponemos a realizar una implementación del Teorema \ref{TAS1} usando Mathematica, desde luego, utilizaremos esta implementación para realizar una comprobación de los ejemplos presentados anteriormente.\\
@@ -759,7 +759,7 @@ Usando la función \textbf{Map} de Mathematica y la lista anterior
 \begin{mmaCell}{Output}
 	 \{z^2 + I \(\pmb{\beta}\),\\ E^z + I\(\pmb{\beta}\),\\ 1/z + I \(\pmb{\beta}\),\\ E^(1/z) + I \(\pmb{\beta}\),\\ I \(\pmb{\beta}\) + Log[z]\}
 \end{mmaCell}
-\noindent Podemos ver que estos resultados son los mismos que obtuvimos anteriormente.
+\noindent Podemos ver que, estos resultados son los mismos que obtuvimos anteriormente.
 
 
 
