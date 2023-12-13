@@ -1,19 +1,19 @@
 \chapter{Mapeos conformes} \label{chap:background}
 \section{Introducción}\label{introcap2}
 \begin{defi}
-	Sean $\Omega_{1}$ y $\Omega_{2}$ dos conjuntos abiertos. Un mapeo analítico e inyectivo $f:\Omega_{1}\rightarrow\Omega_{2}$  es llamado un homeomorfismo analítico de  $\Omega_{1}$ sobre $\Omega_{2}$. Un mapeo analítico e inyectivo de $\Omega_{1}$ a $\Omega_{2}$ es llamado un mapeo conforme de $\Omega_{1}$ a $\Omega_{2}$.\\
+	Sean $\Omega_{1}$ y $\Omega_{2}$ dos conjuntos abiertos. Un mapeo analítico e inyectivo $f:\Omega_{1}\rightarrow\Omega_{2}$, es llamado un homeomorfismo analítico de  $\Omega_{1}$ sobre $\Omega_{2}$. Un mapeo analítico e inyectivo de $\Omega_{1}$ a $\Omega_{2}$ es llamado un mapeo conforme de $\Omega_{1}$ a $\Omega_{2}$.\\
 	Diremos que $\Omega_{1}$ y $\Omega_{2}$ son conformemente equivalentes si existe un mapeo conforme de $\Omega_{1}$ a $\Omega_{2}$ y cuyo rango sea $\Omega_{2}$, en ese caso escribiremos $\Omega_{1} \sim\Omega_{2}$.
 \end{defi}
 \begin{defi}
-	Diremos que la curva $l$ parametrizada por $\lambda$ en $[a,b]$ y diferenciable en $t_0$ tiene tangente $\tau$ en $\lambda(t_0) = z_0$ si existe el límite $\theta = \ds\lim_{t\rightarrow t0}\mbox{Arg}r(t)$  donde
+	Diremos que la curva $l$, parametrizada por $\lambda$ en $[a,b]$ y diferenciable en $t_0$ tiene tangente $\tau$ en $\lambda(t_0) = z_0$ si existe el límite $\theta = \ds\lim_{t\rightarrow t0}\mbox{Arg }r(t)$  donde
 	$$r(t)=\dfrac{\lambda(t)-\lambda(t_0)}{t-t_0},$$ entonces se dirá que $l$ tienen tangente con inclinación $\theta$
 \end{defi}
 
 \begin{teor}
-	Sean $G$ un dominio y $f$ continua en $G$ supongamos que $f(z)$ tiene derivada
+	Sean $G$ un dominio y $f$ continua en $G$, supongamos que $f(z)$ tiene derivada
 	distinta de cero en $z_0 \in G$ y que $l$ es una curva que pasa por $z_0$ y que tiene tangente $\tau$ en
-	$z_0$. Entonces $w = f(z)$ mapea $l$ en una curva $L$ en el plano $w$ que pasa por $w_0 = f(z_0)$ y con
-	tangente $T$ en $w_0$ además la inclinación de $T$ excede a $\tau$ en $\mbox{Arg}'f(z_0)$.\\
+	$z_0$. Entonces $w = f(z)$ mapea a $l$ en una curva $L$ en el plano $w$, que pasa por $w_0 = f(z_0)$ y con
+	tangente $T$ en $w_0$, además la inclinación de $T$ excede a $\tau$ en $\mbox{Arg}'f(z_0)$.\\
 	Para consultar la demostración le sugerimos ver el Teorema 3.3 de \cite{silverman}.
 \end{teor}
 
@@ -25,10 +25,10 @@
 \noindent A partir del teorema anterior se deduce el siguiente corolario.
 
 \begin{coro}
-	Supongamos que $l_1$ y $l_2$ son curvas que se cruzan en $z_0\in G$ y que $l_1$ tiene tangente $\tau_1$ y $l_2$ tiene tangente $\tau_2$ en $z_0$. Supongamos que $f$ es diferenciable en $z_0$ con $f^{'}_0(z_0)\neq 0$. Entonces bajo $f$, $l_1$ va a dar a una curva $L_1$ y $l_2$ a una curva $L_2$ que por el teorema pasarán por $w_0 = f(z_0)$ con respectivas tangentes $T_1$ y $T_2$ en $w_0$.
+	Supongamos que $l_1$ y $l_2$ son curvas que se cruzan en $z_0\in G$ y que $l_1$ tiene tangente $\tau_1$ y $l_2$ tiene tangente $\tau_2$ en $z_0$. Supongamos que $f$ es diferenciable en $z_0$ con $f^{'}_0(z_0)\neq 0$. Entonces, bajo $f$, $l_1$ va a dar a una curva $L_1$ y $l_2$ a una curva $L_2$ que por el teorema  anterior pasarán por $w_0 = f(z_0)$, con respectivas tangentes $T_1$ y $T_2$ en $w_0$.
 \end{coro}
-De lo anterior podemos concluir que $(|f'(z_0)|,\mbox{Arg}f(z_0))$ nos da una descripción de como deforma $f$ al dominio en $z_0$.\\
-Nuestro primer objetivo es usar Mathematica para explorar algunos mapeos simples. Lo haremos cargando el paquete \textbf{ParametricPlot}, este paquete contiene dos funcionalidades las cuales son  \textbf{CartesianMap} y \textbf{PolarMap} las cuales nos permiten hacer gráficos utilizando coordenadas cartesianas y polares respectivamente. \\
+De lo anterior, podemos concluir que $(|f'(z_0)|,\mbox{Arg}f(z_0))$ nos da una descripción de como deforma $f$ al dominio en $z_0$.\\
+Nuestro primer objetivo es usar Mathematica para explorar algunos mapeos simples. Lo haremos cargando el paquete \textbf{ParametricPlot}, este paquete contiene dos funcionalidades, las cuales son  \textbf{CartesianMap} y \textbf{PolarMap}, estas  nos permiten hacer gráficos utilizando coordenadas cartesianas y polares respectivamente. \\
 A manera de ejemplo y para mostrar el uso de estas dos funcionalidades, primero consideraremos la función $f(z)=e^{z}$ en la región $$A=\{z=x+iy\in\C | -1\leq x\leq 1, \; -2\leq y\leq 2\}.$$
 
 \begin{mmaCell}{Input}
@@ -39,7 +39,7 @@ A manera de ejemplo y para mostrar el uso de estas dos funcionalidades, primero 
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{5.png}}{}
 \end{mmaCell}
-En el código anterior usamos la función \textbf{Through} de Mathematica, esta función distribuye los operadores que aparecen dentro de los encabezados de las expresiones, por ejemplo podemos usar esta función para aplicar a una lista de funciones un mismo argumento, que fue lo que realizamos en el anterior código.
+En el código anterior, usamos la función \textbf{Through} de Mathematica, esta función distribuye los operadores que aparecen dentro de los encabezados de las expresiones, por ejemplo podemos usar esta función para aplicar a una lista de funciones un mismo argumento, que fue lo que realizamos en el anterior código.
 \begin{mmaCell}{Input}
 	 Through[\{f, g, h\}[x]];
 \end{mmaCell}
@@ -56,8 +56,8 @@ $$A=\{(r,t)| 0\leq r\leq t,\; 0\leq t\leq 2\pi \}.$$
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{6.png}}{}
 \end{mmaCell}
-En \textbf{Mathematica 12.1} se introdujo la función \textbf{ComplexRegionPlot}, para usar esta función basta escribir  ComplexRegionPlot[$pred$,{$z$,$z_{min}$,$z_{max}$}] y se generará un gráfico que muestra la región en el plano complejo para el cual el parámetro  \emph{pred} es Verdadero. Por otro lado si lo que requerimos es graficar regiones dadas por múltiples predicados $pred_i$ escribiremos  ComplexRegionPlot[{$pred_1,pred_2$,$\ldots$},{$z$,$z_{min}$,$z_{max}$}] y donde el predicado, $pred_i$, puede ser cualquier combinación lógica de desigualdades. El $pred_i$ generalmente involucrará funciones como Re, Im, Abs y Arg que extraen componentes reales de números complejos para propósitos de comparación. \\
-Teniendo esto en cuenta para graficar la región $\Omega=\left\{z\in\C |\dfrac{1}{2}\leq |z|\leq 1\right\}$  se haría de la siguiente manera:
+En \textbf{Mathematica 12.1}, se introdujo la función \textbf{ComplexRegionPlot}, para usar esta función basta escribir  ComplexRegionPlot[$pred$,{$z$,$z_{min}$,$z_{max}$}] y se generará un gráfico que muestra la región en el plano complejo para el cual el parámetro  \emph{pred} es Verdadero. Por otro lado si lo que requerimos es graficar regiones dadas por múltiples predicados $pred_i$, escribiremos  ComplexRegionPlot[{$pred_1,pred_2$,$\ldots$},{$z$,$z_{min}$,$z_{max}$}] y donde el predicado, $pred_i$, puede ser cualquier combinación lógica de desigualdades. El $pred_i$ generalmente involucrará funciones como Re, Im, Abs y Arg, que extraen componentes reales de números complejos para propósitos de comparación. \\
+Teniendo esto en cuenta, para graficar la región $\Omega=\left\{z\in\C |\dfrac{1}{2}\leq |z|\leq 1\right\}$  se haría de la siguiente manera:
 \begin{mmaCell}{Input}
 	 ComplexRegionPlot[1/2 <= Abs[z] <= 1, \{z, -1 - I, 1 + I\}]
 \end{mmaCell}
@@ -76,7 +76,7 @@ Y para graficar varias regiones, por ejemplo $\Omega=\{z\in \C | \mbox{Re}(z^2)\
 \end{mmaCell}
 
 
-Ahora extendemos la funcionalidad del paquete \textbf{ParametricPlot} definiendo un par de funciones que nos muestran cómo se deforma el plano mediante un mapeo conforme  mediante mapeos polares y cartesianos.\\
+Ahora extenderemos la funcionalidad del paquete \textbf{ParametricPlot}, definiendo un par de funciones que nos muestran cómo se deforma el plano bajo un mapeo conforme  mediante mapeos polares y cartesianos.\\
 \begin{mmaCell}{Input}
 	 polarMap[func_, radial_, polar_, options___] := \\ ParametricPlot[Evaluate[Through[\{Re, Im\}[func]]],\\ radial, polar,options]
 \end{mmaCell}
@@ -85,18 +85,18 @@ Ahora extendemos la funcionalidad del paquete \textbf{ParametricPlot} definiendo
   cartesianMap[func_, xrange_, yrange_, options___] := \\ParametricPlot[Evaluate[Through[\{Re, Im\}[func]]],\\ xrange, yrange, options]
 \end{mmaCell}
 
-A partir de estas funciones reconstruiremos dos más que nos permitirán ver como se ve el plano tanto antes como después de aplicar un mapeo conforme
+A partir de estas, crearemos las siguientes funciones nos permitirán ver como se ve el plano tanto antes como después de aplicar un mapeo conforme
 \begin{mmaCell}{Input}
 	 polarConformal[func_, radial_, polar_, options___] :=\\Show[GraphicsGrid[\{\{polarMap[rExp[I t],\\radial, polar, options, DisplayFunction ->Identity,\\PlotRange -> All],polarMap[func, radial, polar, options,\\DisplayFunction ->Identity,\\PlotRange -> \{\{-d, d\}, \{-d, d\}\}]\}\}],\\DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}
-en la función el valor $d$ representa que tan grande se va a construir el plano.
+en la función el valor $d$, representa que tan grande se va a construir el plano.
 \begin{mmaCell}{Input}
 	 cartesianConformal[func_, xrange_, yrange_, options___] :=\\Show[GraphicsGrid[\{\{cartesianMap[x + I*y, xrange, yrange,\\options,DisplayFunction -> Identity],\\cartesianMap[W[x + I*y],xrange, yrange, options,\\DisplayFunction -> Identity]\}\}],\\DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}
 
 
 \section{Algunos mapeos sencillos y su visualización} \label{mum}
-El propósito de esta sección es mostrar el uso de las funciones \textbf{cartesianConformal} y \textbf{polarConformal} cuando se utilizan por parámetros funciones sencillas y ver que les sucede a las regiones en el plano complejo cuando son mapeadas bajo estas funciones. 
+El propósito de esta sección, es mostrar el uso de las funciones \textbf{cartesianConformal} y \textbf{polarConformal}, cuando se utilizan por parámetros funciones sencillas y ver que les sucede a las regiones en el plano complejo cuando son mapeadas bajo estas funciones. 
 \subsection{La función $f(z)=z^n$}
 
 Consideremos dos números complejos $z_1$ y $z_2$ arbitrarios, los podemos escribir en forma trigonométrica
@@ -129,12 +129,12 @@ por tanto
 \]
 Si $z_1=z_2=z=r(\cos\Phi+i\sin\Phi)$, entonces
 $$z^2=r^2[\cos(2\Phi)+i\sin(2\Phi)],$$ 
-por inducción se demuestra que para $n\geq 1$ se verifica que 
+por inducción se demuestra que, para $n\geq 1$ se verifica que 
 $$z^n=r^n[\cos(n\Phi)+i\sin(n\Phi)].$$
 Cuando $r=1$, obtenemos la fórmula de De Moivre
 $$z^n=\cos(n\Phi)+i\sin(n\Phi).$$
 así, cuando aplicamos la función $f(z)=z^n$ aplicada el cuarto de círculo $$Q=\left\{z\in \C | |z|=1\; 0\leq \Phi\leq \dfrac{\pi}{2}\right\},$$
-lo que obtendremos será como se ''multiplica'' este conjunto $n$ veces, por ejemplo para $n=2$ tenemos el siguiente conjunto
+lo que obtendremos será como se ''multiplica'' este conjunto $n$ veces. Por ejemplo para $n=2$ tenemos el siguiente conjunto
 $$Q_1=\{z\in \C | |z|=1,\; 0\leq \Phi\leq \pi\}.$$
 \begin{Ejem}
 	Sea $f(z)=z^{n}$. En \textbf{Mathematica} podemos visualizar él comportamiento de esta función aplicada al conjunto $Q$, por simplicidad y  solo para ilustrar se tomarán los casos cuando $n=2,3$ y $n=4$.\\
@@ -181,11 +181,8 @@ Al tomar potencias fraccionarias adecuadas, el efecto de un mapeo de la forma $f
 \end{mmaCell}
 
 \subsection{La función $f(z)=e^z$}
-Una función entera que no es un polinomio se llama función entera.
-trascendental. El ejemplo más simple de este tipo  funciones es la
-función exponencial  $e^z$, obtenida extendiendo adecuadamente la
-función de variable real $e^x$, donde $x\in\R$, al caso donde $x$ toma
-valores complejos arbitrarios, es decir, se reemplaza $x$ por la variable compleja $z = x + iy$. Se tiene el siguiente teorema que caracteriza a la función exponencial
+Una función entera que no es un polinomio se llama función entera trascendental. El ejemplo más simple de este tipo  funciones, es la función exponencial  $e^z$, obtenida extendiendo adecuadamente la
+función de variable real $e^x$, donde $x\in\R$, al caso donde $x$ toma valores complejos arbitrarios, es decir, se reemplaza $x$ por la variable compleja $z = x + iy$. Se tiene el siguiente teorema que caracteriza a la función exponencial
 \begin{teor}
 	Hay una  única función $f(z) = e^z$ con las siguientes propiedades
 	\begin{itemize}
@@ -194,17 +191,17 @@ valores complejos arbitrarios, es decir, se reemplaza $x$ por la variable comple
 		$$f(z_1+z_2)=f(z_1)f(z_2),$$
 		\item [3.] $f(z)$ es complejo diferenciable para todo $z$, es decir, $f(z)$ es entera.
 	\end{itemize}
-\proof Vea el Teorema 6.1 de \cite{silverman}.\endproof 
+Vea el Teorema 6.1 de \cite{silverman} para consultar la demostración. 
 \end{teor}
-Aplicando estas tres propiedades se demuestra que 
+Aplicando estas tres propiedades, se demuestra que 
 $$f(z)=e^z=e^x(\cos x+i\sin y).$$
-Se sigue qué $e^z\neq 0$ para todo $z$ y 
+Se sigue que, $e^z\neq 0$ para todo $z$ y 
 \[
 	 \begin{array}{ccl}
 	 	|e^z|=e^x,&&\mbox{Arg}e^zy+2\pi k.
 	 \end{array}
 \]
-Para $z=iy$ obtenemos la fórmula de Euler
+Para $z=iy$, obtenemos la fórmula de Euler
 $$e^{iy}\cos y+i \sin y.$$
 Usando la ecuación anterior, podemos reemplazar la forma trigonométrica de un número complejo
 $$z=r(\cos\Phi+i\sin\Phi),$$
@@ -287,7 +284,7 @@ en Mathematica
 	\mmaFrac{ \mmaGraphics{expz1.png}}{}
 \end{mmaCell}
 Así, bajo el mapeo $w = e^z$, una familia de rectas paralelas al eje imaginario se transforma en una familia de círculos concéntricos con centro en el origen, y una familia de rectas paralelas al eje real se transforma en una familia de rayos que emanan del origen.\\
-Consideremos el $G$ que consiste en todos los puntos  $z$ tales que 
+Consideremos el conjunto $G$ que consiste en todos los puntos  $z$ tales que 
 $$\phi_1<\mbox{Im }z<\phi_2,$$
 donde $\phi_2-\phi_1=h$, tal dominio es llamado la banda  abierta de ancho $h$. Supongamos que $0<h<2\pi$, y sea $G_1$ la imagen de $G$ bajo el mapeo $w=e^z$. Se sigue que $G_1$ es el interior del ángulo de $h$ radianes con vértice en el origen formado por los rayos
 \[
@@ -313,27 +310,27 @@ Por lo tanto, la función $w=e^z$ es un mapeo conforme uno a uno de la franja ab
 	
 
 Consideremos la función $f(z)=e^z$ y la región $$\Omega_{1}=\{z\in \C \mid \mbox{Re}(z)\in [0,1]\;, \mbox{Im}(z)\in [0,2\pi]\}.$$
-Usando la función \textbf{cartesianConformal} vemos que la imagen de $\Omega_{1}$ bajo $f_1$ resulta ser un anillo que se muestra a continuación
+Usando la función \textbf{cartesianConformal}, vemos que la imagen de $\Omega_{1}$ bajo $f_1$ resulta ser un anillo que se muestra a continuación
 \begin{mmaCell}{Input}
 	 f[z_] = Exp[z] \\cartesianConformal[f[(x + I*y)], \{x, 0, 1\}, \{y, -Pi, Pi\},\\Mesh -> 50,LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.5}}]{Output}
 	\mmaFrac{ \mmaGraphics{22.png}}{}
 \end{mmaCell}
-es decir la región 
+es decir, la región 
 $$\Omega_{2}=\{z\in \C\mid 1<|z|<e\}.$$
 \end{Ejem}
 
 
 %% función logaritmo
 \subsection{La función $f(z)=\ln z$}
-La inversa de la función $z=e^w=e^{u}(\cos v +i\sin v)$
+La función inversa de la función $z=e^w=e^{u}(\cos v +i\sin v)$,
 es definida para cualquier valor diferente de $0$ y $\infty$, y se expresa por la fórmula 
 $$w=\ln|z|+i\mbox{Arg}z.$$
-Esta función, que es multivaluada, es llamada el logaritmo y es denotado por $\mbox{Ln}z$, es decir, 
-$$\mbox{Ln}z=\ln|z|+i\mbox{Arg}z.$$
-El valor $$\ln|z|+i\mbox{arg}z,$$ es llamado el valor principal y es denotado por $\ln\;z$. Entonces la expresión para $\mbox{Ln}z$ se puede reescribir como
-$$\mbox{Ln}z=\ln z+2k\pi i,$$
+Esta función, que es multivaluada, es llamada el logaritmo y es denotado por $\mbox{Ln }z$, es decir, 
+$$\mbox{Ln }z=\ln|z|+i\mbox{Arg}z.$$
+El valor $$\ln|z|+i\mbox{arg}z,$$ es llamado el valor principal y es denotado por $\ln\;z$. Entonces la expresión para $\mbox{Ln }z$ se puede reescribir como
+$$\mbox{Ln }z=\ln z+2k\pi i,$$
 donde $k\in\Z$. Se sigue que para cada número complejo, diferente de cero y del infinito, posee un conjunto infinito de logaritmos (es decir, de valores de la función logarítmica); dos valores cualesquiera de éstos de diferencian en un entero múltiplo de $2\pi i$. Si $z\in \R^{+}$, el valor principal del logaritmo coincide con $\ln|z|$, y por consiguiente es aquel número real cuando considerábamos el logaritmo como una función de variable real.\\
 Pero, además de estos valores reales, los logaritmos de los números positivos poseen también un conjunto infinito de valores imaginarios que se obtienen a partir de la ecuación 
 $$\mbox{Ln} |z|=\ln z+2k\pi i,$$
@@ -371,7 +368,7 @@ Comenzamos definiendo lo que es una transformación de Möbius
 	\begin{equation}\label{mobius}
 		S(z)=\dfrac{az+b}{cz+d},
 	\end{equation}
-	 es llamada una transformación fraccional lineal. Si  además $a, b, c,$ y $d$ satisfacen que $ad-bc\neq 0$ entonces $S(z)$ es llamada una  transformación de Möbius.
+	 es llamada una transformación fraccional lineal. Si  además $a, b, c,$ y $d$ satisfacen que $ad-bc\neq 0$, entonces $S(z)$ es llamada una  transformación de Möbius.
 \end{defi}
 
 \begin{prop}\label{prop3}
@@ -641,7 +638,7 @@ Usaremos la función \textbf{cartesianConformal} que ya se había construido pre
 \end{itemize}
 	
 \end{Ejem}
-Note que gráficamente  una transformación de M\"obius se puede obtener a partir de aplicar distintas transformaciones fundamentales sucesivamente, formalmente 
+Note que, gráficamente  una transformación de M\"obius se puede obtener a partir de aplicar distintas transformaciones fundamentales sucesivamente, formalmente 
 \begin{prop}\label{prop4}
 	Una transformación de M\"obius es la composición de transformaciones fundamentales.\\
 	La prueba de esta proposición no es difícil, a continuación se da un esbozo de la demostración.\\ Sea $S(z)=\mobius{a}{+b}{c}{+d}$. Si $c=0$, entonces $S(z)=\dfrac{a}{d}z+\dfrac{b}{d}$, la cual es una transformación lineal.\\
@@ -658,17 +655,16 @@ Note que gráficamente  una transformación de M\"obius se puede obtener a parti
 	\]
 	donde $\alpha=\dfrac{a}{c}$, $\beta=\dfrac{bc-ad}{c^2}$ y $\gamma=\dfrac{d}{c}$.\endproof
 \end{prop}
-El siguiente teorema es quizás uno de los mas importantes en el análisis complejo pues establece, en palabras simples, que dado todo subconjunto propio abierto sin agujeros del plano complejo se puede "meter" $\;$dentro de un disco abierto unitario. Este teorema fue enunciado  por Bernhard Riemann en 1851 en su tesis doctoral y aunque Riemann dio una prueba del teorema, esta no resulto ser correcta, no fue sino hasta 1900 cuando William Fogg Osgood dio la primera demostración rigurosa del teorema.
+El siguiente teorema es quizás, uno de los mas importantes en el análisis complejo pues establece, en palabras simples, que  todo subconjunto propio abierto sin agujeros del plano complejo se puede "meter" $\;$dentro de un disco abierto unitario. Este teorema fue enunciado  por Bernhard Riemann en 1851 en su tesis doctoral y aunque Riemann dio una prueba del teorema, esta no resulto ser correcta, no fue sino hasta 1900 cuando William Fogg Osgood dio la primera demostración rigurosa del teorema.
 
 \begin{teor}[del mapeo de Riemann]\label{TMR}
-	Sea $\Omega$ una región simplemente conexa tal que $\Omega\neq \C$. Entonces existe un mapeo conforme biyectivo $f: \Omega\rightarrow D$, donde $D =\{ z : |z| < 1 \}$.
-	\proof
-	La demostración se puede consultar en \cite{tarlok} página 85, Teorema 3.10.\endproof
+	Sea $\Omega$ una región simplemente conexa tal que $\Omega\neq \C$. Entonces existe un mapeo conforme biyectivo $f: \Omega\rightarrow D$, donde $D =\{ z : |z| < 1 \}$.\\
+	La demostración se puede consultar en \cite{tarlok} página 85, Teorema 3.10.
 \end{teor}
 Bajo ciertas condiciones la función que se enuncia en el Teorema \ref{TMR} es única
 \begin{prop}\label{propTMR}
- Asuma que $\Omega$ satisface las suposiciones del Teorema \ref{TMR} y sea $z_0\in \Omega$. Entonces existe una única función $f:\Omega\rightarrow D$ tal que  $f\in \mathcal{H}(\Omega)$, $f$ es inyectiva y $f(z_0)$ con $f'(z_0)>0$.
- \proof Vea la demostración en  \cite{tarlok}, Teorema 3.18 página 94.\endproof
+ Asuma que $\Omega$ satisface las suposiciones del Teorema \ref{TMR} y sea $z_0\in \Omega$. Entonces existe una única función $f:\Omega\rightarrow D$ tal que  $f\in \mathcal{H}(\Omega)$, $f$ es inyectiva y $f(z_0)$ con $f'(z_0)>0$.\\
+ La demostración se puede consultar en el Teorema 3.18 página 94 de \cite{tarlok}.
 \end{prop}
 
 \begin{coro}\label{coroRiemman}
@@ -676,18 +672,17 @@ Bajo ciertas condiciones la función que se enuncia en el Teorema \ref{TMR} es �
 \end{coro}
 
 \begin{teor}[del módulo máximo]\label{modmx}
-	Suponga que $f (z)$ es analítica en el interior y sobre una curva simple cerrada $C$. Así, el valor máximo de $| f (z)|$ se encuentra sobre $C$, a menos que $f (z)$ sea una constante.
-	\proof La demostración se puede consultar en \cite{marsden}, Teorema 6.3.5.\endproof
+	Suponga que $f (z)$ es analítica en el interior y sobre una curva simple cerrada $C$. Así, el valor máximo de $| f (z)|$ se encuentra sobre $C$, a menos que $f (z)$ sea una constante.\\
+	La demostración se puede consultar en \cite{marsden}, es el Teorema 6.3.5 de dicha referencia.
 \end{teor}
 \begin{prop}
 	Cualquier mapeo conforme de $D =\{ z : |z| < 1 \}$ sobre sí mismo es un mapeo de la forma de la forma
 	$$T(z)=e^{i\theta}\dfrac{z-z_{0}}{1-\bar{z_{0}}z},$$
-	para alguna $z_{0}\in D$ fija y $\theta \in [0, 2\pi[$; más aún, cualquier $T$ de esta forma es un mapeo conforme de $D$ sobre $D$, y además $T$ es único. 
-	\proof
-	La demostración la podemos consultar en \cite{marsden}, ver la Proposición  5.2.2. \endproof
+	para alguna $z_{0}\in D$ fija y $\theta \in [0, 2\pi[$; más aún, cualquier $T$ de esta forma es un mapeo conforme de $D$ sobre $D$, y además $T$ es único.\\
+	La demostración la podemos consultar en \cite{marsden}, vea la Proposición  5.2.2.
 
 \end{prop}
-Notemos que la transformación lineal entera $w = az+b$ $(a\neq 0)$ claramente preserva círculos, ya que el mapeo $w$ es solo una traslación  (si $a = 1)$, o una traslación combinada con un estiramiento (si $a\neq 1$).
+Notemos que, la transformación lineal entera $w = az+b$ $(a\neq 0)$ claramente preserva círculos, ya que el mapeo $w$ es solo una traslación  (si $a = 1)$, o una traslación combinada con un estiramiento (si $a\neq 1$).
 \begin{lema}\label{lema1}
 	La transformación
 	$$w=\dfrac{1}{z},$$
@@ -717,7 +712,7 @@ es decir, si miramos a $w=\dfrac{1}{z}$ como la acción bajo la proyección este
 	luego $w$ se puede escribir como el producto $$w=L_3L_2L_1,$$ de tres transformaciones que preservan círculos. Luego $T$ preserva círculos.
 \end{prop}
 \begin{coro}
-	Sea $\delta=-\dfrac{d}{c}$ el polo de la transformación de M\"obius $$T(z)=w=\mobius{a}{+b}{c}{+d}.$$ Entonces la transformación $T$ transforma toda recta o círculo que pasa a través de $\delta$ en una recta,  y cualquier otra línea recta o círculo en	un circulo.
+	Sea $\delta=-\dfrac{d}{c}$ el polo de la transformación de M\"obius $$T(z)=w=\mobius{a}{+b}{c}{+d}.$$ Entonces la transformación $T$ mapea toda recta o círculo que pasa a través de $\delta$ en una recta,  y cualquier otra línea recta o círculo en un circulo.
 \end{coro}
 Consideremos la transformación de M\"obius $$T(z)=\mobius{5}{+(5+3i)}{(2.4+3.2i)}{+{4.3+7.2i}}$$
 y el disco $D=\{z\in \C: |z|< 1\}$
@@ -835,7 +830,7 @@ Tomando el límite
 	se tiene así que $\bar{z}=\dfrac{R^2}{z}$, por lo tanto la función racional $z+\dfrac{R^2}{z}$ es igual a $z+\bar{z}="\mbox{Re}z$  en el círculo, en consecuencia tenemos el mapeo
 	$$w=f(z)=z+\dfrac{R^2}{z}.$$
 	Esta función es un mapeo inyectivo de la región de flujo para $y>0$ sobre el semiplano superior. Por lo tanto, la función de flujo apropiada corresponde a $\psi(u, v) = v = \mbox{Im}w$, dando las líneas de corriente
-	$$\varphi(x,y)=\mbox{Im}\left(z+\dfrac{R^2}{z}\right)=\mbox{cte}.$$\endsolu
+	$$\varphi(x,y)=\mbox{Im}\left(z+\dfrac{R^2}{z}\right)=\mbox{cte}.$$\endproof
 	
 \end{Ejem}
 
@@ -843,7 +838,7 @@ Tomando el límite
 
 Si eliminamos el supuesto que el flujo sea simétrico, entonces solo requerimos que el círculo mismo sea una línea de corriente. Por lo tanto podemos agregar cualquier múltiplo constante  de $\log |z|$ (ya que se tiene que $|z|=R$ es una línea de corriente) a la función de corriente y obtener los patrones de flujo circulante.\\
 
-En 1908 el matemático Nikolái Zhukovski  (a veces escrito Joukowski) estudio este tipo de mapeos pero no aplicados al círculo $|z|=R$, si no a círculos $C$ cuyo centro fuera distinto al origen. El resultado que obtuvo fue un perfil aerodinámico como el de la figura \ref{fig:24}.\\Al comenzar con diferentes círculos C podemos generar una variedad de estos llamados perfiles aerodinámicos de Joukowski, podemos usar la transformación de Joukowski para calcular los flujos alrededor de distintos perfiles aerodinámicos. Por ejemplo, podemos dar forma al perfil aerodinámico para cumplir con ciertas especificaciones de ingeniería eligiendo adecuadamente $C$ e introduciendo modificaciones en el mapeo como, por ejemplo:
+En 1908 el matemático Nikolái Zhukovski  (a veces escrito Joukowski) estudio este tipo de mapeos pero no aplicados al círculo $|z|=R$, si no a círculos $C$ cuyo centro fuera distinto al origen. El resultado que obtuvo fue un perfil aerodinámico como el de la figura \ref{fig:24}.\\Al comenzar con diferentes círculos C, podemos generar una variedad de estos llamados perfiles aerodinámicos de Joukowski, podemos usar la transformación de Joukowski para calcular los flujos alrededor de distintos perfiles aerodinámicos. Por ejemplo, podemos dar forma al perfil aerodinámico para cumplir con ciertas especificaciones de ingeniería eligiendo adecuadamente $C$ e introduciendo modificaciones en el mapeo como, por ejemplo:
 $$w=f(z)=z+\dfrac{R^2}{z}+\dfrac{a}{z^2}+\dfrac{b}{z^2}+\cdots$$
 \begin{figure}[h!]
 	\centering
@@ -863,7 +858,7 @@ no es difícil ver que
 \end{equation}
 Además tenemos que $J(0)=J(\infty)=\infty$. \\
 Derivando obtenemos $$J'(z)=\dfrac{1}{2}\left(z-\dfrac{1}{z^2}\right).$$
-Luego $J'(z)=0$ si y sólo si $z=\pm 1$, por lo que $J$ es conforme en $\C\setminus\{0,\pm 1\}$. Por otro lado, si $J(z_1)=J(z_2)$ entonces $z_{1}^2z_2+z_2=z_{2}^2+z_1$, luego $(z_1-z_2)(z_1z_2-1)=0$ de donde $z_1=z_2$ o $z_1z_2=1$, es decir, que cada punto del plano $W$ tiene en la transformación $w$ dos preimágenes $z_1$ y $z_2$ ligadas por la relación $z_1z_2=1$. Si una de éstas preimágenes pertenece al interior del círculo unitario, la otra pertenece al exterior  y viceversa. A continuación, veremos como el mapeo $J(z)$ transforma dominio $D=\{z\in \C\mid |z|\leq 1 \}$ en un dominio $G$ de del plano $W$ muy parecido a un perfil aerodinámico. Veamos primero la imagen de la frontera de $D$, $$\partial D=\{z\in\C\mid |z|=1\}.$$
+Luego $J'(z)=0$, si y sólo si, $z=\pm 1$, por lo que $J$ es conforme en $\C\setminus\{0,\pm 1\}$. Por otro lado, si $J(z_1)=J(z_2)$ entonces $z_{1}^2z_2+z_2=z_{2}^2+z_1$, luego $(z_1-z_2)(z_1z_2-1)=0$ de donde $z_1=z_2$ o $z_1z_2=1$, es decir, que cada punto del plano $W$ tiene en la transformación $w$ dos preimágenes $z_1$ y $z_2$ ligadas por la relación $z_1z_2=1$. Si una de éstas preimágenes pertenece al interior del círculo unitario, la otra pertenece al exterior  y viceversa. A continuación, veremos como el mapeo $J(z)$ transforma dominio $D=\{z\in \C\mid |z|\leq 1 \}$ en un dominio $G$ de del plano $W$ muy parecido a un perfil aerodinámico. Veamos primero la imagen de la frontera de $D$, $$\partial D=\{z\in\C\mid |z|=1\}.$$
 Si $z=e^{it}$, con $t\in[0,2\pi]$, entonces $J(e^{it})=\dfrac{1}{2}\left(e^{it}+e^{-it}\right)=\cos t$, es decir, la imagen de $\partial D$ bajo $J$ es el segmento del eje real $[-1,1]$ recorrido dos veces. Por lo que, se puede afirmar que $G$ está formado por todos aquellos puntos del plano $W$  a excepción de aquellos que pertenecen al segmento del eje real $[-1,1]$. En efecto, consideremos las imágenes de las circunferencias $|z|=r$ y los radios $\mbox{Arg}\; z=\alpha+2k\pi$, consideremos solo el interior de $D$, $(D^{\circ})$. Tomando el cambio $z=re^{it}$ con $t\in[0,2\pi]$ y $r\in (0,1)$, entonces
 $$J(z)=J(re^{it})=\dfrac{1}{2}\left(r+\dfrac{1}{r}\right)\cos t-i\dfrac{1}{2}\left(\dfrac{1}{r}-r\right)\sen t,$$
 o bien 

@@ -19,17 +19,12 @@
 \contentsline {subsection}{\numberline {2.2.1}La función $f(z)=z^n$}{27}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}La función $f(z)=z^\frac {n}{m}$, $m\neq 0$}{30}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}La función $f(z)=e^z$}{31}{subsection.2.2.3}%
-\contentsline {paragraph}{ Demostraci\'on:}{31}{section*.19}%
 \contentsline {subsection}{\numberline {2.2.4}La función $f(z)=\ln z$}{37}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Transformaciones de Möbius}{39}{section.2.3}%
-\contentsline {paragraph}{ Demostraci\'on:}{49}{section*.21}%
-\contentsline {paragraph}{ Demostraci\'on:}{49}{section*.22}%
-\contentsline {paragraph}{ Demostraci\'on:}{50}{section*.23}%
-\contentsline {paragraph}{ Demostraci\'on:}{50}{section*.24}%
 \contentsline {subsection}{\numberline {2.3.1}Transformaciones de M\"obius en el plano extendido}{53}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Mapeo de Joukowski}{55}{section.2.4}%
-\contentsline {paragraph}{ Soluci\'on:\\}{55}{section*.25}%
-\contentsline {subsection}{\numberline {2.4.1}Mapeo de Joukowski usando Mathematica}{59}{subsection.2.4.1}%
+\contentsline {paragraph}{ Soluci\'on:\\}{55}{section*.20}%
+\contentsline {subsection}{\numberline {2.4.1}Mapeo de Joukowski usando Mathematica}{58}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Mapeo de Schwarz-Christoffel}{61}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Algunos comentarios sobre el punto en el infinito y los exponentes}{63}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Deducciones de las fórmulas \\de Schwarz-Christoffel}{64}{subsection.2.5.2}%
@@ -46,4 +41,4 @@
 \contentsline {section}{\numberline {3.2}Flujo de fluidos}{77}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Transferencia de calor}{81}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Campo electromagnético}{85}{section.3.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{87}{chapter*.31}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{87}{chapter*.26}%
