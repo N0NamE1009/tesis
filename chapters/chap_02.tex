@@ -948,19 +948,21 @@ Lo  que el script anterior genera es una forma de ver como el círculo se deform
 
 
 \section{Mapeo de Schwarz-Christoffel}
-El Teorema del mapeo de Riemann nos dice que cualquier región simplemente conexa $\Omega$, estrictamente contenida en el plano complejo, podría ser transformada conformemente en el disco unitario abierto $D$ del plano complejo (Teorema \ref{TMR}), sin embargo este teorema de existencia no es constructivo, es decir, no se proporciona un método explicito para encontrar tal mapeo conforme.\\
-En esta sección se realiza un breve estudio del mapeo de Schwarz–Christoffel, este mapeo se define por una serie de puntos singulares en el borde del polígono y su correspondencia con puntos en el eje real del semiplano. La función de mapeo se construye a partir de una fracción algebraica que se integra en una función analítica específica. Además, el mapeo de Schwarz-Christoffel es una herramienta valiosa para la visualización y la solución de problemas en muchas áreas de la matemática, incluyendo la teoría de números, la teoría de sistemas dinámicos y la teoría de grupos. También es importante en la aplicación del cálculo numérico y la teoría de la optimización en la solución de problemas en ingeniería y ciencias.\\
 
-Además, el mapeo de Schwarz-Christoffel tiene propiedades únicas que lo hacen diferente de otras transformaciones conformes. Por ejemplo, es posible calcular el área y la longitud de curvas en un polígono a partir de su representación en un semiplano, lo que es útil para resolver problemas en geometría y teoría de curvas.
-Consideremos una región simplemente conexa $\Omega$, cuya frontera sea un polígono de $n$ lados en el plano $W$ con vértices $w_1,w_2,\ldots,w_n$, en 1866 Hermann Amandus Schwarz e independientemente en 1867  Elwin Bruno Christoffel, publicaron una forma de mapear  el semiplano superior en  la región $\Omega$.
+El Teorema del mapeo de Riemann nos indica que cualquier región simplemente conexa $\Omega$, estrictamente contenida en el plano complejo, puede ser transformada conforme en el disco unitario abierto $D$ del plano complejo (Teorema \ref{TMR}). Sin embargo, este teorema de existencia no es constructivo, es decir, no proporciona un método explícito para encontrar tal mapeo conforme.\\
+
+En esta sección, se realiza un breve estudio del mapeo de Schwarz–Christoffel. Este mapeo se define por una serie de puntos singulares en el borde del polígono y su correspondencia con puntos en el eje real del semiplano. La función de mapeo se construye a partir de una fracción algebraica que se integra en una función analítica específica. Además, el mapeo de Schwarz-Christoffel es una herramienta valiosa para la visualización y la solución de problemas en diversas áreas de la matemática, incluyendo la teoría de números, la teoría de sistemas dinámicos y la teoría de grupos. Asimismo, es importante en la aplicación del cálculo numérico y la teoría de la optimización para resolver problemas en ingeniería y ciencias.\\
+
+Además, el mapeo de Schwarz-Christoffel tiene propiedades únicas que lo hacen diferente de otras transformaciones conformes. Por ejemplo, es posible calcular el área y la longitud de curvas en un polígono a partir de su representación en un semiplano, lo que es útil para resolver problemas en geometría y teoría de curvas.\\
+Consideremos una región simplemente conexa $\Omega$, cuya frontera sea un polígono de $n$ lados en el plano $W$ con vértices $w_1,w_2,\ldots,w_n$. En 1866, Hermann Amandus Schwarz e independientemente en 1867, Elwin Bruno Christoffel publicaron una forma de mapear el semiplano superior en la región $\Omega$.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{img/sc}
 	\caption{Transformación de Schwarz-Christoffel}
 	\label{fig:sc}
 \end{figure}
-Suponga que cada $w_j$ se mapea en $x_j$, donde $x_j$ es un punto en el eje real.
-La transformación que mapea el semiplano superior en   $\Omega$ está definida  como 
+Supongamos que cada $w_j$ se mapea en $x_j$, donde $x_j$ es un punto en el eje real.
+La transformación que mapea el semiplano superior en   $\Omega$ está definida  como:
 
 \begin{equation}\label{dSC}
 	\dfrac{dw}{dz}=C_1\prod_{j=1}^{n}(z-x_n)^{\frac{\phi_j}{\pi}-1}.
@@ -975,8 +977,8 @@ La forma más sencilla de entender porqué funciona la fórmula es considerar un
 	\mbox{Arg}(dw)=\mbox{Arg}(dz)+\mbox{Arg}(C_1)+\sum_{j=1}^{n}\left(\dfrac{\phi_j}{\pi}-1\right)\mbox{Arg}(z-x_j).
 \end{equation}
 
-A medida que $z$ se mueve a lo largo del eje real en la dirección positiva, cuando $z$ se encuentra estrictamente entre dos de los $x_j$,  todos los términos (\ref{SC1}) son constantes, de modo que $w$ se mueve en línea recta.
-Esta es la razón por la que la imagen en el plano $W$ es poligonal. Ahora tenemos que ver qué sucede en las esquinas. Cuando $z$ pasa a través de $x_j$, todos los términos excepto aquellos que involucran a $x_j$ permanecen constantes, pero el factor $\mbox{Arg}(z-x_j)$ toma los siguientes valores
+A medida que $z$ se mueve a lo largo del eje real en la dirección positiva, cuando $z$ se encuentra estrictamente entre dos de los $x_j$,  todos los términos (\ref{SC1}) son constantes, lo que implica que $w$ se mueve en línea recta.
+Esta es la razón por la cual la imagen en el plano $W$ es poligonal. Ahora, debemos observar qué sucede en las esquinas. Cuando $z$ pasa a través de $x_j$, todos los términos excepto aquellos que involucran a $x_j$, permanecen constantes, pero el factor $\mbox{Arg}(z-x_j)$ toma los siguientes valores:
 \[
 \mbox{Arg}(z-x_j)=\left\{\begin{array}{ccr}
 	\pi, &\mbox{si}&z<x_j\\
@@ -985,30 +987,32 @@ Esta es la razón por la que la imagen en el plano $W$ es poligonal. Ahora tenem
 \]
 El término 
 $$\left(\dfrac{\phi_j}{\pi}-1\right) \mbox{Arg}(z-x_j),$$
-por lo tanto, salta del valor $\phi_j-1$ al valor $0$. La dirección en la que $w$ se está desplazando resulta ser un giro positivo (es decir, en sentido antihorario), por $\pi -\phi_j$. Un cambio de dirección por esta cantidad corresponde a la introducción de una esquina en el polígono con un ángulo interior $\phi_j$.\\
+salta, por lo tanto, del valor $\phi_j-1$ al valor $0$. La dirección en la que $w$ se está desplazando resulta ser un giro positivo (es decir, en sentido antihorario), por $\pi -\phi_j$. Un cambio de dirección por esta cantidad corresponde a la introducción de una esquina en el polígono con un ángulo interior de $\phi_j$.\\
 
 \iffalse Lo que esta discusión establece es que el eje real se mapea a la frontera de una región poligonal. Esto será suficiente para nuestros propósitos. Se puede ir más allá y establecer que el mapeo es uno a uno y, de hecho, toma el semiplano superior al interior de un polígono. Siempre podemos verificar este último punto calculando valores de muestra de mapeos particulares, como la imagen de $i$. \fi 
 
 
 
 \subsection{Algunos comentarios sobre el punto en el infinito y los exponentes}
-Podemos asumir que uno de los puntos en el eje real, digamos $x_n$, está en el infinito, y que se elimina de la lista de puntos en la transformación. Para ver esto, escribimos, con $x_n <\infty$,
+Podemos asumir que uno de los puntos en el eje real, digamos $x_n$, está en el infinito y que se elimina de la lista de puntos en la transformación. Para ver esto, escribimos, con $x_n <\infty$,
 
 $$C_1=\dfrac{C_1^{'}}{(-x_n)^{\frac{\phi_n}{\pi}-1}},$$
 $$\dfrac{\partial w}{\partial z}=C_1^{'}(z-x_1)^{\frac{\phi_1}{\pi}-1}(z-x_2)^{\frac{\phi_2}{\pi}-1}\cdots\left(\dfrac{x_n-z}{x_n}\right)^{\frac{\phi_n}{\pi}-1}.$$
 
-Manteniendo  $C_1^{'}<\infty$ y tomando el límite $x_n\rightarrow \infty$ obtenemos 
+Manteniendo  $C_1^{'}<\infty$ y tomando el límite $x_n\rightarrow \infty$, obtenemos 
 $$C_1=\dfrac{C_1^{'}}{(-x_n)^{\frac{\phi_n}{\pi}-1}},$$
 $$\dfrac{\partial w}{\partial z}=C_1^{'}(z-x_1)^{\frac{\phi_1}{\pi}-1}(z-x_2)^{\frac{\phi_2}{\pi}-1}\cdots(z-x_{n-1})^{\frac{\phi_{n-1}}{\pi}-1}.$$
 Recordemos que la suma de los ángulos exteriores de cualquier polígono cerrado es $2\pi$. Por lo tanto, podemos afirmar que
 $$\sum_{k=1}^{n}(\pi-\phi_k)=2\pi,$$
 o bien, dividiendo entre $-\pi$
 $$\sum_{k=1}^{n}\left(\dfrac{\phi_k}{\pi}-1\right)=-2.$$
-Por lo tanto, podemos afirmar que la suma de los exponentes en la fórmula \ref{eSC} es $-2$. Esto es una restricción que resultará útil en la relación entre la fórmula \ref{eSC} para un semiplano y el resultado correspondiente para un disco. También hay algo de libertad en la elección de los $x_n$. Tenga en cuenta que las constantes $C_1$ y $C_2$ simplemente ajustan el tamaño y la posición del polígono generado por el mapeo. Si establecemos $C_1 = 1 $ y $C_2 = 0$, creamos un polígono, digamos $P'$, que es similar al polígono deseado, digamos $P$, pero no tiene el tamaño correcto y no está en la ubicación correcta. Examinemos la libertad en los $x_j$ dentro de este esquema. Supondremos que $x_n = \infty$ aún no se ha realizado. En estas circunstancias, dado que los ángulos exteriores están fijos, todavía hay restricciones entre los $x_j$. Para que $P'$ sea similar a $P$, dado que los ángulos están fijos, requiere que los lados de $P'$ deban tener longitudes que están en una proporción constante común con los lados correspondientes de $P$. Esto implica $n - 3$ restricciones en los vértices, que a su vez están determinados por las $n$ variables $x_j$.\\
+Por lo tanto, podemos afirmar que la suma de los exponentes en la fórmula \ref{eSC} es $-2$. Esto es una restricción que resultará útil en la relación entre la fórmula \ref{eSC} para un semiplano y el resultado correspondiente para un disco.
+
+También hay algo de libertad en la elección de los $x_n$. Tenga en cuenta que las constantes $C_1$ y $C_2$ simplemente ajustan el tamaño y la posición del polígono generado por el mapeo. Si establecemos $C_1 = 1 $ y $C_2 = 0$, creamos un polígono, digamos $P'$, que es similar al polígono deseado, digamos $P$, pero no tiene el tamaño correcto y no está en la ubicación correcta. Examinemos la libertad en los $x_j$ dentro de este esquema. Supondremos que $x_n = \infty$ aún no se ha realizado. En estas circunstancias, dado que los ángulos exteriores están fijos, todavía hay restricciones entre los $x_j$. Para que $P'$ sea similar a $P$, dado que los ángulos están fijos, requiere que los lados de $P'$ deban tener longitudes que están en una proporción constante común con los lados correspondientes de $P$. Esto implica $n - 3$ restricciones en los vértices, que a su vez están determinados por las $n$ variables $x_j$.\\
 Esto significa que antes de hacer que $x_n = \infty$, tres de los $x_j$ se pueden elegir a voluntad. Si hacemos que $x_n = \infty$, dos de los $x_j$ restantes se pueden elegir. Esta libertad también se puede entender en términos de los requisitos dentro del Teorema de mapeo de Riemann necesarios para hacer que el mapeo sea único: debemos especificar la imagen de un punto complejo  y una dirección para garantizar la unicidad.
 
 \subsection{Deducciones de las fórmulas \\de \SC}
-La discusión anterior aunque es informal nos da una idea de la transformación de \SC, a continuación se esboza una deducción de la fórmula de \SC \; para el semiplano superior
+La discusión anterior, aunque es informal nos da una idea de la transformación de \SC. A continuación se esboza una deducción de la fórmula de \SC \; para el semiplano superior
 \begin{teor}[Fórmula de \SC \; para el semiplano superior\index{Fórmula de \SC\; para el semiplano superior}]
 	Sea $\Omega$ una región simplemente conexa cuya frontera sea un polígono con vértices $w_1,\ldots,w_n$ y ángulos interiores $\phi_1, \ldots,\phi_n $ en sentido antihorario. Sea $f$ cualquier mapeo conforme del semiplano superior $H$ a $\Omega$ con $f (\infty) = w_n$. Entonces
 	\begin{equation}\label{SCSP}
@@ -1017,7 +1021,7 @@ La discusión anterior aunque es informal nos da una idea de la transformación 
 	para algunas constantes $C_1$ y $C_2$, donde $w_j=f(x_j)$ para $j=1,2,\ldots,n-1$. \\
 	\textbf{Esbozo.}\\Para simplificar, tratamos solo el caso donde todos los $x_j$ son finitos y el producto oscila entre los índices $1$ a $n$. Por el principio de reflexión de Schwarz,  el mapeo $f$ puede continuarse analíticamente en el semiplano inferior; la imagen continúa en el reflejo de $\Omega$ sobre uno de los lados del polígono. Al reflejar de nuevo sobre un lado del nuevo polígono, podemos regresar analíticamente al semiplano superior. Lo mismo se puede hacer para cualquier número par de reflexiones de $\Omega$, cada vez creando una nueva rama de $f$. La imagen de cada rama debe ser una copia trasladada y rotada de $\Omega$. Ahora, si $C_1$ y $C_2$ son constantes complejas, entonces
 	$$\dfrac{(C_2+C_1f(z))''}{(C_2+Cf(z))'}=\dfrac{f''(z)}{f'(z)}.$$
-	Por lo tanto la función $\dfrac{f''(z)}{f'(z)}$ se puede definir por  continuación como una función univaluada en todas partes de la cerradura en el semiplano superior, excepto en los $z_j$ (donde las derivadas pueden no existir). Análogamente, considerando números impares de reflexiones, vemos que $\dfrac{f''(z)}{f'(z)}$ 	es univaluada y analítica en el semiplano inferior también.\\
+	Por lo tanto, la función $\dfrac{f''(z)}{f'(z)}$ se puede definir por  continuación como una función univaluada en todas partes de la cerradura en el semiplano superior, excepto en los $z_j$ (donde las derivadas pueden no existir). Análogamente, considerando números impares de reflexiones, vemos que $\dfrac{f''(z)}{f'(z)}$ 	es univaluada y también es analítica en el semiplano inferior.\\
 	Afirmamos que dado $x_j$, se cumple que 
 	$$f'(z)=(z-x_j)^{\dfrac{\phi_j}{\pi}-1}\psi(z),$$
 	para una función analítica $\psi(z)$ en una vecindad de $x_j$. En efecto, puesto 	que la idea detrás de la transformación \SC \; es que una transformación conforme $f$ pueda tener una derivada que se puede expresar 	como
