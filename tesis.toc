@@ -18,27 +18,27 @@
 \contentsline {section}{\numberline {2.2}Algunos mapeos sencillos y su visualización}{27}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}La función $f(z)=z^n$}{27}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}La función $f(z)=z^\frac {n}{m}$, $m\neq 0$}{30}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}La función $f(z)=e^z$}{31}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}La función $f(z)=\ln z$}{37}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Transformaciones de Möbius}{39}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Transformaciones de M\"obius en el plano extendido}{53}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Mapeo de Joukowski}{55}{section.2.4}%
-\contentsline {paragraph}{ Soluci\'on:\\}{55}{section*.20}%
-\contentsline {subsection}{\numberline {2.4.1}Mapeo de Joukowski usando Mathematica}{58}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Mapeo de Schwarz-Christoffel}{61}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Algunos comentarios sobre el punto en el infinito y los exponentes}{63}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Deducciones de las fórmulas \\de Schwarz-Christoffel}{64}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el semiplano}{67}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Polígono con un vértice}{67}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}La franja vertical semi-infinita.}{68}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Triángulos}{69}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Rectángulos y funciones elípticas}{72}{subsection.2.6.4}%
-\contentsline {section}{\numberline {2.7}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}{74}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}El hexágono}{75}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}El $n$-ágono regular}{75}{subsection.2.7.2}%
-\contentsline {chapter}{\numberline {3}Aplicaciones}{78}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{78}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Flujo de fluidos}{78}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Transferencia de calor}{82}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Campo electromagnético}{86}{section.3.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{88}{chapter*.26}%
+\contentsline {subsection}{\numberline {2.2.3}La función $f(z)=e^z$}{30}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}La función $f(z)=\ln z$}{36}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Transformaciones de Möbius}{38}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Transformaciones de M\"obius en el plano extendido}{50}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Mapeo de Joukowski}{52}{section.2.4}%
+\contentsline {paragraph}{ Soluci\'on:\\}{52}{section*.20}%
+\contentsline {subsection}{\numberline {2.4.1}Mapeo de Joukowski usando Mathematica}{56}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Mapeo de Schwarz-Christoffel}{58}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Algunos comentarios sobre el punto en el infinito y los exponentes}{60}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Deducciones de las fórmulas \\de Schwarz-Christoffel}{61}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el semiplano}{64}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Polígono con un vértice}{64}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}La franja vertical semi-infinita.}{65}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Triángulos}{66}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Rectángulos y funciones elípticas}{69}{subsection.2.6.4}%
+\contentsline {section}{\numberline {2.7}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}{71}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}El hexágono}{72}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}El $n$-ágono regular}{72}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {3}Aplicaciones}{74}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{74}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Flujo de fluidos}{74}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Transferencia de calor}{78}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Campo electromagnético}{82}{section.3.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{84}{chapter*.26}%

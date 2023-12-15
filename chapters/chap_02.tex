@@ -142,21 +142,21 @@ Para $n=2$, si $f_1(z)=z^2$ tenemos
 \begin{mmaCell}{Input}
 	 f1[z_] = z^2 \\polarConformal[f1[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{17.png}}{}
 \end{mmaCell}
 Para $n=3$, si $f_2(z)=z^3$, entonces  tenemos el siguiente comportamiento
 \begin{mmaCell}{Input}
 	 f2[z_] = z^3 \\polarConformal[f2[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{18.png}}{}
 \end{mmaCell}
 Y para $n=4$, con $f_3(z)=z^4$, se tiene 
 \begin{mmaCell}{Input}
 	 f3[z_] = z^4 \\polarConformal[f3[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{19.png}}{}
 \end{mmaCell}
 
@@ -176,7 +176,7 @@ Al tomar potencias fraccionarias adecuadas, el efecto de un mapeo de la forma $f
 \begin{mmaCell}{Input}
  	f5[z_] = z^(1/2) \\polarConformal[f5[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{21.png}}{}
 \end{mmaCell}
 
@@ -264,7 +264,7 @@ Veamos esto último en Matemática
 \begin{mmaCell}{Input}
 	 f[z_] = Exp[z] \\cartesianConformal[f[(x + I*y)], \{x, 0, 1\}, \{y, -2Pi, 2Pi\},\\Mesh -> 1,LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Red, Axes -> True,\\PlotPoints -> 40]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.5}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{expz.png}}{}
 \end{mmaCell}
 Ahora consideremos la línea 
@@ -280,7 +280,7 @@ en Mathematica
 \begin{mmaCell}{Input}
 	 f[z_] = Exp[z] \\cartesianConformal[f[(x + I*y)], \{x, -10, 10\}, {y, 0, 2 Pi},\\Mesh -> \{\{0\}, \{1\}\}, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Red, Axes -> True,\\PlotPoints -> 40]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.5}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{expz1.png}}{}
 \end{mmaCell}
 Así, bajo el mapeo $w = e^z$, una familia de rectas paralelas al eje imaginario se transforma en una familia de círculos concéntricos con centro en el origen, y una familia de rectas paralelas al eje real se transforma en una familia de rayos que emanan del origen.\\
@@ -301,7 +301,7 @@ Por lo tanto, la función $w=e^z$ es un mapeo conforme uno a uno de la franja ab
 		f[z_] = Exp[z] \\f[(x + I*y)], {x, -10, 10}, {y, Pi/2, Pi},\\Mesh -> 100, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Red, Axes -> True,\\PlotPoints -> 40]
 	\end{mmaCell}
 	
-	\begin{mmaCell}[moregraphics={moreig={scale=0.5}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{expz2.png}}{}
 	\end{mmaCell}
 \end{Ejem}
@@ -314,7 +314,7 @@ Usando la función \textbf{cartesianConformal}, vemos que la imagen de $\Omega_{
 \begin{mmaCell}{Input}
 	 f[z_] = Exp[z] \\cartesianConformal[f[(x + I*y)], \{x, 0, 1\}, \{y, -Pi, Pi\},\\Mesh -> 50,LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.5}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{22.png}}{}
 \end{mmaCell}
 es decir, la región 
@@ -355,7 +355,7 @@ Al igual que la función $w=z^\frac{1}{2}$ revierte el efecto de la función $w_
 \begin{mmaCell}{Input}
 	 f[z_] = Log[z]\\polarConformal[f[r Exp[I t]], \{r, 1, E\}, \{t, 0, 2 Pi\},\\Mesh -> \{30, 30\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotRange -> \{\{-4, 4\}, \{-4, 4\}\}]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{23.png}}{}
 \end{mmaCell}
 Como podemos ver en la imagen anterior, el logaritmo regresa el anillo $$\{z\in \C\mid 1<|z|<e\},$$ a la banda vertical $$\{z\in \C|\mbox{Re}(z)\in[0,1],\; \mbox{Im}(z)\in [-\pi,\pi]\}.$$
@@ -557,7 +557,7 @@ Las regiones $\Omega_{1}$ y $\Omega_{2}$ se grafican a continuación.
 	 Show[GraphicsGrid[\{\{Graphics[omega1], Graphics[omega2]\}\}, \\\{\}],DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}
 
-\begin{mmaCell}[moregraphics={moreig={scale=0.6}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{9.png}}{}
 \end{mmaCell}
 
@@ -565,14 +565,14 @@ Si queremos ver la imagen del semiplano superior bajo la función $f(z)=\dfrac{z
 \begin{mmaCell}{Input}
 	 cartesianConformal[w[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300,LabelStyle ->Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Blue, Axes -> True,\\PlotPoints ->40, PlotRange -> All]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{10.png}}{}
 \end{mmaCell}
 Recíprocamente, con la función inversa de $f$, $f^{-1}(z)=i\dfrac{z+1}{z-1}$ podemos ver como se transforma el círculo unitario en el semiplano superior. Para ello usaremos la función \textbf{polarConformal}. La instrucción \textbf{Mesh -> \{300, 300\}} nos indica que el círculo unitario se construirá a partir de 300 círculos concéntricos de radio menor que uno y 300 radios dentro del círculo.
 \begin{mmaCell}{Input}
 	  polarConformal[f[r Exp[I t]], \{r, 0, 1\}, \{t, 0, 2 Pi\},\\Mesh -> \{300, 300\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{11.png}}{}
 \end{mmaCell}
 
@@ -604,35 +604,35 @@ Usaremos la función \textbf{cartesianConformal} que ya se había construido pre
 	\item [1)] \begin{mmaCell}{Input}
 		 W1[z_] = (2 - 3 I)*z + 5 + I\\cartesianConformal[W1[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40,PlotRange -> All]
 	\end{mmaCell}
-	\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{12.png}}{}
 	\end{mmaCell}
 
 	\item [2)] \begin{mmaCell}{Input}
 		W2[z_] = z + 5 + I\\cartesianConformal[W2[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40,PlotRange -> \{\{-10, 10\}, \{-10, 10\}\}]
 	\end{mmaCell}
-	\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{13.png}}{}
 	\end{mmaCell}
 
 	\item [3)] \begin{mmaCell}{Input}
 		W3[z_] = 4*z \\cartesianConformal[W3[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40,PlotRange -> \{\{-30, 30\}, \{0, 30\}\}]
 	\end{mmaCell}
-	\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{14.png}}{}
 	\end{mmaCell}
 
 	\item [4)] \begin{mmaCell}{Input}
 		W4[z_] = 1/z \\cartesianConformal[W4[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40,PlotRange ->\{\{-6, 6\}, \{-6, 6\}\}]
 	\end{mmaCell}
-	\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{15.png}}{}
 	\end{mmaCell}
 
 	\item [5)] \begin{mmaCell}{Input}
 		W5[z_] = Exp[2/3 * Pi *I]*z \\cartesianConformal[W5[x + I*y], \{x, -5, 5\}, \{y, 0, 5\},\\Mesh -> 300, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 40,PlotRange ->\{\{-7, 7\}, \{-7, 7\}\}]
 	\end{mmaCell}
-	\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+	\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 		\mmaFrac{ \mmaGraphics{16.png}}{}
 	\end{mmaCell}
 \end{itemize}
@@ -720,7 +720,7 @@ Podemos usar la función \textbf{polarConformal} para comprobar visualmente la p
 \begin{mmaCell}{Input}
 	 TMobius[z_, a_, b_, c_, d_] = (a*z + b)/(c*z + d);\\polarConformal[ TMobius[r Exp[I t], 5, 5 + 3 I,\\2.4 + 3.2 I, 4.3 + 7.2 I],\\\{r, 0, 1\}, \{t, 0, 2 Pi\},Mesh->\{0, 0\},\\PlotRange ->Automatic,LabelStyle-> Directive[Larger,Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{27.png}}{}
 \end{mmaCell}
 
@@ -1187,15 +1187,14 @@ Verifiquemos esta fórmula para el caso en el que el triángulo es equilátero, 
 	\mmaFrac{ \mmaGraphics{30.png}}{}
 \end{mmaCell}
 \subsection{Rectángulos y funciones elípticas}
-Si $n = 4$, los $x_j$ de la fórmula de \SC\; no los podemos tomar a nuestra elección. En el caso general, no existe una manera analítica respecto al grado de libertad en los $x_j$. Sin embargo, en el caso importante cuando la región es el interior de un rectángulo, podemos usar la  simetría para hallar una solución explícita.
+Si $n = 4$, los $x_j$ de la fórmula de \SC\;  no pueden ser seleccionados a nuestra elección. En el caso general, no existe una manera analítica con respecto al grado de libertad en los $x_j$. Sin embargo, en el caso importante cuando la región es el interior de un rectángulo, podemos utilizar la simetría para encontrar una solución explícita.\\
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.72\linewidth]{img/SCR}
 	\caption{Mapeo del semiplano superior a un rectángulo}
 	\label{fig:scr}
 \end{figure}
-Rotamos y trasladamos el rectángulo para que sus vértices sean $w_1=-K+iK$, $w_2=-K$, $w_3=K$ y $w_4=K+iK$. Por simetría elegimos los $x_j$ como $z_1 = -m$, 
-$z_2 = -1$, $z_3 = 1$ y $z_4 = m$,  donde $m$ es un parámetro que representa el grado de libertad en los $x_j$. La imagen del infinito resulta ser  el punto $iK'$, y la imagen de $0$ es $0$. La función puede escribirse como una integral elíptica de primera clase:
+Rotamos y trasladamos el rectángulo para que sus vértices sean $w_1=-K+iK$, $w_2=-K$, $w_3=K$ y $w_4=K+iK$. Por simetría, elegimos los $x_j$ como $z_1 = -m$, $z_2 = -1$, $z_3 = 1$ y $z_4 = m$,  donde $m$ es un parámetro que representa el grado de libertad en los $x_j$. La imagen del infinito resulta ser  el punto $iK'$, y la imagen de $0$ es $0$. La función puede escribirse como una integral elíptica de primera clase:
 \[
 \begin{array}{ccl}
 	w&=&C_1\ds\int_{}^{z}\prod_{j=1}^{4}(t-x_j)^{-\frac{1}{2}}dt+C_2\\
@@ -1209,15 +1208,15 @@ resulta más conveniente hacer el cambio de variable $a=m^{-1}$, $C_1'=-C_1$, en
 	=&=&C_1'\ds\int_{}^{\sin^{-1}(z)}\dfrac{d\theta}{\sqrt{1-a^2\sin^2(\theta)}},
 \end{array}
 \]
-Esta integral se conoce como integral elíptica incompleta de primera clase. \textbf{Mathematica} cuenta con una serie de funciones ya definidas para las integrales elípticas, en este ejemplo la función que usaremos seria \textbf{EllipticF[$\phi$, m]} la cual nos da la integral elíptica de primer orden $F(\phi|m)$.\\
+Esta integral se conoce como integral elíptica incompleta de primera clase. \textbf{Mathematica} cuenta con una serie de funciones ya definidas para las integrales elípticas. En este ejemplo, la función que usaremos sería  \textbf{EllipticF[$\phi$, m]} la cual nos da la integral elíptica de primer orden $F(\phi|m)$.\\
 Ingresando esta última integral en \textbf{Mathematica}
 \begin{mmaCell}{Input}
 	 Integrate[1/(Sqrt[1 - a*Sin[z]^2]), \{z, 0, ArcSin[z]\}]
 \end{mmaCell}
 obtenemos el siguiente resultado\\
 \fbox{$F\left(\left.\sin ^{-1}(z)\right|a\right)\text{ if }0<\R\left(\sin ^{-1}(z)\right)\leq \dfrac{\pi }{2}\lor -\dfrac{\pi }{2}\leq \R\left(\sin ^{-1}(z)\right)<0$}\\
-Para conocer más a detalle estas funciones en \textbf{Mathematica} vea \cite{Elliptic}.\\
-Para simplificar este tomemos $c_1'=1$ y $m=2$, entonces $a=\dfrac{1}{2}$.
+Para obtener información más detallada sobre estas funciones en \textbf{Mathematica}, consulte \cite{Elliptic}.\\
+Para simplificar,  tomemos $c_1'=1$ y $m=2$, entonces $a=\dfrac{1}{2}$.
 \begin{mmaCell}{Input}
 	 ClearAll[z, w];\\w[z_] = EllipticF[ArcSin[z], 0.5^2];\\cartesianConformal[w[x + I*y], {x, -8, 8}, \{y, 10^(-12), 8\},\\Mesh -> 60, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> AbsoluteThickness[0.01], MeshStyle -> Blue,\\Axes -> True, PlotPoints -> 1000, PlotRange -> All]
 \end{mmaCell}
@@ -1225,10 +1224,10 @@ Para simplificar este tomemos $c_1'=1$ y $m=2$, entonces $a=\dfrac{1}{2}$.
 	\mmaFrac{ \mmaGraphics{31.png}}{}
 \end{mmaCell}
 \section{Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}
-En este caso, podemos hacer uso de la simetría para considerar puntos $p_j$ que estén espaciados uniformemente alrededor del círculo unitario, incluso podemos tomar los puntos $_j$ de tal forma que sean las raíces $n$-ésimas de la unidad de
+En este caso, podemos hacer uso de la simetría para considerar puntos $p_j$ que estén espaciados uniformemente alrededor del círculo unitario, Incluso podemos tomar los puntos $_j$ de tal forma que sean las raíces $n$-ésimas de la unidad, es decir, 
 $$p_j=\omega_n^j,$$
 $$\omega_n^{\frac{2\pi i}{n}}.$$
-El producto $(p-p_1)\cdots (p-p_n)$ se simplifica a $p^n-1$. Tenemos por objetivo un $n$-ágono regular, los ángulos interiores para un $n$-ágono son todos iguales y están dados por:
+El producto $(p-p_1)\cdots (p-p_n)$ se simplifica a $p^n-1$. Si nuestro objetivo es un $n$-ágono regular, los ángulos interiores para un $n$-ágono son todos iguales y están dados por:
 $$\phi_k=\pi\left(1-\dfrac{2}{n}\right),$$
 y los exponentes son todos iguales a $-\dfrac{2}{n}$. Por lo tanto, el mapeo deseado es de la forma 
 \begin{equation}
@@ -1255,7 +1254,7 @@ Para comprobar qué está haciendo esta función usamos la función \textbf{pola
 \end{mmaCell}
 
 \subsection{El $n$-ágono regular}
-Con las consideraciones hechas previamente ahora nos resulta sencillo tratar el $n$-ágono regular
+Con las consideraciones hechas previamente, ahora nos resulta sencillo tratar el $n$-ágono regular
 \begin{mmaCell}{Input}
 	 nAgon[z_, n_] = Integrate[1/(1 - p^n)^(2/n), \{p, 0, z\},\\Assumptions -> n > 0]]
 \end{mmaCell} 
@@ -1266,7 +1265,7 @@ Las siguientes imágenes se generaron usando $n=3,4,5,10$ en el código
 \begin{mmaCell}{Input}
 	 ClearAll[f, z]\\polarConformal[nAgon[r Exp[I t], n], \{r, 0, 1\},\{t, 0, 2*Pi\},\\Mesh -> \{100, 100\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold],PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-las imágenes obtenidas las podemos ver en la figura \ref{fig:Mapeo del círculo unitario al n-ágono}. \newpage
+las imágenes obtenidas las podemos ver en la figura \ref{fig:Mapeo del círculo unitario al n-ágono}. 
 \begin{figure}[htbp]
 	\centering
 	\begin{subfigure}{0.45\textwidth}
