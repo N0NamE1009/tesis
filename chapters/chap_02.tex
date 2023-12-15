@@ -932,15 +932,14 @@ La siguiente implementación en Mathematica se tomo de \cite{GeometryJo}.
 	xLE[\mmaPat{\(\pmb{\mu}\)_}]:=Chop[zA[\mmaDef{\(\pmb{\theta}\)LE}[\mmaPat{\(\pmb{\mu}\)}],\mmaPat{\(\pmb{\mu}\)}]]
 \end{mmaCell}
 
-
-
-\begin{mmaCell}[moregraphics={moreig={scale=0.6}}]{Input}
-	\mmaFrac{ \mmaGraphics{program.png}}{}
+\begin{mmaCell}[moredefined={xLE, zA}]{Input}
+	 Manipulate[\\Module[\{a,c,gz,gzA,gzCrit,\mmaUnd{g\(\pmb{\zeta}\)},\mmaUnd{g\(\pmb{\zeta}\)C},\\\mmaUnd{g\(\pmb{\zeta}\)Crit},\mmaUnd{g\(\pmb{\zeta}\)Tri},za,\mmaUnd{\(\pmb{\zeta}\)c},\mmaUnd{\(\pmb{\beta}\)},\mmaUnd{\(\pmb{\mu}\)}\},\\\{\mmaUnd{\(\pmb{\mu}\)},a,\mmaUnd{\(\pmb{\beta}\)}\}=\{r\mmaSup{\mmaDef{e}}{\mmaDef{i}\mmaUnd{\(\pmb{\alpha}\)}},Abs[1-\mmaUnd{\(\pmb{\mu}\)}],-Arg[1-\mmaUnd{\(\pmb{\mu}\)}]\};\\\mmaUnd{\(\pmb{\mu}\)}=r\mmaSup{\mmaDef{e}}{\mmaDef{i}\mmaUnd{\(\pmb{\alpha}\)}}(*translation vector as complex number*);\\a=Abs[1-\mmaUnd{\(\pmb{\mu}\)}](*radius of circle forcing circle to pass \\through \(\pmb{\zeta}\)=1*);\\\mmaUnd{\(\pmb{\beta}\)}=-Arg[1-\mmaUnd{\(\pmb{\mu}\)}](*angle in reference triangle opposite side \(\pmb{\mu}\)*);\\(* complex plane of circle *)\\\mmaUnd{\(\pmb{\zeta}\)c}=\mmaDef{\(\pmb{\zeta}\)C}[\mmaUnd{\(\pmb{\theta}\)},\mmaUnd{\(\pmb{\mu}\)}];\\\mmaUnd{g\(\pmb{\zeta}\)C}=ParametricPlot[\{Re[\mmaUnd{\(\pmb{\zeta}\)c}],Im[\mmaUnd{\(\pmb{\zeta}\)c}]\},\{\mmaFnc{\(\pmb{\theta}\)},0,2\mmaDef{\(\pmb{\pi}\)}\},PlotStyle\\\(\pmb{\to}\)\{Thick,Black\}];\\\mmaUnd{g\(\pmb{\zeta}\)Tri}=Graphics[\{EdgeForm[Thin],Polygon[\{\{0,0\},\\\{Re[\mmaUnd{\(\pmb{\mu}\)}],Im[\mmaUnd{\(\pmb{\mu}\)}]\},\{1,0\}\}]\}];\\\mmaUnd{g\(\pmb{\zeta}\)Crit}=Graphics[\{Black,PointSize[Medium],Point[\{\{1,0\},\\\{-1,0\}\}]\}];\\\mmaUnd{g\(\pmb{\zeta}\)}=Show[\mmaUnd{g\(\pmb{\zeta}\)C},\mmaUnd{g\(\pmb{\zeta}\)Tri},\mmaUnd{g\(\pmb{\zeta}\)Crit},Axes\(\pmb{\to}\)None,Frame\(\pmb{\to}\)True,\\FrameLabel \(\pmb{\to}\)\{\{x,None\},\{y,"plano z"\}\},ImageSize\(\pmb{\to}\)3.95 72,\\PlotRange\(\pmb{\to}\)3,RotateLabel\(\pmb{\to}\)False];\\(* complex plane of airfoil *)\\za=zA[\mmaUnd{\(\pmb{\theta}\)},\mmaUnd{\(\pmb{\mu}\)}];\\c=2-xLE[\mmaUnd{\(\pmb{\mu}\)}];\\gzA=ParametricPlot[\{Re[za],Im[za]\}, \{\mmaUnd{\(\pmb{\theta}\)},0,2 \mmaDef{\(\pmb{\pi}\)}\},\\PlotStyle \(\pmb{\to}\)\{Thick,Black\}];\\gzCrit = Graphics[\{Black, PointSize[Medium],\\Point[\{\{2, 0\}, \{-2, 0\}\}]\}];\\gz = Show[gzA, gzCrit, Axes -> None,\\Epilog -> \{Inset[Style[Row[\{Style["c",Italic],\\StringForm["=\`\` ", NumberForm[c, \{4, 2\}]\}],\\FontSize -> 12  ],\{2, 2.3\}]\},\\Frame -> True,FrameLabel -> \{\{Style["v", Italic],\\None\}, \{Style["u", Italic], Row[\{Style["", Italic],\\" plano w"\}]\}\},\\ImageSize -> 3.95 72, PlotRange -> 3,\\RotateLabel -> False];\\Row[{g\(\pmb{\zeta}\), Spacer[14], gz}, ImageSize -> 8.4 72]],
 \end{mmaCell}
-
-
-Lo  que el script anterior genera es una forma de ver como el círculo se deforma en perfiles aerodinámicos y además proporciona unos controles para variar el tamaño del círculo y apreciar en tiempo real como se produce un nuevo perfil aerodinámico. La forma del perfil aerodinámico está controlada por un triángulo de referencia en el plano $Z$ definido por el origen, el centro del círculo  $z=re^{i\alpha}$ y el punto $z=1$.
-\begin{mmaCell}[moregraphics={moreig={scale=0.6}}]{Input}
+\begin{mmaCell}[moredefined={xLE, zA}]{Input}
+\\ (* controles *)\\Style[Row[\{Spacer[100],"El circulo centrado en  ",\\Superscript[Style["re", Italic],\\Row[\{Style["i", Italic], "\(\pmb{\alpha}\)"\}]],"pasa por el punto critico \\en z = 1."\}], 11],\\Row[\{Control[\{\{r,.3,Style["r",Italic]\},0,1\}],Spacer[10],\\Dynamic[NumberForm[r, \{3, 2\}]], Spacer[30],\\Control[\{\{\(\pmb{\alpha}\), .7 \(\pmb{\pi}\)\}, \(\pmb{\pi}\)/2, \(\pmb{\pi}\)\}], Spacer[10],\\Dynamic[NumberForm[\(\pmb{\alpha}\)/\(\pmb{\pi}\), \{3, 2\}]], "\(\pmb{\pi}\)" \}],\\SaveDefinitions -> True ]
+\end{mmaCell}
+Lo que el script anterior genera es una forma de ver cómo el círculo se deforma en perfiles aerodinámicos y además proporciona unos controles para variar el tamaño del círculo y apreciar en tiempo real cómo se produce un nuevo perfil aerodinámico. La forma del perfil aerodinámico está controlada por un triángulo de referencia en el plano $Z$ definido por el origen, el centro del círculo $z=re^{i\alpha}$ y el punto $z=1$.
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Input}
 	\mmaFrac{ \mmaGraphics{perfiles1.png}}{}
 \end{mmaCell}
 
@@ -1117,7 +1116,7 @@ Podemos tener una mirada más detallada a lo que hace este mapeo usando las func
 \begin{mmaCell}{Input}
 	  w[z_] = (2*ArcSin[z])/Pi;\\cartesianConformal[w[x + I*y], \{x, -16, 16\}, \{y, 10^(-8), 16\},\\Mesh -> 50, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Blue, Axes -> True,\\PlotPoints -> 200, PlotRange -> All]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.7}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{28.png}}{}
 \end{mmaCell}
 
@@ -1130,7 +1129,7 @@ Los polígonos con tres vértices son los dominios más generales para los cuale
 	 Show[Graphics[\{\{LightBlue,Polygon[\{\{0,0\},\{1,0\},\{0.3,1\}\}]\},\\ \{PointSize[0.03], Point[\{0, 0\}]\},\{PointSize[0.03],\\Point[\{1, 0\}]\},\{PointSize[0.03], Point[\{0.3, 1\}]\}, \\Line[\{\{-1/2, 0\}, \{1.5, 0\}\}],Line[\{\{0, -1/2\}, \{0, 1.5\}\}],\\Text["A", \{0.1, -0.1\}], Text["B", \{1.1, -0.1\}],\\Text["C", \{0.3, 1.2\}],Text["[Alpha]", \{0.1, 0.1\}],\\Text["[Beta]", \{0.85, 0.1\}]\}]]
 \end{mmaCell}
 
-\begin{mmaCell}[moregraphics={moreig={scale=0.8}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{29.png}}{}
 \end{mmaCell}
 
@@ -1183,7 +1182,7 @@ Verifiquemos esta fórmula para el caso en el que el triángulo es equilátero, 
 \begin{mmaCell}{Input}
 	 ClearAll[z, w, k]\\w[z_] = BetaRegularized[z, 1/3, 1/3]\\cartesianConformal[w[x + I*y],\{x, -8, 8\}, \{y, 10^(-12), 8\},\\Mesh -> 60, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> AbsoluteThickness[0.01], MeshStyle -> Blue,\\Axes -> True,PlotPoints -> 1000, PlotRange -> All]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.8}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{30.png}}{}
 \end{mmaCell}
 \subsection{Rectángulos y funciones elípticas}
@@ -1220,7 +1219,7 @@ Para simplificar,  tomemos $c_1'=1$ y $m=2$, entonces $a=\dfrac{1}{2}$.
 \begin{mmaCell}{Input}
 	 ClearAll[z, w];\\w[z_] = EllipticF[ArcSin[z], 0.5^2];\\cartesianConformal[w[x + I*y], {x, -8, 8}, \{y, 10^(-12), 8\},\\Mesh -> 60, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> AbsoluteThickness[0.01], MeshStyle -> Blue,\\Axes -> True, PlotPoints -> 1000, PlotRange -> All]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.8}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{31.png}}{}
 \end{mmaCell}
 \section{Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}
@@ -1249,7 +1248,7 @@ Para comprobar qué está haciendo esta función usamos la función \textbf{pola
 \begin{mmaCell}{Input}
 	 ClearAll[f, z]\\f[z_] = z Hypergeometric2F1[1/6, 1/3, 7/6, z^6]\\polarConformal[f[r Exp[I t]], {r, 0, 1},\\\{t, 0, 2*Pi\},Mesh -> \{50, 50\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
-\begin{mmaCell}[moregraphics={moreig={scale=0.8}}]{Output}
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{32.png}}{}
 \end{mmaCell}
 

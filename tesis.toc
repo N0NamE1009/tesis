@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {2.6.3}Triángulos}{66}{subsection.2.6.3}%
 \contentsline {subsection}{\numberline {2.6.4}Rectángulos y funciones elípticas}{69}{subsection.2.6.4}%
 \contentsline {section}{\numberline {2.7}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}{71}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}El hexágono}{72}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.1}El hexágono}{71}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}El $n$-ágono regular}{72}{subsection.2.7.2}%
 \contentsline {chapter}{\numberline {3}Aplicaciones}{74}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducción}{74}{section.3.1}%
