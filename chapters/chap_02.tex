@@ -1047,13 +1047,13 @@ Existe una versión que mapea el disco unitario $D(0,1)$  en un polígono.
 	para algunas $A,C\in \C$, donde $w_k=f(x_k)$ para $k=1,2,\ldots,n$.\\
 	\textbf{Esbozo.} \\El mapeo 
 	$$p(z)=\dfrac{z-i}{z+i},$$
-	manda el semiplano superior al circulo unitario, la inversa de este mapeo resulta ser
+	manda el semiplano superior al circulo unitario. La inversa de este mapeo resulta ser
 	$$\dfrac{i(1+p)}{1-p},$$
-	suponga que los $x_k$ son mapeados a puntos $p_k$ en el circulo unitario, entonces para cada $k$ tenemos
+	suponga que los $x_k$ son mapeados a puntos $p_k$ en el circulo unitario. Entonces, para cada $k$ tenemos
 	$$z-x_k=\dfrac{i(p+1)}{1-p}-\dfrac{i(p_k+1)}{1-p_k}=\dfrac{2i(p-p_k)}{(1-p)(1-p_k)},$$
-	y el Jacobiano de la transformación es 
+	así como el Jacobiano de la transformación es 
 	$$\dfrac{\partial z}{\partial p}=\dfrac{2i}{(1-p)^2},$$
-	sustituyendo esto en la fórmula de \SC, usando el exponente de la fórmula 
+	sustituyendo esto en la fórmula de \SC y usando el exponente de la fórmula 
 	$$\sum_{k=1}^{n}\left(\dfrac{\phi_k}{\pi}-1\right)=-2,$$
 	y simplificando obtenemos la fórmula.
 \end{teor}
@@ -1061,12 +1061,12 @@ Existe una versión que mapea el disco unitario $D(0,1)$  en un polígono.
 %% Continuar aca la revisión
 
 \section{Ejemplos del uso de la fórmula de Schwarz-Christoffel para el semiplano}
-En esta sección se presentan una serie de ejemplos que nos permitirán tener una comprensión más clara de la fórmula (\ref{eSC}), ahora consideraremos algunos ejemplos analíticos simples. No es difícil suponer que  la cuestión se complica un poco más cuando hay más de tres vértices, ya que entonces tenemos que resolver el problema de determinar los $x_j$ para todos menos tres de los valores de $j$. Así que consideraremos primero algunos casos con solo dos vértices, que se pueden hacer de manera analítica.  
+En esta sección se presentan una serie de ejemplos que nos permitirán tener una comprensión más clara de la fórmula (\ref{eSC}). Ahora consideraremos algunos ejemplos analíticos simples. No es difícil suponer que  la cuestión se complica un poco más cuando hay más de tres vértices, ya que entonces tenemos que resolver el problema de determinar los $x_j$ para todos excepto tres de los valores de $j$. Así que consideraremos primero algunos casos con solo dos vértices, que se pueden resolver de manera analítica.Así que consideraremos primero algunos casos con solo dos vértices, que se pueden resolver de manera analítica.
 \subsection{Polígono con un vértice}
-Las fórmulas de \SC \; no son del todo explicitas, debemos determinar los $x_j$ y las constantes afines $C_1$ y $C_2$ antes de poder aplicar la fórmula. Existe cierta flexibilidad en la selección de estos parámetros. Por el Teorema de mapeo de Riemann, podemos elegir cualesquiera tres puntos en $\R\setminus\{\infty\}$ para mapearlos a cualesquiera tres puntos del polígono, siempre y cuando se mantenga su orden. En otras palabras, hay tres grados de libertad en el mapeo, lo que nos permite elegir tres  $x_j$ arbitrariamente. Por lo tanto, si $n \leq 3$, no hay problema de parámetros que debamos resolver y la fórmula \SC \; se vuelve explícita y en ocasiones sencilla de resolver.\\
+Las fórmulas de \SC \; no son del todo explicitas; debemos determinar los $x_j$ y las constantes afines $C_1$ y $C_2$ antes de poder aplicar la fórmula. Existe cierta flexibilidad en la selección de estos parámetros. Por el Teorema de mapeo de Riemann, podemos elegir cualesquiera tres puntos en $\R\setminus\{\infty\}$ para mapearlos a cualesquiera tres puntos del polígono, siempre y cuando se mantenga su orden. En otras palabras, hay tres grados de libertad en el mapeo, lo que nos permite elegir tres  $x_j$ arbitrariamente. Por lo tanto, si $n \leq 3$, no hay problema de parámetros que debamos resolver y la fórmula \SC \; se vuelve explícita y en ocasiones sencilla de resolver.\\
 Cuando $n=1$, el polígono resulta ser una línea, con vértice  $w_1=\infty$ y $\phi_1=-\pi$, entonces $f(z)$ resulta ser de la forma
 $$f(z)=C_2+C_1z,$$
-que permite el escalado, la rotación y la traslación. La fórmula del mapa del disco (\ref{SCD}) nos da 
+que permite el escalado, la rotación y la traslación. La fórmula del mapeo de \SC para el disco, (\ref{SCD}),00 nos da 
 $$f(z)=A+\dfrac{C}{z-z_1}.$$
 Este es uno de los pocos resultados analíticos simples de la fórmula de Schwarz-Christoffel. 
 \subsection{La franja vertical semi-infinita.}
@@ -1080,7 +1080,7 @@ En este caso tenemos:
 	w_2=a;&&\phi_2=\dfrac{\pi}{2},
 \end{array}
 \]
-y podemos simplemente tomar $x_1=-1$, $x_2=1$, entonces la forma diferencial de la ecuación de Schwarz-Chrstoffel nos da
+y podemos simplemente tomar $x_1=-1$, $x_2=1$. Entonces la forma diferencial de la ecuación de Schwarz-Chrstoffel nos da
 $$\dfrac{\partial w}{\partial z}=C_1(z-1)^{\dfrac{\frac{\pi}{2}}{\pi}-1}(z+1)^{\frac{\frac{\pi}{2}}{\pi}-1}=\dfrac{C_1}{\sqrt{z^2-1}}=\dfrac{A}{\sqrt{1-z^2}},$$
 donde el cambio de las constantes lo realizamos para que la ecuación nos sea más fácil de integrar, es decir,
 \[
@@ -1123,7 +1123,8 @@ Podemos tener una mirada más detallada a lo que hace este mapeo usando las func
 
 \subsection{Triángulos}
 
-Los polígonos con tres vértices son los dominios más generales para los cuales los $x_j$ de la fórmula de  Schwarz-Christoffel pueden ser elegidos arbitrariamente, siempre y cuando permanezcan distintos y ordenados correctamente. Consideremos la siguiente imagen (los parámetros en la rutina de trazado, son con fines ilustrativos, no tienen un  significado en particular), donde asumimos que el punto $A$ está en el origen y $B$ está en $w =1+0i=1$. Los ángulos interiores en estos dos vértices son $\alpha$ y $\beta$ respectivamente.
+
+Los polígonos con tres vértices son los dominios más generales para los cuales los $x_j$ de la fórmula de Schwarz-Christoffel pueden elegirse arbitrariamente, siempre y cuando permanezcan distintos y estén ordenados correctamente. Consideremos la siguiente imagen (los parámetros en la rutina de trazado son con fines ilustrativos y no tienen un significado en particular), donde asumimos que el punto $A$ está en el origen y $B$ está en $w = 1 + 0i = 1$. Los ángulos interiores en estos dos vértices son $\alpha$ y $\beta$, respectivamente.
 
 \begin{mmaCell}{Input}
 	 Show[Graphics[\{\{LightBlue,Polygon[\{\{0,0\},\{1,0\},\{0.3,1\}\}]\},\\ \{PointSize[0.03], Point[\{0, 0\}]\},\{PointSize[0.03],\\Point[\{1, 0\}]\},\{PointSize[0.03], Point[\{0.3, 1\}]\}, \\Line[\{\{-1/2, 0\}, \{1.5, 0\}\}],Line[\{\{0, -1/2\}, \{0, 1.5\}\}],\\Text["A", \{0.1, -0.1\}], Text["B", \{1.1, -0.1\}],\\Text["C", \{0.3, 1.2\}],Text["[Alpha]", \{0.1, 0.1\}],\\Text["[Beta]", \{0.85, 0.1\}]\}]]
@@ -1133,7 +1134,7 @@ Los polígonos con tres vértices son los dominios más generales para los cuale
 	\mmaFrac{ \mmaGraphics{29.png}}{}
 \end{mmaCell}
 
-Lo que buscamos es construir de alguna manera un mapeo $w(z)$ tal que este triángulo sea la imagen del plano superior, con A situado en el origen z = 0, y B en z = 1. Aquí haremos uso del hecho de que C puede ser definido como $f(\infty)=C$, de modo que la fórmula \SC \; solo involucre dos términos:
+Lo que buscamos es construir de alguna manera un mapeo $w(z)$ tal que este triángulo sea la imagen del plano superior, con A situado en el origen z = 0, y B en z = 1. Aquí haremos uso del hecho de que $C$ puede ser definido como $f(\infty)=C$, de modo que la fórmula \SC \; solo involucre dos términos:
 $$\dfrac{\partial w}{\partial z}=A' z^{\frac{\alpha}{\pi}-1}(z-1)^{\frac{\beta}{\pi}-1}=Cz^{\frac{\alpha}{\pi}-1}(1-z)^{\frac{\beta}{\pi}-1},$$
 integrando desde $\xi=0$ hasta $\xi=z$
 $$w=C\int_{0}^{z}\xi^{\frac{\alpha}{\pi}-1}(1-\xi)^{\frac{\beta}{\pi}-1}d\xi+B.$$
@@ -1147,12 +1148,12 @@ obtenemos
 $$\dfrac{\Gamma\left(\dfrac{\alpha}{\pi}\right)\Gamma\left(\dfrac{\beta}{\pi}\right)}{\Gamma\left(\dfrac{\alpha+\beta}{\pi}\right)},$$
 por lo tanto 
 $$C=\dfrac{\Gamma\left(\dfrac{\alpha+\beta}{\pi}\right)}{\Gamma\left(\dfrac{\alpha}{\pi}\right)\Gamma\left(\dfrac{\beta}{\pi}\right)},$$
-por lo tanto el mapeo viene dado por 
+por consiguiente, el mapeo viene dado por 
 \begin{equation}
 	w=\dfrac{\Gamma\left(\dfrac{\alpha+\beta}{\pi}\right)}{\Gamma\left(\dfrac{\alpha}{\pi}\right)\Gamma\left(\dfrac{\beta}{\pi}\right)}\int_{0}^{z}\xi^{\frac{\alpha}{\pi}-1}(1-\xi)^{\frac{\beta}{\pi}-1}d\xi.
 \end{equation}
 Recordemos que  $$\int_{0}^{z}\xi^{a-1}(1-\xi)^{b-1}d\xi = \beta_z(a,b),$$
-donde $\beta_z(a,b)$ es la función beta incompleta, en \textbf{Mathematica} esta función especial puede usarse utilizando el comando \textbf{Beta[z,a,b]}.\\
+donde $\beta_z(a,b)$ es la función beta incompleta. En \textbf{Mathematica}, esta función especial puede usarse utilizando el comando \textbf{Beta[z,a,b]}.\\
 Por otro lado, la función Beta se puede expresar en términos de la función Gamma
 \[
 {\displaystyle {\begin{aligned}\Gamma (x)\Gamma (y)&=\int _{u=0}^{\infty }u^{x-1}e^{-u}du\int _{v=0}^{\infty }v^{y-1}e^{-v}dv\\&=\int _{v=0}^{\infty }\int _{u=0}^{\infty }u^{x-1}v^{y-1}e^{-u-v}dudv,\end{aligned}}}
@@ -1166,20 +1167,19 @@ despejando obtenemos
 \[
 {\displaystyle \beta (x,y)={\dfrac {\Gamma (x)\Gamma (y)}{\Gamma (x+y)}}}.
 \]
-En \textbf{Mathematica} la función beta se puede usar usando el comando \textbf{Beta[a,b]}
-así 
+En \textbf{Mathematica}, la función beta se puede usar usando el comando \textbf{Beta[a,b]}. Así, 
 $$w=\dfrac{\beta_z\left(\dfrac{\alpha}{\pi},\dfrac{\beta}{\pi}\right)}{\beta\left(\dfrac{\alpha}{\pi},\dfrac{\beta}{\pi}\right)},$$
-teniendo esto en cuenta escribimos la expresión para $w$ en \textbf{Mathematica}
+teniendo esto en cuenta, escribimos la expresión para $w$ en \textbf{Mathematica}
 \begin{mmaCell}{Input}
 	 w[z_,\(\alpha\)_,\(\beta\)_]:=\mmaFrac{Beta[z,\(\alpha\),\(\beta\)]}{Beta[\(\alpha\),\(\beta\)]}
 \end{mmaCell}
-En \textbf{Mathematica} contamos con una función que simplifica a la expresión anterior, esta es la función \textbf{BetaRegularized}, esta función da la función beta incompleta regularizada $I_z(a,b)$  y para casos no singulares se verifica 
+En \textbf{Mathematica}, contamos con una función que simplifica a la expresión anterior. Esta es la función \textbf{BetaRegularized}, esta función da la función beta incompleta regularizada $I_z(a,b)$. Para casos no singulares, se verifica que
 $$I_z(a,b)=\dfrac{\beta(z,a,b)}{\beta(a,b)}.$$
 Ya con esto podemos reescribir a $w$ en Wolfram de la siguiente manera
 \begin{mmaCell}{Input}
 	 w[z_,\(\alpha\)_,\(\beta\)_]:=BetaRegularized[z,\(\alpha\),\(\beta\)]
 \end{mmaCell}
-Verifiquemos esta fórmula para el caso donde el triángulo es equilátero, con $\alpha=\beta=\dfrac{\pi}{3}$
+Verifiquemos esta fórmula para el caso en el que el triángulo es equilátero, con $\alpha=\beta=\dfrac{\pi}{3}$
 \begin{mmaCell}{Input}
 	 ClearAll[z, w, k]\\w[z_] = BetaRegularized[z, 1/3, 1/3]\\cartesianConformal[w[x + I*y],\{x, -8, 8\}, \{y, 10^(-12), 8\},\\Mesh -> 60, LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> AbsoluteThickness[0.01], MeshStyle -> Blue,\\Axes -> True,PlotPoints -> 1000, PlotRange -> All]
 \end{mmaCell}

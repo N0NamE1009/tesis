@@ -34,11 +34,11 @@
 \contentsline {subsection}{\numberline {2.6.3}Triángulos}{69}{subsection.2.6.3}%
 \contentsline {subsection}{\numberline {2.6.4}Rectángulos y funciones elípticas}{72}{subsection.2.6.4}%
 \contentsline {section}{\numberline {2.7}Ejemplos del uso de la fórmula de Schwarz-Christoffel para el disco unitario}{74}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}El hexágono}{74}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.1}El hexágono}{75}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}El $n$-ágono regular}{75}{subsection.2.7.2}%
-\contentsline {chapter}{\numberline {3}Aplicaciones}{77}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducción}{77}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Flujo de fluidos}{77}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Transferencia de calor}{81}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Campo electromagnético}{85}{section.3.4}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{87}{chapter*.26}%
+\contentsline {chapter}{\numberline {3}Aplicaciones}{78}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducción}{78}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Flujo de fluidos}{78}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Transferencia de calor}{82}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Campo electromagnético}{86}{section.3.4}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{88}{chapter*.26}%
