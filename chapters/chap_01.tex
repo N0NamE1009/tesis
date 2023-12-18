@@ -35,15 +35,21 @@ El siguiente teorema es una es una equivalencia de la definición anterior. La p
 	\begin{equation}
 		f(z)-f(a)=A(z-a)+(z-a)\varepsilon(z,a),
 	\end{equation}
-	 $\varepsilon(z,a)\rightarrow 0$ cuando $z\rightarrow a$ y $A$ es una constante independiente de $(z-a)$ y $\varepsilon$.
+	 en donde $\varepsilon(z,a)\rightarrow 0$ cuando $z\rightarrow a$ y $A$ es una constante independiente de $(z-a)$ y $\varepsilon$.
 	
 \end{teor}
 
-Sea $f$ una función complejo diferenciable en $a$, entonces se cumple que
-$$f(z)=f(a)+\varphi(z)(z-a).$$
-Si $z\rightarrow a$, entonces 
-$$\lim_{z\rightarrow a}f(z)=\lim_{z\rightarrow a}\left[f(a)+\varphi(z)(z-a)\right]=f(a)+\lim_{z\rightarrow a}[\varphi(z)(z-a)]=f(a).$$
-En resumen se tiene la siguiente proposición.
+Si es $f$ una función complejo diferenciable en $a$, entonces por el Teorema \ref{teodif}, $f$ puede escribirse 
+$$f(z)-f(a)=A(z-a)+(z-a)\varepsilon(z,a),$$
+donde $\varepsilon(z,a)\rightarrow 0$ cuando $z\rightarrow a$ y $A$ es una constante. Si $z\rightarrow a$, entonces
+\[
+\begin{array}{ccl}
+	\ds\lim_{z\rightarrow a}f(z)&=&\ds\lim_{z\rightarrow a}[f(a)+A(z-a)+(z-a)\varepsilon(z,a)]\\
+	&=&f(a)+A\ds\lim_{z\rightarrow a}(z-a)+\ds\lim_{z\rightarrow a}[(z-a)\varepsilon(z,a)]\\
+	&=&f(a).
+\end{array}
+\]
+Por lo tanto, $f$ es continua en $a$. En resumen se tiene la siguiente proposición.
 \begin{prop}
 	Sea $\Omega\subset \C$ un conjunto abierto y sea $a \in \Omega$. Sea $f:\Omega\rightarrow\C$, si $f$ es complejo diferenciable en $a$, entonces es continua en $a$.
 \end{prop}
@@ -118,8 +124,7 @@ las cuales se conocen como ecuaciones de \textbf{Cauchy-Riemann}, lo anterior pr
 	Sea $$f(z)=u(x,y)+iv(x,y),$$ una función definida en un dominio $\Omega$. Entonces una
 	condición necesaria y suficiente para que $f (z)$ sea complejo diferenciable en el punto
 	$z_0 = x_0 + iy_0 \in \Omega$, es que las funciones $u(x, y)$ y $v(x, y)$ sean real diferenciables en el
-	punto $z_0=(x_0, y_0)$ y que satisfagan las ecuaciones de Cauchy-Riemann
-	Si estas condiciones se cumplen, $f'(z_0)$, puede representarse en cualquiera de las siguientes formas:
+	punto $z_0=(x_0, y_0)$ y que satisfagan las ecuaciones de Cauchy-Riemann. Si estas condiciones se cumplen, $f'(z_0)$, puede representarse en cualquiera de las siguientes formas:
 	\begin{equation}
 		f'(z_0)=\dfrac{\partial u}{\partial x}+i\dfrac{\partial v}{\partial x}=\dfrac{\partial v}{\partial y}-i\dfrac{\partial u}{\partial y}=\dfrac{\partial u}{\partial x}-i\dfrac{\partial u}{\partial y}=\dfrac{\partial v}{\partial y}+i\dfrac{\partial v}{\partial x},
 	\end{equation}
@@ -137,13 +142,13 @@ Una función holomorfa en todo $\C$   es llamada una función \textbf{entera}.
 	Sea $a=(a_1,a_2)\in\R^2$ un elemento arbitrario, entonces 
 	\[
 	\begin{array}{ccl}
-		\dfrac{f(x,y)-f(a_1,a_2)-2a(x-a_1)-2a_2(x-b)}{\sqrt{(x-a_1)^2+(y-a_2)^2}}&=&\dfrac{x^2+y^2-a_1^2-a_2^2}{\sqrt{(x-a_1)^2+(y-a_2)^2}}+\\
-		&&+\dfrac{-2a(x-a_1)-2a_2(x-b)}{\sqrt{(x-a_1)^2+(y-a_2)^2}}\\
+		\dfrac{f(x,y)-f(a_1,a_2)-2a_1(x-a_1)-2a_2(x-a_2)}{\sqrt{(x-a_1)^2+(y-a_2)^2}}&=&\dfrac{x^2+y^2-a_1^2-a_2^2}{\sqrt{(x-a_1)^2+(y-a_2)^2}}+\\
+		&&+\dfrac{-2a_1(x-a_1)-2a_2(x-a_2)}{\sqrt{(x-a_1)^2+(y-a_2)^2}}\\
 		&=&\dfrac{(x-a_1)^2+(y-a_2)^2}{\sqrt{(x-a_1)^2+(y-a_2)^2}}\\
 		&=&\sqrt{(x-a_1)^2+(y-a_2)^2}.
 	\end{array}
 	\]
-	Al tomar el límite cuando $(x,y)\rightarrow(a_1,a_2)$, se tiene que $f(x,y)$ es diferenciable en $a=(a_1,a_2)$ y dado que $a$ fue arbitrario $f(x,y)$ es diferenciable en $\R^2$.\\
+	Al tomar el límite cuando $(x,y)\rightarrow(a_1,a_2)$, se tiene que $f(x,y)$ es real diferenciable en $a=(a_1,a_2)$ y dado que $a$ fue arbitrario $f(x,y)$ es diferenciable en $\R^2$.\\
 	Ahora, consideremos  $f(z)=|z|^{2}$ como un mapeo de $\C\rightarrow\C$.
 	Tenemos que si $z=x+iy$, entonces 
 	$$f(z)=|z|^2=|x+iy|^2=x^2+y^2,$$
@@ -164,7 +169,7 @@ Una función holomorfa en todo $\C$   es llamada una función \textbf{entera}.
 	\end{array}
 	\]
 	luego, si $z$ tiende a $z_0$ a lo largo del rayo $\{\alpha z_0\mid \alpha\in (1,\infty)\}$, entonces 
-	el límite anterior es $2z_0\neq 0$. Por tanto, no existe un abierto $\Omega\subset \C$ en el que $f(z)$ sea holomorfa.\endproof
+	el límite anterior es $2\overline{z_0}\neq 0$. Por tanto, no existe un abierto $\Omega\subset \C$ en el que $f(z)$ sea holomorfa.\endproof
 \end{Ejem}
 El ejemplo anterior ilustra una función que puede ser diferenciable en términos reales, pero no en términos complejos. Esto resalta la distinción entre la diferenciabilidad en el contexto de los números reales y los números complejos.
 \begin{teor}[De Identidad para Funciones Analíticas]\label{TIFA}
@@ -184,9 +189,13 @@ Acabamos de introducir los términos de singularidad aislada, removible, esencia
 	\caption{Ejemplo gráfico del comportamiento de los ceros, polos y singularidades cuando se usa la función ComplexPlot3D}
 	\label{fig:plotco}
 \end{figure}
-\\Y la forma de usar esta función es \textbf{ComplexPlot[$f$,$\{z,z_{min},z_{max}\}$]}, cabe aclarar que esta función genera un grafico de $\mathbf{\operatorname{Arg}[f]}$ sobre el rectángulo en el plano complejo con esquinas $z_{min}$ y $z_{max}$, además que,  la intensidad de los colores esta determinada por el valor absoluto (módulo) de $f$, es decir,  $\mathbf{\operatorname{Abs}[f]}$. El funcionamiento de \textbf{ComplexPlot3D}  es análogo.\\
-En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{ComplexContourPlot}, la cual traza los contornos de una función real sobre los complejos. La forma de usar es \textbf{ComplexContourPlot[$f$,$\{z,z_{min},z_{max}\}$]} y además en las posiciones donde $f$ no se evalúa como un número real, se dejan agujeros para que se vea el fondo del gráfico de contorno. La función $f$ generalmente incluirá funciones como Re, Im, Abs y Arg que extraen componentes reales de números complejos para propósitos de comparación.\\\\
+\\Y la forma de usar esta función es \textbf{ComplexPlot[$f$,$\{z,z_{min},z_{max}\}$]}, cabe aclarar que esta función genera un grafico de $\mathbf{\operatorname{Arg}[f]}$ sobre el rectángulo en el plano complejo con esquinas $z_{min}$ y $z_{max}$, además que,  la intensidad de los colores esta determinada por el valor absoluto (módulo) de $f$, es decir,  $\mathbf{\operatorname{Abs}[f]}$.\\
+Por otro lado, recordemos que una función de variable compleja, $f(z)=w$ necesita de cuatro dimensiones para representarla gráficamente, pero visualizarla no es posible para los seres humanos. Sin embargo, podemos usar una proyección de esta superficie en cuatro dimensiones para dibujar la grafica en tres dimensiones. Para este fin, usaremos la función  \textbf{ComplexPlot3D}. Esta función al igual que ComplexPlot, determina la intensidad del color por el módulo y es el argumento el que determina el color. Esta función toma por parámetros la función $f$ y las esquinas de un rectángulo en el plano complejo cuyas esquinas son $z_{min}$ y $z_{max}$. \\
+
 \noindent Al lector interesado le sugerimos revisar \cite{Domain_coloring}, allí encontrará una explicación más detallada, sin llegar a ser teórica, acerca de la visualización de funciones complejas usando colores.\\
+
+En la versión 12.1 de \textbf{Mathematica} se introdujo la función \textbf{ComplexContourPlot}, la cual se utiliza para  visualizar gráficamente funciones complejas en el plano complejo. Esta función representa líneas de nivel de la parte real e imaginaria de la función compleja en el plano complejo, proporcionando una manera efectiva de ver cómo la función afecta la deformación del plano. En la practica, generalmente se usaran funciones como Re, Im, Abs y Arg para extraer las partes reales, imaginarias, el módulo y el argumento respectivamente para obtener la representación.
+
 
 \begin{defi}
 	Sean $f\colon \Omega\to\C$ una función, $a$ un punto interior de $\Omega$ y $r>0$ tal que la cerradura del disco $D(a,r)$ está contenida en $\Omega$. Definimos $A_{f,a,r}\colon[0,2\pi)\to\R$,
@@ -229,7 +238,7 @@ Tratando esta función como mapeo de $\C$ a $\C$ y utilizando las funciones \tex
 \begin{mmaCell}[moregraphics={moreig={scale=.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{1_2.png}}{}
 \end{mmaCell}
-Como podemos ver, al ser $|z|^2$ una función que tiene por codominio los reales, \textbf{Mathematica} la interpreta como un función real al momento de graficarla, y esto último lo podemos comprobar cuando usamos \textbf{ComplexContourPlot}, donde observamos como solo se grafican las curvas de nivel de la componente real y no se gráfica alguna componente compleja.
+Como podemos ver, al ser $|z|^2$ una función que tiene por codominio los reales, \textbf{Mathematica} la interpreta como un función real al momento de graficarla, y esto último lo podemos comprobar cuando usamos \textbf{ComplexContourPlot}, donde observamos como solo se grafican las curvas de nivel de la componente real sin embargo no se grafica la componente compleja, incluso si le indicamos a Mathematica que la grafique, como lo hicimos en el código que sigue, esta grafica no se dibujará. Este código puede ser redundante pero solo es para fines ilustrativos, siguiendo las buenas practicas y quitando fragmentos de codigo innecesario solo basta quitar \textbf{Im[Abs[z]*Abs[z]}.
 \begin{mmaCell}{Input}
 	 ComplexContourPlot[\{Re[Abs[z]*Abs[z]], Im[Abs[z]*Abs[z]]\},\\\{z, 20\}, PlotLegends -> "Expressions"]
 \end{mmaCell}
@@ -360,17 +369,7 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 		\end{array} \right. 
 		\] 
 	 Sí $z=x+iy$, tenemos que $$z^5=x^5+5ix^4y-10x^3y^2-10ix^2y^3+5xy^4+iy^5,$$ así como $$|z|^4=x^4+2 x^2 y^2+y^4.$$
-	 Entonces $$u(x,y)=\dfrac{x^5 - 10 x^3 y^2  + 5 x y^4 }{x^4 + 2 x^2 y^2 + y^4},$$  $$v(x,y)=\dfrac{ 5  x^4 y  - 10  x^2 y^3 +  y^5}{x^4 + 2 x^2 y^2 + y^4}.$$
-	 Tenemos
-	\[
-		\begin{array}{c}
-			u_x=\dfrac{5 x^4-30 x^2 y^2+5 y^4}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^3+4 x y^2\right) \left(x^5-10 x^3 y^2+5 x y^4\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\\\
-			u_y = \dfrac{20 x y^3-20 x^3 y}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^2 y+4 y^3\right) \left(x^5-10 x^3 y^2+5 x y^4\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\
-			v_x=\dfrac{20 x^3 y-20 x y^3}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^3+4 x y^2\right) \left(5 x^4 y-10 x^2 y^3+y^5\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2},\\\\
-			v_y=\dfrac{5 x^4-30 x^2 y^2+5 y^4}{x^4+2 x^2 y^2+y^4}-\dfrac{\left(4 x^2 y+4 y^3\right) \left(5 x^4 y-10 x^2 y^3+y^5\right)}{\left(x^4+2 x^2 y^2+y^4\right)^2}.
-		\end{array}
-	\] De lo anterior se desprende que $u(0,0)=v(0,0)=0$, debido a la definición de $f$.\\
-	Entonces 
+	 Entonces $$u(x,y)=\dfrac{x^5 - 10 x^3 y^2  + 5 x y^4 }{x^4 + 2 x^2 y^2 + y^4},$$  $$v(x,y)=\dfrac{ 5  x^4 y  - 10  x^2 y^3 +  y^5}{x^4 + 2 x^2 y^2 + y^4}.$$Luego
 	\[
 		\begin{array}{ccl}
 			u_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{u(x,0)-u(0,0)}{x}\\
@@ -380,17 +379,13 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 			&=&\ds\lim_{y\rightarrow 0}\dfrac{y}{y}\\
 			&=&1,\\
 			u_y(0,0)&=&\ds\lim_{y\rightarrow 0}\dfrac{u(0,y)-u(0,0)}{y}\\
-			&=&\ds\lim_{x\rightarrow 0}\dfrac{0}{y}\\
+			&=&\ds\lim_{y\rightarrow 0}\dfrac{0}{y}\\
 			&=&0,\\
-		\end{array}
-		\]
-		\[
-		\begin{array}{ccl}
 			v_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{v(x,0)-v(0,0)}{x}\\
 			&=&\ds\lim_{x\rightarrow 0}\dfrac{0}{x}\\
 			&=&0.
 		\end{array}
-	\]	
+	\]
 	Luego $f$ satisface las ecuaciones de Cauchy-Riemann en $z=0$.\\
 	Por otro lado, tomemos $z=te^{i\theta}$ con $\theta\in \R$ fijo y $t>0$  tal que $t\rightarrow0^{+}$, entonces
 	\[
@@ -465,7 +460,7 @@ entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la func
 \section{El Teorema de Ahlfors-Struble}
  Sean $z = x + iy$ y $f(z) = u(x, y)+iv(x, y)$. Entonces dada una función $u(x, y)$, a menudo surge la pregunta de cómo encontrar la función $v(x,y)$ correspondiente y, por tanto, el mapeo  $f(z)$. En la mayoría de las veces el problema se soluciona resolviendo las ecuaciones de Cauchy-Riemann. Tenga en cuenta que un paso preliminar y muy sensato es comprobar que $u(x,y)$  satisface la ecuación de Laplace, esto se ilustra en el siguiente ejemplo.
  \begin{Ejem}\label{EjCR}
- 	Sea $u(x,y)=x^2-y^2$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+v(x,y)$ sea complejo diferenciable.
+ 	Sea $u(x,y)=x^2-y^2$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+iv(x,y)$ sea complejo diferenciable.
  	\solu
  	\noindent En primer lugar, planteamos nuestro sistema de ecuaciones de Cauchy-Riemann
  	\[
@@ -529,8 +524,8 @@ El razonamiento anterior, es un esbozo de la demostración del siguiente teorema
 	$z = x + iy$. Entonces, se tiene
 	\[
 		\begin{array}{ccl}
-			f(z)&=&2u\left(\dfrac{z}{2},\dfrac{z}{2i}\right)-\overline{f(0)}\\
-			&=&2iv\left(\dfrac{z}{2},\dfrac{z}{2i}\right)+\overline{f(0)},
+			f(z)&=&2u\hspace{-0.1cm}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)-\overline{f(0)}\\\\
+			&=&2iv\hspace{-0.1cm}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)+\overline{f(0)},
 		\end{array}
 	\]
 	donde $\overline{f(0)}$ es el conjugado de $f(0)$.
@@ -560,7 +555,7 @@ Consideremos nuevamente el ejemplo \ref{EjCR}, pero ahora lo resolveremos usando
 \end{Ejem}
 
 \begin{Ejem}	
-	Sea $u(x,y)=e^{x} \cos(y)$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+v(x,y)$ sea complejo diferenciable.
+	Sea $u(x,y)=e^{x} \cos(y)$, encuentre $v(x,y)$ tal que $f(z)=u(x,y)+iv(x,y)$ sea complejo diferenciable.
 	\solu
 	\noindent Vemos que $u(0,0)=1$, luego $f(0)=1+i\beta$ para  alguna $\beta\in\R$. Recordemos que 
 	$$\cos p=\dfrac{1}{2}(e^{ip}+e^{-ip}).$$
@@ -600,8 +595,8 @@ los cuales resultan ser $-7.85398 i,  -1.5708 i$ y $4.71239i$ para $k=-1,0,1$ re
 	$z = x + iy$. Entonces extendiendo  $u$ (o $v$) a $\C^2$ se tiene
 	\[
 	\begin{array}{ccl}
-		f(z)&=&2u\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)-\overline{f(a)}\\
-		&=&2iv\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)+\overline{f(a)},
+		f(z)&=&2u\hspace{-0.1cm}\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)-\overline{f(a)}\\
+		&=&2iv\hspace{-0.1cm}\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)+\overline{f(a)},
 	\end{array}
 	\]
 	donde $\overline{f(a)}$ es el conjugado de $f(a)$.\\
@@ -616,9 +611,9 @@ los cuales resultan ser $-7.85398 i,  -1.5708 i$ y $4.71239i$ para $k=-1,0,1$ re
 	Usando el Teorema \ref{TAS2}
 	\[
 		\begin{array}{ccl}
-			f(z)&=&2u\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)\\
-			&=&2\left(\dfrac{\frac{z+\bar{a}}{2}}{\left(\dfrac{z+\bar{a}}{2}\right)^{2}+\left(\dfrac{z-\bar{a}}{2i}\right)^2}\right)\\
-			&=&2\dfrac{z+\bar{a}}{2}\dfrac{1}{z\bar{a}}-\overline{f(a)}\\
+			f(z)&=&2u\left(\dfrac{z+\bar{a}}{2},\dfrac{z-\bar{a}}{2i}\right)-\overline{f(a)}\\\\
+			&=&2\left(\dfrac{\dfrac{z+\bar{a}}{2}}{\left(\dfrac{z+\bar{a}}{2}\right)^{2}+\left(\dfrac{z-\bar{a}}{2i}\right)^2}\right)-\overline{f(a)}\\\\
+			&=&2\dfrac{z+\bar{a}}{2}\dfrac{1}{z\bar{a}}-\overline{f(a)}\\\\
 			&=&\dfrac{1}{z}+\dfrac{1}{\overline{a}}-\overline{f(a)}.
 		\end{array}
 	\]
