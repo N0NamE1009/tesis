@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.30)  17 DEC 2023 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.30)  18 DEC 2023 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1780,42 +1780,45 @@ File: img/5_5.png Graphic file (type png)
 <use img/5_5.png>
 Package pdftex.def Info: img/5_5.png  used on input line 352.
 (pdftex.def)             Requested size: 130.25804pt x 130.25682pt.
-LaTeX Info: Redefining \. on input line 388.
-LaTeX Info: Redefining \% on input line 388.
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
  [11 <./img/5_4.png (PNG copy)> <./img/5_5.png (PNG copy)>]
-<img/6_1.png, id=396, 361.35pt x 361.35pt>
+LaTeX Info: Redefining \. on input line 408.
+LaTeX Info: Redefining \% on input line 408.
+ [12]
+<img/6_1.png, id=400, 361.35pt x 361.35pt>
 File: img/6_1.png Graphic file (type png)
 <use img/6_1.png>
-Package pdftex.def Info: img/6_1.png  used on input line 417.
+Package pdftex.def Info: img/6_1.png  used on input line 431.
 (pdftex.def)             Requested size: 86.83649pt x 86.83604pt.
-<img/6_2.png, id=397, 361.35pt x 301.8778pt>
+<img/6_2.png, id=401, 361.35pt x 301.8778pt>
 File: img/6_2.png Graphic file (type png)
 <use img/6_2.png>
-Package pdftex.def Info: img/6_2.png  used on input line 422.
+Package pdftex.def Info: img/6_2.png  used on input line 436.
 (pdftex.def)             Requested size: 130.25804pt x 108.81871pt.
-<img/6_3.png, id=398, 465.23813pt x 363.60844pt>
+<img/6_3.png, id=402, 465.23813pt x 363.60844pt>
 File: img/6_3.png Graphic file (type png)
 <use img/6_3.png>
-Package pdftex.def Info: img/6_3.png  used on input line 427.
+Package pdftex.def Info: img/6_3.png  used on input line 441.
 (pdftex.def)             Requested size: 130.25804pt x 101.80411pt.
-LaTeX Info: Redefining \. on input line 436.
-LaTeX Info: Redefining \% on input line 436.
- [12]
-LaTeX Info: Redefining \. on input line 455.
-LaTeX Info: Redefining \% on input line 455.
+LaTeX Info: Redefining \. on input line 454.
+LaTeX Info: Redefining \% on input line 454.
 
 [13 <./img/6_1.png (PNG copy)> <./img/6_2.png (PNG copy)> <./img/6_3.png (PNG c
 opy)>]
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 476.
+LaTeX Info: Redefining \% on input line 476.
  [14]
-LaTeX Info: Redefining \. on input line 519.
-LaTeX Info: Redefining \% on input line 519.
+LaTeX Info: Redefining \. on input line 502.
+LaTeX Info: Redefining \% on input line 502.
  [15]
-<img/8_1.png, id=432, 361.35pt x 361.35pt>
+LaTeX Info: Redefining \. on input line 544.
+LaTeX Info: Redefining \% on input line 544.
+ [16]
+<img/8_1.png, id=436, 361.35pt x 361.35pt>
 File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
-Package pdftex.def Info: img/8_1.png  used on input line 552.
+Package pdftex.def Info: img/8_1.png  used on input line 566.
 (pdftex.def)             Requested size: 90.33728pt x 90.33728pt.
 File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
@@ -1823,13 +1826,13 @@ File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
 File: img/8_1.png Graphic file (type png)
 <use img/8_1.png>
-LaTeX Info: Redefining \. on input line 553.
-LaTeX Info: Redefining \% on input line 553.
- [16]
-<img/9_1.png, id=440, 361.35pt x 355.92975pt>
+LaTeX Info: Redefining \. on input line 575.
+LaTeX Info: Redefining \% on input line 575.
+ [17 <./img/8_1.png (PNG copy)>]
+<img/9_1.png, id=445, 361.35pt x 355.92975pt>
 File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
-Package pdftex.def Info: img/9_1.png  used on input line 577.
+Package pdftex.def Info: img/9_1.png  used on input line 591.
 (pdftex.def)             Requested size: 90.33728pt x 88.98221pt.
 File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
@@ -1837,30 +1840,33 @@ File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
 File: img/9_1.png Graphic file (type png)
 <use img/9_1.png>
-LaTeX Info: Redefining \. on input line 585.
-LaTeX Info: Redefining \% on input line 585.
- [17 <./img/8_1.png (PNG copy)> <./img/9_1.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 621.
-LaTeX Info: Redefining \% on input line 621.
- [18]
-<img/11_1.png, id=457, 542.025pt x 532.389pt>
-File: img/11_1.png Graphic file (type png)
-<use img/11_1.png>
-Package pdftex.def Info: img/11_1.png  used on input line 628.
-(pdftex.def)             Requested size: 135.5059pt x 133.09692pt.
-File: img/11_1.png Graphic file (type png)
-<use img/11_1.png>
-File: img/11_1.png Graphic file (type png)
-<use img/11_1.png>
-File: img/11_1.png Graphic file (type png)
-<use img/11_1.png>
-LaTeX Info: Redefining \. on input line 646.
-LaTeX Info: Redefining \% on input line 646.
- [19 <./img/11_1.png (PNG copy)>]
-<img/11_2.png, id=465, 542.025pt x 528.17325pt>
+LaTeX Info: Redefining \. on input line 615.
+LaTeX Info: Redefining \% on input line 615.
+ [18 <./img/9_1.png (PNG copy)>]
+<img/11_1_1.png, id=454, 201.00093pt x 194.97844pt>
+File: img/11_1_1.png Graphic file (type png)
+<use img/11_1_1.png>
+Package pdftex.def Info: img/11_1_1.png  used on input line 642.
+(pdftex.def)             Requested size: 100.50021pt x 97.48897pt.
+File: img/11_1_1.png Graphic file (type png)
+<use img/11_1_1.png>
+File: img/11_1_1.png Graphic file (type png)
+<use img/11_1_1.png>
+File: img/11_1_1.png Graphic file (type png)
+<use img/11_1_1.png>
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+ [19]
+LaTeX Info: Redefining \. on input line 669.
+LaTeX Info: Redefining \% on input line 669.
+ [20 <./img/11_1_1.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 690.
+LaTeX Info: Redefining \% on input line 690.
+ [21]
+<img/11_2.png, id=475, 542.025pt x 528.17325pt>
 File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
-Package pdftex.def Info: img/11_2.png  used on input line 671.
+Package pdftex.def Info: img/11_2.png  used on input line 710.
 (pdftex.def)             Requested size: 135.5059pt x 132.04298pt.
 File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
@@ -1868,13 +1874,13 @@ File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
 File: img/11_2.png Graphic file (type png)
 <use img/11_2.png>
-LaTeX Info: Redefining \. on input line 672.
-LaTeX Info: Redefining \% on input line 672.
- [20]
-<img/12_1.png, id=472, 614.295pt x 613.0905pt>
+LaTeX Info: Redefining \. on input line 714.
+LaTeX Info: Redefining \% on input line 714.
+ [22 <./img/11_2.png (PNG copy)>]
+<img/12_1.png, id=482, 614.295pt x 613.0905pt>
 File: img/12_1.png Graphic file (type png)
 <use img/12_1.png>
-Package pdftex.def Info: img/12_1.png  used on input line 697.
+Package pdftex.def Info: img/12_1.png  used on input line 736.
 (pdftex.def)             Requested size: 153.57336pt x 153.27225pt.
 File: img/12_1.png Graphic file (type png)
 <use img/12_1.png>
@@ -1882,50 +1888,47 @@ File: img/12_1.png Graphic file (type png)
 <use img/12_1.png>
 File: img/12_1.png Graphic file (type png)
 <use img/12_1.png>
-LaTeX Info: Redefining \. on input line 698.
-LaTeX Info: Redefining \% on input line 698.
- [21 <./img/11_2.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 713.
-LaTeX Info: Redefining \% on input line 713.
-
-[22 <./img/12_1.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 740.
+LaTeX Info: Redefining \% on input line 740.
+ [23 <./img/12_1.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 772.
+LaTeX Info: Redefining \% on input line 772.
+ [24]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/sl' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 744.
-LaTeX Info: Redefining \. on input line 750.
-LaTeX Info: Redefining \% on input line 750.
- [23])
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 783.
+)
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [24]
+ [25]
 \openout2 = `chapters/chap_02.aux'.
 
  (chapters/chap_02.tex
 Cap\'{\i }tulo 2.
-[25
+[26
 
 
 
 
 ]
-<img/5.png, id=506, 247.52475pt x 347.49825pt>
+<img/5.png, id=511, 247.52475pt x 347.49825pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
 Package pdftex.def Info: img/5.png  used on input line 40.
 (pdftex.def)             Requested size: 99.00813pt x 138.99683pt.
-<img/6.png, id=507, 186.6975pt x 347.49825pt>
+<img/6.png, id=512, 186.6975pt x 347.49825pt>
 File: img/6.png Graphic file (type png)
 <use img/6.png>
 Package pdftex.def Info: img/6.png  used on input line 57.
 (pdftex.def)             Requested size: 74.67767pt x 138.99683pt.
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
- [26 <./img/5.png (PNG copy)>]
-<img/7.png, id=512, 289.08pt x 282.45525pt>
+ [27 <./img/5.png (PNG copy)>]
+<img/7.png, id=518, 289.08pt x 282.45525pt>
 File: img/7.png Graphic file (type png)
 <use img/7.png>
 Package pdftex.def Info: img/7.png  used on input line 66.
 (pdftex.def)             Requested size: 115.62994pt x 112.98009pt.
-<img/8.png, id=513, 289.08pt x 285.4665pt>
+<img/8.png, id=519, 289.08pt x 285.4665pt>
 File: img/8.png Graphic file (type png)
 <use img/8.png>
 Package pdftex.def Info: img/8.png  used on input line 75.
@@ -1937,7 +1940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
-[27 <./img/6.png (PNG copy)> <./img/7.png (PNG copy)> <./img/8.png (PNG copy)>]
+[28 <./img/6.png (PNG copy)> <./img/7.png (PNG copy)> <./img/8.png (PNG copy)>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 100.
 
@@ -1954,21 +1957,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
-[28]
-<img/17.png, id=523, 481.8pt x 190.311pt>
+[29]
+<img/17.png, id=528, 481.8pt x 190.311pt>
 File: img/17.png Graphic file (type png)
 <use img/17.png>
 Package pdftex.def Info: img/17.png  used on input line 146.
 (pdftex.def)             Requested size: 192.71658pt x 76.12303pt.
 LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
- [29]
-<img/18.png, id=529, 481.8pt x 251.7405pt>
+ [30]
+<img/18.png, id=534, 481.8pt x 251.7405pt>
 File: img/18.png Graphic file (type png)
 <use img/18.png>
 Package pdftex.def Info: img/18.png  used on input line 153.
 (pdftex.def)             Requested size: 192.71658pt x 100.6944pt.
-<img/19.png, id=530, 481.8pt x 251.7405pt>
+<img/19.png, id=535, 481.8pt x 251.7405pt>
 File: img/19.png Graphic file (type png)
 <use img/19.png>
 Package pdftex.def Info: img/19.png  used on input line 160.
@@ -2012,9 +2015,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
-[30 <./img/17.png (PNG copy)> <./img/18.png (PNG copy)> <./img/19.png (PNG copy
+[31 <./img/17.png (PNG copy)> <./img/18.png (PNG copy)> <./img/19.png (PNG copy
 )>]
-<img/21.png, id=535, 481.8pt x 190.311pt>
+<img/21.png, id=540, 481.8pt x 190.311pt>
 File: img/21.png Graphic file (type png)
 <use img/21.png>
 Package pdftex.def Info: img/21.png  used on input line 180.
@@ -2034,30 +2037,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
-[31 <./img/21.png (PNG copy)>]
+[32 <./img/21.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 224.
 LaTeX Info: Redefining \% on input line 224.
- [32]
+ [33]
 LaTeX Info: Redefining \. on input line 251.
 LaTeX Info: Redefining \% on input line 251.
- [33]
-<img/expz.png, id=552, 602.25pt x 313.9228pt>
+ [34]
+<img/expz.png, id=557, 602.25pt x 313.9228pt>
 File: img/expz.png Graphic file (type png)
 <use img/expz.png>
 Package pdftex.def Info: img/expz.png  used on input line 268.
 (pdftex.def)             Requested size: 240.89572pt x 125.5669pt.
 LaTeX Info: Redefining \. on input line 276.
 LaTeX Info: Redefining \% on input line 276.
- [34 <./img/expz.png>]
-<img/expz1.png, id=558, 602.25pt x 309.40594pt>
+ [35 <./img/expz.png>]
+<img/expz1.png, id=563, 602.25pt x 309.40594pt>
 File: img/expz1.png Graphic file (type png)
 <use img/expz1.png>
 Package pdftex.def Info: img/expz1.png  used on input line 284.
 (pdftex.def)             Requested size: 240.89572pt x 123.76018pt.
 LaTeX Info: Redefining \. on input line 297.
 LaTeX Info: Redefining \% on input line 297.
- [35 <./img/expz1.png>]
-<img/expz2.png, id=564, 602.25pt x 314.3745pt>
+ [36 <./img/expz1.png>]
+<img/expz2.png, id=569, 602.25pt x 314.3745pt>
 File: img/expz2.png Graphic file (type png)
 <use img/expz2.png>
 Package pdftex.def Info: img/expz2.png  used on input line 305.
@@ -2068,7 +2071,7 @@ File: img/expz2.png Graphic file (type png)
 <use img/expz2.png>
 File: img/expz2.png Graphic file (type png)
 <use img/expz2.png>
-<img/22.png, id=565, 481.8pt x 251.7405pt>
+<img/22.png, id=570, 481.8pt x 251.7405pt>
 File: img/22.png Graphic file (type png)
 <use img/22.png>
 Package pdftex.def Info: img/22.png  used on input line 318.
@@ -2088,61 +2091,61 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Info: Redefining \. on input line 329.
 LaTeX Info: Redefining \% on input line 329.
-[36 <./img/expz2.png (PNG copy)> <./img/22.png (PNG copy)>]
+[37 <./img/expz2.png (PNG copy)> <./img/22.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 342.
 LaTeX Info: Redefining \% on input line 342.
- [37]
-<img/log.png, id=576, 590.205pt x 250.68657pt>
+ [38]
+<img/log.png, id=581, 590.205pt x 250.68657pt>
 File: img/log.png Graphic file (type png)
 <use img/log.png>
 Package pdftex.def Info: img/log.png  used on input line 349.
 (pdftex.def)             Requested size: 303.93102pt x 129.09544pt.
 LaTeX Info: Redefining \. on input line 357.
 LaTeX Info: Redefining \% on input line 357.
- [38 <./img/log.png>]
-<img/23.png, id=582, 481.8pt x 251.7405pt>
+ [39 <./img/log.png>]
+<img/23.png, id=588, 481.8pt x 251.7405pt>
 File: img/23.png Graphic file (type png)
 <use img/23.png>
 Package pdftex.def Info: img/23.png  used on input line 359.
 (pdftex.def)             Requested size: 192.71658pt x 100.6944pt.
 LaTeX Info: Redefining \. on input line 385.
 LaTeX Info: Redefining \% on input line 385.
- [39 <./img/23.png (PNG copy)>]
+ [40 <./img/23.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 409.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 409.
 LaTeX Info: Redefining \. on input line 426.
 LaTeX Info: Redefining \% on input line 426.
- [40]
+ [41]
 LaTeX Info: Redefining \. on input line 463.
 LaTeX Info: Redefining \% on input line 463.
- [41]
+ [42]
 LaTeX Info: Redefining \. on input line 518.
 LaTeX Info: Redefining \% on input line 518.
- [42]
+ [43]
 LaTeX Info: Redefining \. on input line 550.
 LaTeX Info: Redefining \% on input line 550.
- [43]
-<img/9.png, id=613, 481.8pt x 251.7405pt>
+ [44]
+<img/9.png, id=618, 481.8pt x 251.7405pt>
 File: img/9.png Graphic file (type png)
 <use img/9.png>
 Package pdftex.def Info: img/9.png  used on input line 561.
 (pdftex.def)             Requested size: 192.71658pt x 100.6944pt.
-<img/10.png, id=615, 481.8pt x 195.129pt>
+<img/10.png, id=620, 481.8pt x 195.129pt>
 File: img/10.png Graphic file (type png)
 <use img/10.png>
 Package pdftex.def Info: img/10.png  used on input line 569.
 (pdftex.def)             Requested size: 192.71658pt x 78.0502pt.
-<img/11.png, id=616, 481.8pt x 251.7405pt>
+<img/11.png, id=621, 481.8pt x 251.7405pt>
 File: img/11.png Graphic file (type png)
 <use img/11.png>
 Package pdftex.def Info: img/11.png  used on input line 576.
 (pdftex.def)             Requested size: 192.71658pt x 100.6944pt.
 LaTeX Info: Redefining \. on input line 577.
 LaTeX Info: Redefining \% on input line 577.
- [44 <./img/9.png (PNG copy)> <./img/10.png (PNG copy)>]
-<img/12.png, id=621, 481.8pt x 207.77625pt>
+ [45 <./img/9.png (PNG copy)> <./img/10.png (PNG copy)>]
+<img/12.png, id=627, 481.8pt x 207.77625pt>
 File: img/12.png Graphic file (type png)
 <use img/12.png>
 Package pdftex.def Info: img/12.png  used on input line 608.
@@ -2155,8 +2158,8 @@ File: img/12.png Graphic file (type png)
 <use img/12.png>
 LaTeX Info: Redefining \. on input line 609.
 LaTeX Info: Redefining \% on input line 609.
- [45 <./img/11.png (PNG copy)>]
-<img/13.png, id=629, 481.8pt x 251.7405pt>
+ [46 <./img/11.png (PNG copy)>]
+<img/13.png, id=634, 481.8pt x 251.7405pt>
 File: img/13.png Graphic file (type png)
 <use img/13.png>
 Package pdftex.def Info: img/13.png  used on input line 615.
@@ -2167,7 +2170,7 @@ File: img/13.png Graphic file (type png)
 <use img/13.png>
 File: img/13.png Graphic file (type png)
 <use img/13.png>
-<img/14.png, id=630, 481.8pt x 129.48375pt>
+<img/14.png, id=635, 481.8pt x 129.48375pt>
 File: img/14.png Graphic file (type png)
 <use img/14.png>
 Package pdftex.def Info: img/14.png  used on input line 622.
@@ -2178,7 +2181,7 @@ File: img/14.png Graphic file (type png)
 <use img/14.png>
 File: img/14.png Graphic file (type png)
 <use img/14.png>
-<img/15.png, id=631, 481.8pt x 251.7405pt>
+<img/15.png, id=636, 481.8pt x 251.7405pt>
 File: img/15.png Graphic file (type png)
 <use img/15.png>
 Package pdftex.def Info: img/15.png  used on input line 629.
@@ -2191,9 +2194,9 @@ File: img/15.png Graphic file (type png)
 <use img/15.png>
 LaTeX Info: Redefining \. on input line 630.
 LaTeX Info: Redefining \% on input line 630.
- [46 <./img/12.png (PNG copy)> <./img/13.png (PNG copy)> <./img/14.png (PNG cop
+ [47 <./img/12.png (PNG copy)> <./img/13.png (PNG copy)> <./img/14.png (PNG cop
 y)>]
-<img/16.png, id=636, 481.8pt x 251.7405pt>
+<img/16.png, id=641, 481.8pt x 251.7405pt>
 File: img/16.png Graphic file (type png)
 <use img/16.png>
 Package pdftex.def Info: img/16.png  used on input line 636.
@@ -2206,59 +2209,59 @@ File: img/16.png Graphic file (type png)
 <use img/16.png>
 LaTeX Info: Redefining \. on input line 657.
 LaTeX Info: Redefining \% on input line 657.
- [47 <./img/15.png (PNG copy)> <./img/16.png (PNG copy)>]
+ [48 <./img/15.png (PNG copy)> <./img/16.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 693.
 LaTeX Info: Redefining \% on input line 693.
- [48]
+ [49]
 LaTeX Info: Redefining \. on input line 711.
 LaTeX Info: Redefining \% on input line 711.
- [49]
-<img/27.png, id=668, 481.8pt x 251.13824pt>
+ [50]
+<img/27.png, id=673, 481.8pt x 251.13824pt>
 File: img/27.png Graphic file (type png)
 <use img/27.png>
 Package pdftex.def Info: img/27.png  used on input line 724.
 (pdftex.def)             Requested size: 192.71658pt x 100.4535pt.
 LaTeX Info: Redefining \. on input line 734.
 LaTeX Info: Redefining \% on input line 734.
- [50 <./img/27.png (PNG copy)>]
+ [51 <./img/27.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 766.
 LaTeX Info: Redefining \% on input line 766.
- [51]
+ [52]
 LaTeX Info: Redefining \. on input line 801.
 LaTeX Info: Redefining \% on input line 801.
- [52]
+ [53]
 Underfull \hbox (badness 10000) in paragraph at lines 802--802
 
  []
 
 LaTeX Info: Redefining \. on input line 833.
 LaTeX Info: Redefining \% on input line 833.
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 839--840
 
  []
 
-<img/24.png, id=698, 112.0185pt x 115.632pt>
+<img/24.png, id=703, 112.0185pt x 115.632pt>
 File: img/24.png Graphic file (type png)
 <use img/24.png>
 Package pdftex.def Info: img/24.png  used on input line 845.
 (pdftex.def)             Requested size: 86.83649pt x 89.63857pt.
 LaTeX Info: Redefining \. on input line 860.
 LaTeX Info: Redefining \% on input line 860.
-[54 <./img/24.png>]
+[55 <./img/24.png>]
 LaTeX Info: Redefining \. on input line 874.
 LaTeX Info: Redefining \% on input line 874.
- [55]
+ [56]
 LaTeX Info: Redefining \. on input line 894.
 LaTeX Info: Redefining \% on input line 894.
- [56]
+ [57]
 LaTeX Info: Redefining \. on input line 937.
 LaTeX Info: Redefining \% on input line 937.
- [57]
+ [58]
 LaTeX Info: Redefining \. on input line 940.
 LaTeX Info: Redefining \% on input line 940.
- [58]
-<img/perfiles1.png, id=731, 637.63219pt x 405.76593pt>
+ [59]
+<img/perfiles1.png, id=736, 637.63219pt x 405.76593pt>
 File: img/perfiles1.png Graphic file (type png)
 <use img/perfiles1.png>
 Package pdftex.def Info: img/perfiles1.png  used on input line 943.
@@ -2275,71 +2278,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 953--954
 
 LaTeX Info: Redefining \. on input line 954.
 LaTeX Info: Redefining \% on input line 954.
-[59 <./img/perfiles1.png>]
-<img/sc.png, id=738, 522.45187pt x 216.05719pt>
+[60 <./img/perfiles1.png>]
+<img/sc.png, id=743, 522.45187pt x 216.05719pt>
 File: img/sc.png Graphic file (type png)
 <use img/sc.png>
 Package pdftex.def Info: img/sc.png  used on input line 959.
 (pdftex.def)             Requested size: 303.93102pt x 125.68907pt.
 LaTeX Info: Redefining \. on input line 981.
 LaTeX Info: Redefining \% on input line 981.
- [60 <./img/sc.png>]
+ [61 <./img/sc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 988--990
 
  []
 
 LaTeX Info: Redefining \. on input line 1007.
 LaTeX Info: Redefining \% on input line 1007.
-[61]
+[62]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1013.
 
 LaTeX Info: Redefining \. on input line 1022.
 LaTeX Info: Redefining \% on input line 1022.
-[62]
+[63]
 LaTeX Info: Redefining \. on input line 1034.
 LaTeX Info: Redefining \% on input line 1034.
- [63]
+ [64]
 LaTeX Info: Redefining \. on input line 1050.
 LaTeX Info: Redefining \% on input line 1050.
- [64]
+ [65]
 LaTeX Info: Redefining \. on input line 1067.
 LaTeX Info: Redefining \% on input line 1067.
- [65]
+ [66]
 LaTeX Info: Redefining \. on input line 1091.
 LaTeX Info: Redefining \% on input line 1091.
- [66]
+ [67]
 Overfull \hbox (12.79643pt too wide) in paragraph at lines 1117--1117
 [][][][][][][][][][][][][][][][][][][][][][][]\T1/lmtt/b/n/12 {[][][][][][][][]
 }[][]{[][][][][][][][]}[] 
  []
 
-<img/28.png, id=782, 421.575pt x 220.4235pt>
+<img/28.png, id=787, 421.575pt x 220.4235pt>
 File: img/28.png Graphic file (type png)
 <use img/28.png>
 Package pdftex.def Info: img/28.png  used on input line 1120.
 (pdftex.def)             Requested size: 168.627pt x 88.16783pt.
 LaTeX Info: Redefining \. on input line 1127.
 LaTeX Info: Redefining \% on input line 1127.
-[67 <./img/28.png (PNG copy)>]
-<img/29.png, id=787, 180.675pt x 180.675pt>
+[68 <./img/28.png (PNG copy)>]
+<img/29.png, id=792, 180.675pt x 180.675pt>
 File: img/29.png Graphic file (type png)
 <use img/29.png>
 Package pdftex.def Info: img/29.png  used on input line 1133.
 (pdftex.def)             Requested size: 72.2687pt x 72.2687pt.
 LaTeX Info: Redefining \. on input line 1149.
 LaTeX Info: Redefining \% on input line 1149.
- [68 <./img/29.png (PNG copy)>]
+ [69 <./img/29.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 1176.
 LaTeX Info: Redefining \% on input line 1176.
- [69]
-<img/30.png, id=798, 421.575pt x 128.27925pt>
+ [70]
+<img/30.png, id=803, 421.575pt x 128.27925pt>
 File: img/30.png Graphic file (type png)
 <use img/30.png>
 Package pdftex.def Info: img/30.png  used on input line 1186.
 (pdftex.def)             Requested size: 168.627pt x 51.31078pt.
-<img/SCR.png, id=799, 303.28693pt x 133.42154pt>
+<img/SCR.png, id=804, 303.28693pt x 133.42154pt>
 File: img/SCR.png Graphic file (type png)
 <use img/SCR.png>
 Package pdftex.def Info: img/SCR.png  used on input line 1192.
@@ -2350,16 +2353,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 1209.
 LaTeX Info: Redefining \% on input line 1209.
-[70 <./img/30.png (PNG copy)>]
-<img/31.png, id=805, 361.35pt x 109.6095pt>
+[71 <./img/30.png (PNG copy)>]
+<img/31.png, id=810, 361.35pt x 109.6095pt>
 File: img/31.png Graphic file (type png)
 <use img/31.png>
 Package pdftex.def Info: img/31.png  used on input line 1223.
 (pdftex.def)             Requested size: 144.53743pt x 43.843pt.
 LaTeX Info: Redefining \. on input line 1227.
 LaTeX Info: Redefining \% on input line 1227.
- [71 <./img/SCR.png> <./img/31.png (PNG copy)>]
-<img/32.png, id=814, 361.35pt x 176.45924pt>
+ [72 <./img/SCR.png> <./img/31.png (PNG copy)>]
+<img/32.png, id=819, 361.35pt x 176.45924pt>
 File: img/32.png Graphic file (type png)
 <use img/32.png>
 Package pdftex.def Info: img/32.png  used on input line 1252.
@@ -2367,7 +2370,7 @@ Package pdftex.def Info: img/32.png  used on input line 1252.
 LaTeX Info: Redefining \. on input line 1253.
 LaTeX Info: Redefining \% on input line 1253.
 
-[72]
+[73]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1255.
@@ -2376,22 +2379,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1255.
 
-<img/33.png, id=823, 361.35pt x 185.493pt>
+<img/33.png, id=828, 361.35pt x 185.493pt>
 File: img/33.png Graphic file (type png)
 <use img/33.png>
 Package pdftex.def Info: img/33.png  used on input line 1271.
 (pdftex.def)             Requested size: 195.38374pt x 100.29774pt.
-<img/34.png, id=824, 361.35pt x 188.50426pt>
+<img/34.png, id=829, 361.35pt x 188.50426pt>
 File: img/34.png Graphic file (type png)
 <use img/34.png>
 Package pdftex.def Info: img/34.png  used on input line 1276.
 (pdftex.def)             Requested size: 195.38374pt x 101.92596pt.
-<img/35.png, id=825, 361.35pt x 189.70876pt>
+<img/35.png, id=830, 361.35pt x 189.70876pt>
 File: img/35.png Graphic file (type png)
 <use img/35.png>
 Package pdftex.def Info: img/35.png  used on input line 1282.
 (pdftex.def)             Requested size: 195.38374pt x 102.57724pt.
-<img/36.png, id=826, 361.35pt x 184.2885pt>
+<img/36.png, id=831, 361.35pt x 184.2885pt>
 File: img/36.png Graphic file (type png)
 <use img/36.png>
 Package pdftex.def Info: img/36.png  used on input line 1287.
@@ -2399,17 +2402,17 @@ Package pdftex.def Info: img/36.png  used on input line 1287.
 )
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
- [73 <./img/32.png (PNG copy)>]
+ [74 <./img/32.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
- [74 <./img/33.png (PNG copy)> <./img/34.png (PNG copy)> <./img/35.png (PNG cop
+ [75 <./img/33.png (PNG copy)> <./img/34.png (PNG copy)> <./img/35.png (PNG cop
 y)> <./img/36.png (PNG copy)>]
 \openout2 = `chapters/chap_03.aux'.
 
 
 (chapters/chap_03.tex
 Cap\'{\i }tulo 3.
-[75
+[76
 
 
 
@@ -2417,8 +2420,8 @@ Cap\'{\i }tulo 3.
 ]
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
- [76]
-<img/37.png, id=854, 361.35pt x 361.35pt>
+ [77]
+<img/37.png, id=859, 361.35pt x 361.35pt>
 File: img/37.png Graphic file (type png)
 <use img/37.png>
 Package pdftex.def Info: img/37.png  used on input line 59.
@@ -2429,7 +2432,7 @@ File: img/37.png Graphic file (type png)
 <use img/37.png>
 File: img/37.png Graphic file (type png)
 <use img/37.png>
-<img/38.png, id=855, 361.35pt x 361.35pt>
+<img/38.png, id=860, 361.35pt x 361.35pt>
 File: img/38.png Graphic file (type png)
 <use img/38.png>
 Package pdftex.def Info: img/38.png  used on input line 68.
@@ -2442,11 +2445,11 @@ File: img/38.png Graphic file (type png)
 <use img/38.png>
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
- [77 <./img/37.png (PNG copy)> <./img/38.png (PNG copy)>]
+ [78 <./img/37.png (PNG copy)> <./img/38.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [78]
-<img/39.png, id=868, 361.35pt x 361.35pt>
+ [79]
+<img/39.png, id=873, 361.35pt x 361.35pt>
 File: img/39.png Graphic file (type png)
 <use img/39.png>
 Package pdftex.def Info: img/39.png  used on input line 104.
@@ -2460,32 +2463,32 @@ File: img/39.png Graphic file (type png)
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
 
-[79 <./img/39.png (PNG copy)>]
+[80 <./img/39.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 163.
 LaTeX Info: Redefining \% on input line 163.
- [80]
+ [81]
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
- [81]
-<img/40.png, id=888, 353.06906pt x 137.01187pt>
+ [82]
+<img/40.png, id=893, 353.06906pt x 137.01187pt>
 File: img/40.png Graphic file (type png)
 <use img/40.png>
 Package pdftex.def Info: img/40.png  used on input line 198.
 (pdftex.def)             Requested size: 303.93102pt x 117.94498pt.
 LaTeX Info: Redefining \. on input line 217.
 LaTeX Info: Redefining \% on input line 217.
- [82 <./img/40.png>]
+ [83 <./img/40.png>]
 LaTeX Info: Redefining \. on input line 248.
 LaTeX Info: Redefining \% on input line 248.
- [83]
-<img/41.png, id=909, 361.35pt x 356.0803pt>
+ [84]
+<img/41.png, id=914, 361.35pt x 356.0803pt>
 File: img/41.png Graphic file (type png)
 <use img/41.png>
 Package pdftex.def Info: img/41.png  used on input line 259.
 (pdftex.def)             Requested size: 108.40584pt x 106.8249pt.
 LaTeX Info: Redefining \. on input line 262.
 LaTeX Info: Redefining \% on input line 262.
- [84 <./img/41.png (PNG copy)>]
+ [85 <./img/41.png (PNG copy)>]
 Overfull \hbox (25.64743pt too wide) in paragraph at lines 262--262
 []\T1/lmr/m/n/12 Wolfram Math-World. \T1/lmr/m/it/12 Jou-kows-ki Air-foil: Geo-
 metry\T1/lmr/m/n/12 . [][]$\T1/lmtt/m/n/12 https : / / demonstrations .
@@ -2497,7 +2500,7 @@ Overfull \hbox (0.25325pt too wide) in paragraph at lines 262--262
 omplexRegionPlot .
  []
 
-[85
+[86
 
 ]
 Overfull \hbox (4.77939pt too wide) in paragraph at lines 262--262
@@ -2514,7 +2517,7 @@ Overfull \hbox (7.46355pt too wide) in paragraph at lines 262--262
 )
 LaTeX Info: Redefining \. on input line 155.
 LaTeX Info: Redefining \% on input line 155.
- [86] (tesis.aux
+ [87] (tesis.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -2539,10 +2542,10 @@ Package logreq Info: Writing requests to 'tesis.run.xml'.
 ### semi simple group (level 1) entered at line 147 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40566 strings out of 474587
- 740263 string characters out of 5755508
+ 40568 strings out of 474587
+ 740295 string characters out of 5755508
  1972558 words of memory out of 5000000
- 61822 multiletter control sequences out of 15000+600000
+ 61823 multiletter control sequences out of 15000+600000
  686022 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,18n,175p,2506b,3643s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2565,9 +2568,9 @@ KTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/lm/lmtko10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tesis.pdf (96 pages, 6179266 bytes).
+Output written on tesis.pdf (97 pages, 6040568 bytes).
 PDF statistics:
- 1141 PDF objects out of 1200 (max. 8388607)
- 285 named destinations out of 1000 (max. 500000)
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 286 named destinations out of 1000 (max. 500000)
  626 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -367,21 +367,24 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 			\dfrac{(z)^5}{|z|^4}, &\mbox{ sí }& z\neq 0\\
 			0,&\mbox{ sí }&z=0.
 		\end{array} \right. 
-		\] 
+	\] 
 	 Sí $z=x+iy$, tenemos que $$z^5=x^5+5ix^4y-10x^3y^2-10ix^2y^3+5xy^4+iy^5,$$ así como $$|z|^4=x^4+2 x^2 y^2+y^4.$$
 	 Entonces $$u(x,y)=\dfrac{x^5 - 10 x^3 y^2  + 5 x y^4 }{x^4 + 2 x^2 y^2 + y^4},$$  $$v(x,y)=\dfrac{ 5  x^4 y  - 10  x^2 y^3 +  y^5}{x^4 + 2 x^2 y^2 + y^4}.$$Luego
 	\[
 		\begin{array}{ccl}
-			u_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{u(x,0)-u(0,0)}{x}\\
-			&=&\ds\lim_{x\rightarrow 0}\dfrac{x}{x}\\
+			u_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{u(x,0)-u(0,0)}{x}\\\\
+			&=&\ds\lim_{x\rightarrow 0}\dfrac{\frac{x^5}{x^4}}{x}\\\\
+			&=&\ds\lim_{x\rightarrow 0}\dfrac{x^5}{x^5}\\\\
 			&=&1,\\
 			v_y(0,0)&=&\ds\lim_{y\rightarrow 0}\dfrac{v(0,y)-v(0,0)}{y}\\
-			&=&\ds\lim_{y\rightarrow 0}\dfrac{y}{y}\\
+			&=&\ds\lim_{y\rightarrow 0}\dfrac{y^5}{y^5}\\
 			&=&1,\\
-			u_y(0,0)&=&\ds\lim_{y\rightarrow 0}\dfrac{u(0,y)-u(0,0)}{y}\\
-			&=&\ds\lim_{y\rightarrow 0}\dfrac{0}{y}\\
+			u_y(0,0)&=&\ds\lim_{y\rightarrow 0}\dfrac{u(0,y)-u(0,0)}{y}\\\\
+			&=&\ds\lim_{y\rightarrow 0}\dfrac{\dfrac{0}{y^4}}{y}\\\\
+			&=&\ds\lim_{y\rightarrow 0}\dfrac{0}{y}\\\\
 			&=&0,\\
-			v_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{v(x,0)-v(0,0)}{x}\\
+			v_x(0,0)&=&\ds\lim_{x\rightarrow 0}\dfrac{v(x,0)-v(0,0)}{x}\\\\
+			&=&\ds\lim_{x\rightarrow 0}\dfrac{\dfrac{0}{x^4}}{x}\\\\
 			&=&\ds\lim_{x\rightarrow 0}\dfrac{0}{x}\\
 			&=&0.
 		\end{array}
@@ -390,14 +393,25 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 	Por otro lado, tomemos $z=te^{i\theta}$ con $\theta\in \R$ fijo y $t>0$  tal que $t\rightarrow0^{+}$, entonces
 	\[
 		\begin{array}{ccl}
-			f'(z)&=&\ds\lim_{z\rightarrow0}\ds\dfrac{f(z)-f(0)}{z}\\
-			&=&\ds\lim_{t\rightarrow0}\dfrac{f(te^{i\theta})}{te^{i\theta}}\\
-			&=&\ds\lim_{t\rightarrow0}\dfrac{(te^{i\theta})^5/|te^{i\theta}|^4}{te^{i\theta}}\\
-			&=&\ds\lim_{t\rightarrow0}\dfrac{t^5e^{i4\theta}}{t^5}\\
-			&=&e^{i4\theta}.
+			f'(z)&=&\ds\lim_{z\rightarrow0}\ds\dfrac{f(z)-f(0)}{z}\\\\
+			&=&\ds\lim_{t\rightarrow0}\dfrac{f(te^{i\theta})}{te^{i\theta}}
 		\end{array}
 	\]
-	Por otro parte,  $u_x(0,0)+iv_x(0,0)=1$, por lo tanto $f'(0)$ no puede existir. \\
+	Desarrollando $f(te^{i\theta})$, 
+	\[
+	\begin{array}{ccl}
+		f(te^{i\theta})&=&\dfrac{(te^{i\theta})^5}{|te^{i\theta}|^4}\\\\
+		&=&\dfrac{t^5e^{5i\theta}}{|t|^4|e^{i\theta}|^4}\\\\
+		&=&\dfrac{t^5e^{5i\theta}}{t^4 |\cos\theta+i\sen \theta|^4}\\\\
+		&=&te^{5i\theta}
+	\end{array}
+	\]
+	Entonces, 
+	$$f'(z)=\ds\lim_{t\rightarrow0}=\dfrac{te^{5i\theta}}{te^{i\theta}}=e^{4i\theta}$$
+	
+	%&=&\ds\lim_{t\rightarrow0}\dfrac{(te^{i\theta})^5/|te^{i\theta}|^4}{te^{i\theta}}\\\\
+	%&=&\ds\lim_{t\rightarrow0}\dfrac{t^5e^{i4\theta}}{t^5}\\\\
+	Por otra parte,  $u_x(0,0)+iv_x(0,0)=1$, por lo tanto $f'(0)$ no puede existir. \\
 	Usando \textbf{Mathematica}
 	\begin{mmaCell}{Input}
 		ComplexPlot[(z)^5/((Abs[z])^4), \{z, -2 - 2 I, 2 + 2 I\}]
@@ -436,7 +450,7 @@ El código anterior genera las imágenes mostradas en la figura \ref{fig:ej_4}.\
 \end{Ejem} 
 
 Hay algunas consecuencias básicas de las ecuaciones de Cauchy-Riemann, las cuales se derivan fácilmente y que tienen consecuencias muy importantes, especialmente en el desarrollo de aplicaciones en matemáticas aplicadas.\\
-Considere las curvas $u(x,y)=\mbox{cte}$, $v(x,y)=\mbox{cte}$. El gradiente, $\mbox{grad } u$ es
+Considere las curvas $u(x,y)=\mbox{cte}$, $v(x,y)=\mbox{cte}$. El gradiente, $\operatorname{grad } u$, es
 \[
 	\mbox{grad } u=\left(\begin{array}{c}
 		\dpartial{u}{x}\\\\
@@ -448,7 +462,7 @@ $$\left(\dpartial{u}{x}\right)^2+\left(\dpartial{u}{y}\right)^2=\left(\dpartial{
 y $$\dpartial{u}{x}\dpartial{v}{x}+\dpartial{u}{y}\dpartial{v}{y}=0.$$
 
 \begin{teor}\label{Teor8.5silv}
-	Si $f(z)$ es analítica en un dominio G, entonces $f(z)$ tiene derivadas de todos los ordenes en $G$, más aun toda derivada $$f^{n}(z)=\dfrac{d^n f(z)}{dz^n},$$ es analítica en $G$ para toda $n=0,1,2,\ldots$.\\
+	Si $f(z)$ es analítica en un dominio G, entonces $f(z)$ tiene derivadas de todos los ordenes en $G$, más aún toda derivada $$f^{n}(z)=\dfrac{d^n f(z)}{dz^n},$$ es analítica en $G$ para toda $n=0,1,2,\ldots$.\\
 	Una demostración de este teorema puede encontrarla en \cite{silverman}, más precisamente el Teorema 8.5. 
 \end{teor}
 Ahora, usando el Teorema \ref{Teor8.5silv}, podemos derivar nuevamente y también intercambiar el orden de diferenciación, además de usar las ecuaciones de Cauchy-Riemann para obtener que
@@ -479,16 +493,16 @@ entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la func
  	donde $g,h$ son funciones arbitrarias. Igualando las dos expresiones anteriores, se tiene que $g(x)=h(y)$, es decir, $g$ y $h$ deben de ser constantes. Luego $v=2xy+c$ para alguna constante $c$, por tanto 
  	$$f(z)=x^2-y^2+2ixy+ic=(x+iy)^2+ic=z^2+ic.$$\endproof
  \end{Ejem}
-Este ejemplo resulta ser muy sencillo, pero en ocasiones podemos encontrarnos algunos en los cuales la obtención  de $v$ y
+Este ejemplo resulta ser muy simple, pero en ocasiones podemos encontrarnos algunos en los cuales la obtención  de $v$ y
 por ende de $f$ no son tan sencillos, por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
 Este ejemplo lo estudiaremos más adelante utilizando un Teorema que en seguida se enunciara.\\
-El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ o a paertir de $v$ de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
+El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
 \noindent Se tiene la siguiente definición
 \begin{defi}
 	Sea $u:\R^2\rightarrow\R$ una función real, por una extensión natural de $u$ nos referiremos a un función $u_{ex}:\C^2\rightarrow\C$ que se obtiene al sustituir $x,y\in\R$ en $u$ por $w_1,w_2\in\C$.
 \end{defi}
-\noindent Sean $f(z)$ una función diferenciable en una vecindad en el origen y $\tilde{u}:\C^2\rightarrow\C$ dada por
+\noindent Si $f(z)$ es una función diferenciable en una vecindad en el origen y $\tilde{u}:\C^2\rightarrow\C$ es una función dada por
 \begin{equation}\label{AS1}
 	\title{u}(w_1,w_2)=\dfrac{1}{2}[f(w_+i_w2)+\hat{f}(w_1-iw_2)],
 \end{equation}
@@ -562,7 +576,7 @@ Consideremos nuevamente el ejemplo \ref{EjCR}, pero ahora lo resolveremos usando
 	Entonces 
 	\[
 		\begin{array}{ccl}
-			f(z)&=&2e^{\frac{z}{2}}\cos\left(\dfrac{2}{2i}\right)-\overline{1+i\beta}\\
+			f(z)&=&2e^{\frac{z}{2}}\cos\left(\dfrac{z}{2i}\right)-\overline{1+i\beta}\\
 			&=&e^{\frac{z}{2}}\left[e^{i\frac{z}{2i}}+e^{-i\frac{z}{2i}} \right]-1+i\beta\\
 			&=&e^{z}+i\beta.
 		\end{array}
@@ -624,16 +638,16 @@ los cuales resultan ser $-7.85398 i,  -1.5708 i$ y $4.71239i$ para $k=-1,0,1$ re
 		ComplexPlot[1/z, \{z, -10 - 10 I, 10 + 10 I\},\\PlotRange -> All]
 	\end{mmaCell}
 	
-	\begin{mmaCell}[moregraphics={moreig={scale=.25}}]{Output}
-		\mmaFrac{ \mmaGraphics{11_1.png}}{}
+	\begin{mmaCell}[moregraphics={moreig={scale=.50}}]{Output}
+		\mmaFrac{ \mmaGraphics{11_1_1.png}}{}
 	\end{mmaCell}
-En la imagen anterior, podemos ver el comportamiento de los colores alrededor del origen. Este comportamiento, es decir, cuando el sentido en el que giran los colores alrededor de un punto se invierte se da cuando la función tiene un polo en dicho punto. \endproof
+En la imagen anterior, podemos observar que el giro de los colores se invierte, es decir, siguen el giro de las manecillas del reloj. El comportamiento se debe a que esta función tiene un polo simple en el origen. \endproof
 \end{Ejem}
 \begin{teor}[Teorema Grande de Picard]\label{GTP}
 	Sea $a$ una singularidad esencial de $f$ en alguna vecindad agujerada. Entonces para cada vecindad agujerada de $a$, $f(z)$ asume todos los números complejos, con una posible excepción, un número infinito de veces.
 	La prueba de este teorema se puede consultar en \cite{Conway}, vea el Teorema 4.2.
 \end{teor}
-\begin{Ejem}[Una función con una singularidad esencial en el origen]
+\begin{Ejem}[Una función con una singularidad esencial en el origen]\label{ejem9}
 	Sea $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^2}\right),$$  encuentre $f(z)$.
 	\solu Tenemos que si $x\rightarrow\frac{z+\overline{a}}{2}$, $y\rightarrow\frac{z-\overline{a}}{2i}$
 	\[
@@ -647,23 +661,48 @@ En la imagen anterior, podemos ver el comportamiento de los colores alrededor de
 			
 			\[
 			\begin{array}{ccl}
-			\dfrac{y}{x^2+y^2}&=&\dfrac{\dfrac{z-\overline{a}}{2}}{\left(\dfrac{z+\overline{a}}{2}\right)^2+\left(\dfrac{z-\overline{a}}{2i}\right)^2}\\
-			&=&\dfrac{\dfrac{z-\overline{a}}{2}}{\dfrac{(z+\overline{a})^2-(z-\overline{a})^2}{4}}\\
-			&=&\dfrac{\dfrac{z-\overline{a}}{2}}{\dfrac{4\overline{a}z}{4}}\\
-			&=&\dfrac{z-\overline{a}}{2z\overline{a}},
+			\dfrac{y}{x^2+y^2}&=&\dfrac{\dfrac{z-\overline{a}}{2i}}{\left(\dfrac{z+\overline{a}}{2}\right)^2+\left(\dfrac{z-\overline{a}}{2i}\right)^2}\\\\
+			&=&\dfrac{\dfrac{z-\overline{a}}{2i}}{\dfrac{(z+\overline{a})^2-(z-\overline{a})^2}{4}}\\\\
+			&=&-\dfrac{\dfrac{z-\overline{a}}{2i}}{\dfrac{4\overline{a}z}{4}}\\\\
+			&=&-\dfrac{z-\overline{a}}{2iz\overline{a}},
 		\end{array}
 	\]
 	luego
 	\[
 		\begin{array}{ccl}
-			f(z)&=&2\exp\left({\dfrac{z+\overline{a}}{2z\overline{a}}}\right)\cos\left(\dfrac{z-\overline{a}}{2iz\overline{a}}  \right)-\overline{f(a)}\\
-			&=&2\exp\left({\dfrac{1}{2\overline{a}}+\dfrac{1}{2z}}\right)\cos\left(\dfrac{1}{2i\overline{a}}-\dfrac{1}{2iz}\right)-\overline{f(a)}\\
-			&=&\exp\left({\dfrac{1}{z}}\right)+e^{\dfrac{1}{\overline{a}}}-\overline{f(a)}\\
-			&=&\exp\left({\dfrac{1}{z}}\right)+i\beta,
+			f(z)&=&2\exp\left({\dfrac{z+\overline{a}}{2z\overline{a}}}\right)\cos\left(\dfrac{z-\overline{a}}{2iz\overline{a}}  \right)-\overline{f(a)}\\\\
+			&=&2\exp\left({\dfrac{1}{2\overline{a}}+\dfrac{1}{2z}}\right)\cos\left(\dfrac{1}{2i\overline{a}}-\dfrac{1}{2iz}\right)-\overline{f(a)}.
+				\end{array}
+			\]
+			Recordemos que el coseno se puede escribir en términos de la exponencial:
+			$$\cos\alpha=\dfrac{1}{2}\left(e^{i\alpha}+e^{-i\alpha}\right).$$
+			Entonces
+			$$2\cos\left(\dfrac{1}{2i\overline{a}}-\dfrac{1}{2iz}\right)=\exp\left(\dfrac{1}{2\overline{a}}-\dfrac{1}{2z}\right)+\exp\left(-\dfrac{1}{2\overline{a}}+\dfrac{1}{2z}\right)$$
+			por lo que 
+			\[
+			\begin{array}{ccl}
+			f(z)&=&\exp\left({\dfrac{1}{2\overline{a}}+\dfrac{1}{2z}}\right)\left(\exp\left(\dfrac{1}{2\overline{a}}-\dfrac{1}{2z}\right)+\exp\left(-\dfrac{1}{2\overline{a}}+\dfrac{1}{2z}\right)\right)\\\\
+			&=&\exp\left({\dfrac{1}{z}}\right)+\exp\left({\dfrac{1}{\overline{a}}}\right)-\overline{f(a)},\\\\
 		\end{array}
 	\]
-	con alguna $\beta\in \R$.\\
-	Tomando $\beta=0$,  entonces $f(z)=e^{\frac{1}{z}}$.\begin{mmaCell}{Input}
+	Si $z=a$, entonces $$f(a)+\overline{f(a)}=\exp\left({\dfrac{1}{z}}\right)+\exp\left({\dfrac{1}{\overline{a}}}\right),$$ es decir, $$2\operatorname{Re} (f(a))=2\operatorname{Re }\left(\exp\left(\dfrac{1}{a}\right)\right)\implies \operatorname{Re }(f(a))=\operatorname{Re }\left(\exp\left(\dfrac{1}{a}\right)\right).$$
+	Dado que $f(a),\exp\left(\dfrac{1}{a}\right)\in \C$, entonces, los podemos reescribir como 
+	$$f(a)=\alpha_1+\beta_1 i,$$
+	$$\exp\left(\dfrac{1}{a}\right)=\alpha_2+\beta_2 i,$$
+	y por el análisis previo se debe de tener que $\alpha_1=\alpha_2$, para simplificar $\alpha=\alpha_1=\alpha_2$, entonces 
+	\[
+	\begin{array}{ccl}
+		f(z)&=&\exp\left({\dfrac{1}{z}}\right)+\exp\left({\dfrac{1}{\overline{a}}}\right)-\overline{f(a)}\\\\
+		&=&\exp\left({\dfrac{1}{z}}\right)+\overline{\exp\left({\dfrac{1}{a}}\right)}-\overline{f(a)}\\\\
+		&=&\exp\left(\dfrac{1}{z}\right)+\overline{\alpha_2+\beta_2 i}+\overline{\alpha_1+\beta_1 i}\\\\
+		&=&\exp\left(\dfrac{1}{z}\right)+\overline{\alpha+\beta_2 i}+\overline{\alpha+\beta_1 i}\\\\
+		&=&\exp\left(\dfrac{1}{z}\right)+\alpha-\beta_2 i-\alpha+\beta_1 i\\\\
+		&=&\exp\left(\dfrac{1}{z}\right)+(\beta_1-\beta_2)i,
+	\end{array}
+	\]
+	Si $\beta=\beta_1-\beta_2$, entonces $$\exp\left({\dfrac{1}{z}}\right)+\beta i$$
+	donde  $\beta\in \R$.\\
+	Para simplificar, si tomamos $\beta=0$,  entonces $f(z)=e^{\frac{1}{z}}$.\begin{mmaCell}{Input}
 		ComplexPlot[Exp[1/z], \{z, -1 - 1 I, 1 + 1 I\},\\PlotRange -> Automatic,ColorFunction -> "CyclicLogAbs"]
 	\end{mmaCell}
 	
@@ -671,7 +710,7 @@ En la imagen anterior, podemos ver el comportamiento de los colores alrededor de
 		\mmaFrac{ \mmaGraphics{11_2.png}}{}
 	\end{mmaCell}
 La función anterior es bastante interesante, ya que al representarla con colores podemos ver que no hay ningún punto en el cual los colores giren en torno a él, pero justo en el punto $z=0$, vemos como los colores se van alternando infinitamente hasta acercarse  al $0$, este comportamiento de los colores se da cuando se tiene una singularidad esencial.\\
-Visualmente lo que podemos ver en la figura, es que la función $e^{\frac{1}{z}}$ toma todos los valores complejos, excepto el $0$, en cualquier vecindad del origen; es decir, esta función satisface el Teorema \ref{GTP}.\endproof
+Visualmente, lo que podemos ver en la figura, es que la función $e^{\frac{1}{z}}$ toma todos los valores complejos, excepto el $0$, en cualquier vecindad del origen; es decir, esta función satisface el Teorema \ref{GTP}.\endproof
 \end{Ejem}
 
 
@@ -687,7 +726,7 @@ Visualmente lo que podemos ver en la figura, es que la función $e^{\frac{1}{z}}
 			&=&\ln(z)+i\beta,
 		\end{array}
 	\]
-	para alguna $\beta\in \R$.
+	donde $\beta\in \R$ y se obtiene siguiendo el razonamiento seguido en el Ejemplo \ref{ejem9}.\\
 	Tomando $\beta=0$, entonces $f(z)=e^{\frac{1}{z}}$.
 	\begin{mmaCell}{Input}
 		ComplexPlot[Log[z], \{z, -2 - 2 I, 2 + 2 I\},\\PlotRange -> Automatic,ColorFunction -> "CyclicLogAbs"]
