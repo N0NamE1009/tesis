@@ -4,35 +4,54 @@
 	Sean $\Omega_{1}$ y $\Omega_{2}$ dos conjuntos abiertos. Un mapeo analítico e inyectivo $f:\Omega_{1}\rightarrow\Omega_{2}$, es llamado un homeomorfismo analítico de  $\Omega_{1}$ sobre $\Omega_{2}$. Un mapeo analítico e inyectivo de $\Omega_{1}$ a $\Omega_{2}$ es llamado un mapeo conforme de $\Omega_{1}$ a $\Omega_{2}$.\\
 	Diremos que $\Omega_{1}$ y $\Omega_{2}$ son conformemente equivalentes si existe un mapeo conforme de $\Omega_{1}$ a $\Omega_{2}$ y cuyo rango sea $\Omega_{2}$, en ese caso escribiremos $\Omega_{1} \sim\Omega_{2}$.
 \end{defi}
+
+Sea $l$ una curva continua descrita por la ecuación $z=\lambda(t)$, $t\in[a,b]$, y suponga que $\lambda(t)$ es diferenciables en un punto $t_0\in [a,b]$. Sea $\{t_n\}$ una sucesión arbitraria de puntos en $[a,b]$ que converge a $t_0$, donde $t_n\neq t_0$ para toda $n=1,2,\ldots$, y considere el coeficiente diferencial
+$$r_n=\dfrac{\lambda(t_n)-\lambda(t_0)}{t_n-t_0}.$$
+Claramente $r_n\rightarrow r_0=\lambda'(t_0)$ cuando $n\rightarrow\infty$.
 \begin{defi}
-	Diremos que la curva $l$, parametrizada por $\lambda$ en $[a,b]$ y diferenciable en $t_0$ tiene tangente $\tau$ en $\lambda(t_0) = z_0$ si existe el límite $\theta = \ds\lim_{t\rightarrow t0}\mbox{Arg }r(t)$  donde
-	$$r(t)=\dfrac{\lambda(t)-\lambda(t_0)}{t-t_0},$$ entonces se dirá que $l$ tienen tangente con inclinación $\theta$
+	Diremos que la curva $l$, parametrizada por $\lambda$ en $[a,b]$ y diferenciable en $t_0$ tiene tangente $\tau$ en $\lambda(t_0) = z_0$, si existe el límite $$\theta = \ds\lim_{n\rightarrow \infty}\mbox{Arg}(r_n),$$. Entonces se dirá que $l$ tiene tangente con inclinación $\theta$
 \end{defi}
 
+
 \begin{teor}
-	Sean $G$ un dominio y $f$ continua en $G$, supongamos que $f(z)$ tiene derivada
-	distinta de cero en $z_0 \in G$ y que $l$ es una curva que pasa por $z_0$ y que tiene tangente $\tau$ en
-	$z_0$. Entonces $w = f(z)$ mapea a $l$ en una curva $L$ en el plano $w$, que pasa por $w_0 = f(z_0)$ y con
-	tangente $T$ en $w_0$, además la inclinación de $T$ excede a $\tau$ en $\mbox{Arg}'f(z_0)$.\\
+	Sean $G$ un dominio, y $f$ una función continua  de variable compleja definida en $G$. Supongamos que $f(z)$ tiene derivada distinta de cero en $z_0 \in G$, y sea $l$ una curva que pasa por $z_0$ y que tiene tangente $\tau$ en
+	$z_0$. Entonces, mediante la transformación $w = f(z)$ la curva $l$ se transforma en una curva $L$ situada en el plano $w$, que pasa por $w_0 = f(z_0)$ y con
+	tangente $T$ en $w_0$, además la inclinación de $T$ excede a $\tau$ en $\mbox{Arg}f'(z_0)$.\\
 	Para consultar la demostración le sugerimos ver el Teorema 3.3 de \cite{silverman}.
 \end{teor}
+\begin{defi}
+	Sea $f$ un mapeo conforme, es decir, un función que conserva los ángulos entre las curvas. Diremos que $f$ es un mapeo de primer tipo si  también preserva el sentido de las direcciones de los ángulos. Si los sentidos de las direcciones cambian, diremos que $f$ es un mapeo conforme de segundo tipo. 
+\end{defi}
 
 \begin{teor}
 	Sea $G$ un dominio y $f$ analítica en $G$. Entonces $f$ es un mapeo conforme de primer
 	tipo en todo punto donde $f'(z) \neq 0$.
 \end{teor}
-
 \noindent A partir del teorema anterior se deduce el siguiente corolario.
 
 \begin{coro}
-	Supongamos que $l_1$ y $l_2$ son curvas que se cruzan en $z_0\in G$ y que $l_1$ tiene tangente $\tau_1$ y $l_2$ tiene tangente $\tau_2$ en $z_0$. Supongamos que $f$ es diferenciable en $z_0$ con $f^{'}_0(z_0)\neq 0$. Entonces, bajo $f$, $l_1$ va a dar a una curva $L_1$ y $l_2$ a una curva $L_2$ que por el teorema  anterior pasarán por $w_0 = f(z_0)$, con respectivas tangentes $T_1$ y $T_2$ en $w_0$.
+	Supongamos que $l_1$ y $l_2$ son curvas que se cruzan en $z_0\in G$ y que $l_1$ tiene tangente $\tau_1$ y $l_2$ tiene tangente $\tau_2$ en $z_0$. Supongamos que $f$  tiene derivada distinta de cero en $z_0$. Entonces, bajo $f$, $l_1$ va a dar a una curva $L_1$ y $l_2$ a una curva $L_2$ que por el teorema  anterior pasarán por $w_0 = f(z_0)$, con respectivas tangentes $T_1$ y $T_2$ en $w_0$.
 \end{coro}
 De lo anterior, podemos concluir que $(|f'(z_0)|,\mbox{Arg}f(z_0))$ nos da una descripción de como deforma $f$ al dominio en $z_0$.\\
-Nuestro primer objetivo es usar Mathematica para explorar algunos mapeos simples. Lo haremos cargando el paquete \textbf{ParametricPlot}, este paquete contiene dos funcionalidades, las cuales son  \textbf{CartesianMap} y \textbf{PolarMap}, estas  nos permiten hacer gráficos utilizando coordenadas cartesianas y polares respectivamente. \\
-A manera de ejemplo y para mostrar el uso de estas dos funcionalidades, primero consideraremos la función $f(z)=e^{z}$ en la región $$A=\{z=x+iy\in\C | -1\leq x\leq 1, \; -2\leq y\leq 2\}.$$
+
+En Mathematica, \textbf{ParametricPlot}  es una función utilizada para visualizar ecuaciones paramétricas mediante la representación gráfica de curvas en un sistema de coordenadas 2D. Asimismo, podemos usar esta función para obtener representaciones de juntos que podemos expresar en forma paramétrica. Por ejemplo, para una circunferencia, sabemos que las ecuaciones paramétricas son
+$$x=r\cos\theta$$
+$$x=r\sen\theta$$
+
+si ponemos hacemos variar $r\in[0,1]$ y $\theta\in[0,2\pi]$, obtenemos
+\begin{mmaCell}{Input}
+	 ParametricPlot[\{r Cos[\(\pmb{\theta}\)], r Sin[\(\pmb{\theta}\)]\},\\\{\(\pmb{\theta}\), 0, 2 \(\pmb{\pi}\)\}, \{r, 0, 1\}]
+\end{mmaCell}
+
+
+\begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
+	\mmaFrac{ \mmaGraphics{disk.png}}{}
+\end{mmaCell}
+
+Podemos incluso utilizar ParametricPlot para obtener la imagen de un conjunto $\Omega\subset\C$ bajo una función. A manera de ejemplo, consideraremos la función $f(z)=e^{z}=e^{x+iy}$ y el conjunto $$A=\{z=x+iy\in\C | -1\leq x\leq 1, \; -2\leq y\leq 2\}.$$
 
 \begin{mmaCell}{Input}
-	 ParametricPlot[Through[{Re, Im}[Exp[x + I*y]]], \{x,-1,1\},\\\{y,-2,2\},  PlotStyle -> None, Mesh -> 15];
+	 ParametricPlot[Through[\{Re, Im\}[Exp[x + I*y]]], \{x,-1,1\},\\\{y,-2,2\},  PlotStyle -> None, Mesh -> 15];
 \end{mmaCell}
 
 
@@ -46,18 +65,29 @@ En el código anterior, usamos la función \textbf{Through} de Mathematica, esta
 \begin{mmaCell}{Output}
 	 \{f[x],g[x],h[x]\}
 \end{mmaCell}
-Ahora consideremos la función $f(r,t)=\sqrt{re^{it}}$ en la región
-$$A=\{(r,t)| 0\leq r\leq t,\; 0\leq t\leq 2\pi \}.$$
+Ahora consideremos la función, dada en forma paramétrica, $f(r,t)=\sqrt{re^{it}}$ y el conjunto 
+$$A=\{(r,t)| 0\leq r\leq 1,\; 0\leq t\leq 2\pi \}.$$
 
 \begin{mmaCell}{Input}
-	 ParametricPlot[Through[{Re, Im}[Sqrt[r Exp[I t]]]],\{r,0,1\},\\\{t,0, 2Pi\},PlotStyle -> None, Mesh -> 15]
+	 ParametricPlot[Through[\{Re, Im\}[Sqrt[r Exp[I*t]]]],\{r,0,1\},\\\{t,0, 2Pi\},PlotStyle -> None, Mesh -> 15]
 \end{mmaCell}
 
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{6.png}}{}
 \end{mmaCell}
-En \textbf{Mathematica 12.1}, se introdujo la función \textbf{ComplexRegionPlot}, para usar esta función basta escribir  ComplexRegionPlot[$pred$,{$z$,$z_{min}$,$z_{max}$}] y se generará un gráfico que muestra la región en el plano complejo para el cual el parámetro  \emph{pred} es Verdadero. Por otro lado si lo que requerimos es graficar regiones dadas por múltiples predicados $pred_i$, escribiremos  ComplexRegionPlot[{$pred_1,pred_2$,$\ldots$},{$z$,$z_{min}$,$z_{max}$}] y donde el predicado, $pred_i$, puede ser cualquier combinación lógica de desigualdades. El $pred_i$ generalmente involucrará funciones como Re, Im, Abs y Arg, que extraen componentes reales de números complejos para propósitos de comparación. \\
-Teniendo esto en cuenta, para graficar la región $\Omega=\left\{z\in\C |\dfrac{1}{2}\leq |z|\leq 1\right\}$  se haría de la siguiente manera:
+En \textbf{Mathematica 12.1}, se introdujo la función \textbf{ComplexRegionPlot}. Esta especialmente diseñada para visualizar regiones en el plano complejo. A diferencia de ParametricPlot, ComplexRegionPlot se centra específicamente en trabajar con regiones definidas por condiciones directamente en el plano complejo. Esta función utiliza condiciones, que en Mathematica se denominan predicados (\textit{pred}), cuando estos predicados son ciertos, entonces la función graficara la región en el plano complejo. Por ejemplo, grafiquemos nuevamente el disco cerrado de radio $1$, pero ahora en el plano complejo, es decir, el conjunto
+$$D=\{z\in\C\mid\;  |z|\leq 1\}$$1
+Lo que hará Mathematica sera tomar el predicado $|z|\leq 1$, que en Wolfram se escribe \textbf{Abs[z]<=1}, y graficara todos aquellos puntos en el plano que cumplan con el predicado.
+\begin{mmaCell}{Input}
+	 ComplexRegionPlot[Abs[z] <= 1, \{z, 1\}]
+\end{mmaCell}
+
+\begin{mmaCell}[moregraphics={moreig={scale=0.25}}]{Output}
+	\mmaFrac{ \mmaGraphics{disk2.png}}{}
+\end{mmaCell}
+
+
+Incluso podemos tener predicados más elaborados, tales como conjuntos que tengan doble desigualdad o dos (o más) conjuntos en el plano complejo. Teniendo esto en cuenta, para graficar la región $\Omega=\left\{z\in\C |\dfrac{1}{2}\leq |z|\leq 1\right\}$  se haría de la siguiente manera:
 \begin{mmaCell}{Input}
 	 ComplexRegionPlot[1/2 <= Abs[z] <= 1, \{z, -1 - I, 1 + I\}]
 \end{mmaCell}
@@ -68,7 +98,7 @@ Teniendo esto en cuenta, para graficar la región $\Omega=\left\{z\in\C |\dfrac{
 
 Y para graficar varias regiones, por ejemplo $\Omega=\{z\in \C | \mbox{Re}(z^2)\leq 2 \wedge \mbox{Im}(z^2)>1\}$ 
 \begin{mmaCell}{Input}
-    ComplexRegionPlot[Re[z^2] <= 2 && Im[z^2] > 1,\\\{z, -10 - 10 I, 10 + 10 I\}]
+	ComplexRegionPlot[Re[z^2] <= 2 && Im[z^2] > 1,\\\{z, -10 - 10 I, 10 + 10 I\}]
 \end{mmaCell}
 
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
@@ -76,7 +106,7 @@ Y para graficar varias regiones, por ejemplo $\Omega=\{z\in \C | \mbox{Re}(z^2)\
 \end{mmaCell}
 
 
-Ahora extenderemos la funcionalidad del paquete \textbf{ParametricPlot}, definiendo un par de funciones que nos muestran cómo se deforma el plano bajo un mapeo conforme  mediante mapeos polares y cartesianos.\\
+Ahora con ayuda de la función \textbf{ParametricPlot} podemos definir un par de funciones que nos muestran cómo se deforma el plano bajo un mapeo conforme  mediante mapeos polares y cartesianos.\\
 \begin{mmaCell}{Input}
 	 polarMap[func_, radial_, polar_, options___] := \\ ParametricPlot[Evaluate[Through[\{Re, Im\}[func]]],\\ radial, polar,options]
 \end{mmaCell}
@@ -87,11 +117,11 @@ Ahora extenderemos la funcionalidad del paquete \textbf{ParametricPlot}, definie
 
 A partir de estas, crearemos las siguientes funciones nos permitirán ver como se ve el plano tanto antes como después de aplicar un mapeo conforme
 \begin{mmaCell}{Input}
-	 polarConformal[func_, radial_, polar_, options___] :=\\Show[GraphicsGrid[\{\{polarMap[rExp[I t],\\radial, polar, options, DisplayFunction ->Identity,\\PlotRange -> All],polarMap[func, radial, polar, options,\\DisplayFunction ->Identity,\\PlotRange -> \{\{-d, d\}, \{-d, d\}\}]\}\}],\\DisplayFunction -> \$DisplayFunction]
+	 polarConformal[func_, radial_, polar_, options___] :=  \\Show[GraphicsGrid[\{\{polarMap[r*Exp[I t], radial, polar, \\options,  DisplayFunction -> Identity],  polarMap[func, \\radial, polar, options, DisplayFunction -> Identity]\}\}, \{\}], \\DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}
-en la función el valor $d$, representa que tan grande se va a construir el plano.
+
 \begin{mmaCell}{Input}
-	 cartesianConformal[func_, xrange_, yrange_, options___] :=\\Show[GraphicsGrid[\{\{cartesianMap[x + I*y, xrange, yrange,\\options,DisplayFunction -> Identity],\\cartesianMap[W[x + I*y],xrange, yrange, options,\\DisplayFunction -> Identity]\}\}],\\DisplayFunction -> \$DisplayFunction]
+	 cartesianConformal[func_, xrange_, yrange_, options___] := \\Show[GraphicsGrid[\{\{cartesianMap[x + I*y, xrange, yrange,\\options, DisplayFunction -> Identity], \\cartesianMap[W[x + I*y], xrange, yrange, options, \\DisplayFunction -> Identity]\}\}, \{\}], \\DisplayFunction -> \$DisplayFunction]
 \end{mmaCell}
 
 
@@ -129,32 +159,32 @@ por tanto
 \]
 Si $z_1=z_2=z=r(\cos\Phi+i\sin\Phi)$, entonces
 $$z^2=r^2[\cos(2\Phi)+i\sin(2\Phi)],$$ 
-por inducción se demuestra que, para $n\geq 1$ se verifica que 
+por inducción se demuestra para $n\geq 1$, es decir, 
 $$z^n=r^n[\cos(n\Phi)+i\sin(n\Phi)].$$
 Cuando $r=1$, obtenemos la fórmula de De Moivre
 $$z^n=\cos(n\Phi)+i\sin(n\Phi).$$
-así, cuando aplicamos la función $f(z)=z^n$ aplicada el cuarto de círculo $$Q=\left\{z\in \C | |z|=1\; 0\leq \Phi\leq \dfrac{\pi}{2}\right\},$$
+así, cuando aplicamos la función $f(z)=z^n$ aplicada el cuarto de círculo $$Q=\left\{z\in \C | |z|=1,\; 0\leq \Phi\leq \dfrac{\pi}{2}\right\},$$
 lo que obtendremos será como se ''multiplica'' este conjunto $n$ veces. Por ejemplo para $n=2$ tenemos el siguiente conjunto
 $$Q_1=\{z\in \C | |z|=1,\; 0\leq \Phi\leq \pi\}.$$
 \begin{Ejem}
 	Sea $f(z)=z^{n}$. En \textbf{Mathematica} podemos visualizar él comportamiento de esta función aplicada al conjunto $Q$, por simplicidad y  solo para ilustrar se tomarán los casos cuando $n=2,3$ y $n=4$.\\
 Para $n=2$, si $f_1(z)=z^2$ tenemos
 \begin{mmaCell}{Input}
-	 f1[z_] = z^2 \\polarConformal[f1[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+	 f1[z_] = z^2 \\polarConformal[f1[r Exp[I*t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{17.png}}{}
 \end{mmaCell}
 Para $n=3$, si $f_2(z)=z^3$, entonces  tenemos el siguiente comportamiento
 \begin{mmaCell}{Input}
-	 f2[z_] = z^3 \\polarConformal[f2[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+	 f2[z_] = z^3 \\polarConformal[f2[r Exp[I*t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{18.png}}{}
 \end{mmaCell}
 Y para $n=4$, con $f_3(z)=z^4$, se tiene 
 \begin{mmaCell}{Input}
-	 f3[z_] = z^4 \\polarConformal[f3[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+	 f3[z_] = z^4 \\polarConformal[f3[r Exp[I*t]], \{r, 0, 1\}, \{t, 0, Pi/2\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{19.png}}{}
@@ -174,7 +204,7 @@ Si $n>1$, nuevamente usando la fórmula de De Moivre se obtiene
 $$z^\frac{n}{m}=|z|^{\frac{n}{m}}\left(\cos\dfrac{n\mbox{Arg}z}{m}\right)+i\sin\dfrac{n\mbox{Arg}z}{m}.$$
 Al tomar potencias fraccionarias adecuadas, el efecto de un mapeo de la forma $f(z)=z^n$ se puede deshacer. Por ejemplo, el mapeo $g(z)=z^\frac{1}{2}$ revierte el efecto hecho a una región por el mapeo $f(z)=z^2$, como lo podemos ver a continuación
 \begin{mmaCell}{Input}
- 	f5[z_] = z^(1/2) \\polarConformal[f5[r Exp[I t]], \{r, 0, 1\}, \{t, 0, Pi\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+ 	f5[z_] = z^(1/2) \\polarConformal[f5[r Exp[I*t]], \{r, 0, 1\}, \{t, 0, Pi\},\\Mesh -> \{30, 30\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{21.png}}{}
@@ -353,7 +383,7 @@ Precisamente esta condición  significa que los valores $\mbox{Ln}_k z$ pertenec
 
 Al igual que la función $w=z^\frac{1}{2}$ revierte el efecto de la función $w_1=z^2$, la función $f(z)=\ln z$ revierte el efecto de la función $g(z)=e^z$
 \begin{mmaCell}{Input}
-	 f[z_] = Log[z]\\polarConformal[f[r Exp[I t]], \{r, 1, E\}, \{t, 0, 2 Pi\},\\Mesh -> \{30, 30\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotRange -> \{\{-4, 4\}, \{-4, 4\}\}]
+	 f[z_] = Log[z]\\polarConformal[f[r Exp[I*t]], \{r, 1, E\}, \{t, 0, 2 Pi\},\\Mesh -> \{30, 30\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True,\\PlotRange -> \{\{-4, 4\}, \{-4, 4\}\}]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{23.png}}{}
@@ -570,7 +600,7 @@ Si queremos ver la imagen del semiplano superior bajo la función $f(z)=\dfrac{z
 \end{mmaCell}
 Recíprocamente, con la función inversa de $f$, $f^{-1}(z)=i\dfrac{z+1}{z-1}$ podemos ver como se transforma el círculo unitario en el semiplano superior. Para ello usaremos la función \textbf{polarConformal}. La instrucción \textbf{Mesh -> \{300, 300\}} nos indica que el círculo unitario se construirá a partir de 300 círculos concéntricos de radio menor que uno y 300 radios dentro del círculo.
 \begin{mmaCell}{Input}
-	  polarConformal[f[r Exp[I t]], \{r, 0, 1\}, \{t, 0, 2 Pi\},\\Mesh -> \{300, 300\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Blue, Axes -> True]
+	  polarConformal[f[r Exp[I*t]], \{r, 0, 1\}, \{t, 0, 2 Pi\},\\Mesh -> \{300, 300\},LabelStyle -> Directive[Larger, Bold],\\PlotStyle -> White, MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{11.png}}{}
@@ -718,7 +748,7 @@ Consideremos la transformación de M\"obius $$T(z)=\mobius{5}{+(5+3i)}{(2.4+3.2i
 y el disco $D=\{z\in \C: |z|< 1\}$
 Podemos usar la función \textbf{polarConformal} para comprobar visualmente la proposición anterior
 \begin{mmaCell}{Input}
-	 TMobius[z_, a_, b_, c_, d_] = (a*z + b)/(c*z + d);\\polarConformal[ TMobius[r Exp[I t], 5, 5 + 3 I,\\2.4 + 3.2 I, 4.3 + 7.2 I],\\\{r, 0, 1\}, \{t, 0, 2 Pi\},Mesh->\{0, 0\},\\PlotRange ->Automatic,LabelStyle-> Directive[Larger,Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True]
+	 TMobius[z_, a_, b_, c_, d_] = (a*z + b)/(c*z + d);\\polarConformal[ TMobius[r Exp[I*t], 5, 5 + 3 I,\\2.4 + 3.2 I, 4.3 + 7.2 I],\\\{r, 0, 1\}, \{t, 0, 2 Pi\},Mesh->\{0, 0\},\\PlotRange ->Automatic,LabelStyle-> Directive[Larger,Bold],\\PlotStyle -> White,MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{27.png}}{}
@@ -1246,7 +1276,7 @@ Se obtiene un hexágono regular al establecer $n = 6$ en la ecuación (\ref{SCn}
 donde $_2F_1$ es la función hipergeométrica, en \textbf{Mathematica} esta función se escribe \textbf{ Hypergeometric2F1[a,b,c,z] }. Para más detalles puede consultar \cite{Hypergeometric2F1}.\\
 Para comprobar qué está haciendo esta función usamos la función \textbf{polarConformal} que construimos anteriormente
 \begin{mmaCell}{Input}
-	 ClearAll[f, z]\\f[z_] = z Hypergeometric2F1[1/6, 1/3, 7/6, z^6]\\polarConformal[f[r Exp[I t]], {r, 0, 1},\\\{t, 0, 2*Pi\},Mesh -> \{50, 50\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+	 ClearAll[f, z]\\f[z_] = z Hypergeometric2F1[1/6, 1/3, 7/6, z^6]\\polarConformal[f[r Exp[I*t]], {r, 0, 1},\\\{t, 0, 2*Pi\},Mesh -> \{50, 50\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold], PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 \begin{mmaCell}[moregraphics={moreig={scale=0.4}}]{Output}
 	\mmaFrac{ \mmaGraphics{32.png}}{}
@@ -1262,7 +1292,7 @@ $$z \, _2F_1\left(\dfrac{1}{n},\dfrac{2}{n};1+\dfrac{1}{n};z^n\right).$$
 Ahora, solo basta cambiar el parámetro $n$.\\
 Las siguientes imágenes se generaron usando $n=3,4,5,10$ en el código
 \begin{mmaCell}{Input}
-	 ClearAll[f, z]\\polarConformal[nAgon[r Exp[I t], n], \{r, 0, 1\},\{t, 0, 2*Pi\},\\Mesh -> \{100, 100\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold],PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
+	 ClearAll[f, z]\\polarConformal[nAgon[r Exp[I*t], n], \{r, 0, 1\},\{t, 0, 2*Pi\},\\Mesh -> \{100, 100\}, PlotRange -> All,\\LabelStyle -> Directive[Larger, Bold],PlotStyle -> White,\\MeshStyle -> Blue, Axes -> True]
 \end{mmaCell}
 las imágenes obtenidas las podemos ver en la figura \ref{fig:Mapeo del círculo unitario al n-ágono}. 
 \begin{figure}[htbp]
