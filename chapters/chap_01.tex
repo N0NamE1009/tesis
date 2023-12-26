@@ -469,8 +469,31 @@ Ahora, usando el Teorema \ref{Teor8.5silv}, podemos derivar nuevamente y tambié
 $$\dpartial{^2 u}{x^2}=\dfrac{\partial}{\partial x}\left(\dpartial{u}{x}\right)=\dfrac{\partial}{\partial x}\left(\dpartial{v}{x}\right)=\dfrac{\partial}{\partial y}\left(\dpartial{v}{x}\right)=-\dfrac{\partial}{\partial y}\left(\dpartial{u}{y}\right)=-\dpartial{^2u}{y^2},$$
 luego
 $$\dpartial{^2 u}{x^2}+\dpartial{^2u}{y^2}=0,$$
-entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la función es armónica. Similarmente para $v$.
+entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la función es armónica. Similarmente para $v$.\\
+El razonamiento anterior se puede resumir en los siguientes resultados. 
+\begin{prop}
+	Cualquier función holomorfa es armónica.
+\end{prop}
+\begin{coro}
+	Las partes reales e imaginarias de una función analítica son funciones armónicas.
+\end{coro}
+Si $z=x+iy$, entonces $\overline{z}=x-iy$, luego $$\dpartial{^2}{x^2}+\dpartial{^2}{y^2}=4\dpartial{^2}{z\partial \overline{z}},$$
+consecuentemente la condición 
+\begin{equation}\label{ecarmonica1}
+	\dpartial{^2 f}{x^2}+\dpartial{^2 f}{y^2}=0,
+\end{equation}
+es equivalente a 
+\begin{equation}\label{ecarmonica2}
+	\dpartial{^2 f}{x^2}+\dpartial{^2 f}{z\partial\overline{z}}=0.
+\end{equation}
 
+\begin{prop}
+	Cualquier función armónica real $g(x,y)$ en un subconjunto abierto $\Omega$ del plano es, en una vecindad de cada punto de $\Omega$, la parte real de una función analítica $f$ que se determina mediante la suma de una constante.\\
+	Sugerimos al lector consultar la demostración en \cite{cartan}, en ella utiliza conceptos de las formas diferenciales, estos conceptos salen del alcance de este trabajo, pero de igual forma sugerimos revisar la discusión en las páginas 123 y 124 de la referencia antes mencionada, desde luego que también sugerimos revisar el capítulo 2 ya que ahí se presentan resultados interesantes relacionados a las formas diferenciales.
+\end{prop}
+\begin{coro}
+	Si $\Omega\subset\C$ es un conjunto abierto y simplemente conexo, entonces cualquier función real armónica $g$ es la parte real de un función analítica $f$ en $\Omega$.  
+\end{coro}
 \section{El Teorema de Ahlfors-Struble}
  Sean $z = x + iy$ y $f(z) = u(x, y)+iv(x, y)$. Entonces dada una función $u(x, y)$, a menudo surge la pregunta de cómo encontrar la función $v(x,y)$ correspondiente y, por tanto, el mapeo  $f(z)$. En la mayoría de las veces el problema se soluciona resolviendo las ecuaciones de Cauchy-Riemann. Tenga en cuenta que un paso preliminar y muy sensato es comprobar que $u(x,y)$  satisface la ecuación de Laplace, esto se ilustra en el siguiente ejemplo.
  \begin{Ejem}\label{EjCR}
@@ -496,8 +519,16 @@ entonces $u$ satisface la ecuación de Laplace, en este caso diremos que la func
 Este ejemplo resulta ser muy simple, pero en ocasiones podemos encontrarnos algunos en los cuales la obtención  de $v$ y
 por ende de $f$ no son tan sencillos, por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
-Este ejemplo lo estudiaremos más adelante utilizando un Teorema que en seguida se enunciara.\\
-El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.
+El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
+\noindent Antes de enunciar este teorema, debemos de presentar las herramientas que usaremos en el bosquejo de se prueba.\\
+
+
+
+
+\begin{teor}
+	Cualquier función $g(x,y)$ en un conjunto abierto $\Omega\subset\C$ es una función analítica de las variables reales $x$ y $y$ en $\Omega$. En particular, cualquier función armónica es infinitamente diferenciable en $\C$.
+\end{teor}
+
 
 \begin{teor}[Ahlfors-Struble para vecindades en torno al origen]\label{TAS1}
 	Sea $f(z)$ diferenciable en una vecindad del origen, con parte real $u(x, y)$ y parte imaginaria $v(x, y)$, donde 

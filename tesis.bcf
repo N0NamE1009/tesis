@@ -2370,41 +2370,43 @@
     <bcf:citekey order="7" intorder="1">silverman</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Domain_coloring</bcf:citekey>
     <bcf:citekey order="9" intorder="1">silverman</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Shaw-A</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Conway</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">silverman</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">cartan</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Shaw-A</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Conway</bcf:citekey>
     <bcf:citekey order="13" intorder="1">silverman</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">tarlok</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">silverman</bcf:citekey>
     <bcf:citekey order="15" intorder="1">tarlok</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">marsden</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">tarlok</bcf:citekey>
     <bcf:citekey order="17" intorder="1">marsden</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">GeometryJo</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Elliptic</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Hypergeometric2F1</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">tarlok</bcf:citekey>
-    <bcf:citekey order="22" intorder="2">silverman</bcf:citekey>
-    <bcf:citekey order="23" intorder="3">shaw</bcf:citekey>
-    <bcf:citekey order="24" intorder="4" nocite="1">ComplexRegionPlot</bcf:citekey>
-    <bcf:citekey order="25" intorder="5">marsden</bcf:citekey>
-    <bcf:citekey order="26" intorder="6" nocite="1">Churchill</bcf:citekey>
-    <bcf:citekey order="27" intorder="7" nocite="1">ahlfors</bcf:citekey>
-    <bcf:citekey order="28" intorder="8" nocite="1">rajeev</bcf:citekey>
-    <bcf:citekey order="29" intorder="9" nocite="1">Driscoll</bcf:citekey>
-    <bcf:citekey order="30" intorder="10" nocite="1">Abramowitz</bcf:citekey>
-    <bcf:citekey order="31" intorder="11" nocite="1">Beta</bcf:citekey>
-    <bcf:citekey order="32" intorder="12" nocite="1">BetaInc</bcf:citekey>
-    <bcf:citekey order="33" intorder="13" nocite="1">Pearson</bcf:citekey>
-    <bcf:citekey order="34" intorder="14" nocite="1">BetaR</bcf:citekey>
-    <bcf:citekey order="35" intorder="15">Conway</bcf:citekey>
-    <bcf:citekey order="36" intorder="16">Elliptic</bcf:citekey>
-    <bcf:citekey order="37" intorder="17">Hypergeometric2F1</bcf:citekey>
-    <bcf:citekey order="38" intorder="18" nocite="1">ComplexPlot</bcf:citekey>
-    <bcf:citekey order="39" intorder="19" nocite="1">ComplexPlot3D</bcf:citekey>
-    <bcf:citekey order="40" intorder="20" nocite="1">ComplexContourPlot</bcf:citekey>
-    <bcf:citekey order="41" intorder="21">Shaw-A</bcf:citekey>
-    <bcf:citekey order="42" intorder="22">GeometryJo</bcf:citekey>
-    <bcf:citekey order="43" intorder="23" nocite="1">ComplexVector</bcf:citekey>
-    <bcf:citekey order="44" intorder="24">Domain_coloring</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">marsden</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">GeometryJo</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Elliptic</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Hypergeometric2F1</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">tarlok</bcf:citekey>
+    <bcf:citekey order="23" intorder="2">silverman</bcf:citekey>
+    <bcf:citekey order="24" intorder="3">shaw</bcf:citekey>
+    <bcf:citekey order="25" intorder="4" nocite="1">ComplexRegionPlot</bcf:citekey>
+    <bcf:citekey order="26" intorder="5">marsden</bcf:citekey>
+    <bcf:citekey order="27" intorder="6" nocite="1">Churchill</bcf:citekey>
+    <bcf:citekey order="28" intorder="7" nocite="1">ahlfors</bcf:citekey>
+    <bcf:citekey order="29" intorder="8" nocite="1">rajeev</bcf:citekey>
+    <bcf:citekey order="30" intorder="9" nocite="1">Driscoll</bcf:citekey>
+    <bcf:citekey order="31" intorder="10" nocite="1">Abramowitz</bcf:citekey>
+    <bcf:citekey order="32" intorder="11" nocite="1">Beta</bcf:citekey>
+    <bcf:citekey order="33" intorder="12" nocite="1">BetaInc</bcf:citekey>
+    <bcf:citekey order="34" intorder="13" nocite="1">Pearson</bcf:citekey>
+    <bcf:citekey order="35" intorder="14" nocite="1">BetaR</bcf:citekey>
+    <bcf:citekey order="36" intorder="15">Conway</bcf:citekey>
+    <bcf:citekey order="37" intorder="16">Elliptic</bcf:citekey>
+    <bcf:citekey order="38" intorder="17">Hypergeometric2F1</bcf:citekey>
+    <bcf:citekey order="39" intorder="18" nocite="1">ComplexPlot</bcf:citekey>
+    <bcf:citekey order="40" intorder="19" nocite="1">ComplexPlot3D</bcf:citekey>
+    <bcf:citekey order="41" intorder="20" nocite="1">ComplexContourPlot</bcf:citekey>
+    <bcf:citekey order="42" intorder="21">Shaw-A</bcf:citekey>
+    <bcf:citekey order="43" intorder="22">GeometryJo</bcf:citekey>
+    <bcf:citekey order="44" intorder="23" nocite="1">ComplexVector</bcf:citekey>
+    <bcf:citekey order="45" intorder="24">Domain_coloring</bcf:citekey>
+    <bcf:citekey order="46" intorder="25">cartan</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

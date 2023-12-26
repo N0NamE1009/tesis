@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{cartan}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6824495566cd1d66f7c005461ffc6038}{%
+           family={Cartan},
+           familyi={C\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison Wesley Longman (Higher Education Division, Pearson Education)}%
+      }
+      \strng{namehash}{6824495566cd1d66f7c005461ffc6038}
+      \strng{fullhash}{6824495566cd1d66f7c005461ffc6038}
+      \strng{bibnamehash}{6824495566cd1d66f7c005461ffc6038}
+      \strng{authorbibnamehash}{6824495566cd1d66f7c005461ffc6038}
+      \strng{authornamehash}{6824495566cd1d66f7c005461ffc6038}
+      \strng{authorfullhash}{6824495566cd1d66f7c005461ffc6038}
+      \field{labelalpha}{Car63}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0201009019}
+      \field{series}{COLLECTION ENSEIGNEMENT DES SCIENCES HERMANN}
+      \field{title}{Elementary theory of analytic functions of one or several complex variables}
+      \field{year}{1963}
+    \endentry
     \entry{Abramowitz}{book}{}
       \name{author}{1}{}{%
         {{hash=5ffec58f26b0e058ca9ea4e288a8c595}{%
