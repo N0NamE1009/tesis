@@ -497,41 +497,7 @@ Este ejemplo resulta ser muy simple, pero en ocasiones podemos encontrarnos algu
 por ende de $f$ no son tan sencillos, por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
 Este ejemplo lo estudiaremos más adelante utilizando un Teorema que en seguida se enunciara.\\
-El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
-\noindent Se tiene la siguiente definición
-\begin{defi}
-	Sea $u:\R^2\rightarrow\R$ una función real, por una extensión natural de $u$ nos referiremos a un función $u_{ex}:\C^2\rightarrow\C$ que se obtiene al sustituir $x,y\in\R$ en $u$ por $w_1,w_2\in\C$.
-\end{defi}
-\noindent Si $f(z)$ es una función diferenciable en una vecindad en el origen y $\tilde{u}:\C^2\rightarrow\C$ es una función dada por
-\begin{equation}\label{AS1}
-	\title{u}(w_1,w_2)=\dfrac{1}{2}[f(w_+i_w2)+\hat{f}(w_1-iw_2)],
-\end{equation}
-en donde  $\hat{f}$ es la reflexión, $\hat{f}:\C\rightarrow\C$ dada por $\hat{f}(z)=\overline{f(\overline{z})}$.\\
-\noindent Note que, si  hacemos el cambio de variable 
-\begin{equation}\label{AS2}
-	w_1=\dfrac{z}{2},\;\;\;w_2=\dfrac{z}{2i},
-\end{equation}
-donde $z\in\C$, obtenemos 
-\begin{equation}\label{AS3}
-	\tilde{u}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)=\dfrac{1}{2}[f(z)+\hat{f}(0)]=\dfrac{1}{2}[f(z)+\overline{f(0)}]
-\end{equation}
-Observemos que si $w_1=x$ y $w_2=y$ con $x,y\in\R$, entonces 
-\[
-	\begin{array}{ccl}
-		\tilde{u}(x,y)&=&\dfrac{1}{2}[f(x+iy)+\hat{f}(x-iy)]\\\\
-		&=&\dfrac{1}{2}[f(x+iy)+\overline{f(x+iy)}]\\
-		&=&u(x,y),
-	\end{array}
-\]
-ya que para cualquier $z\in\C$ se verifica que $z+\overline{z}=2\operatorname{Re}(z)$. Del análisis anterior, se tiene que $\tilde{u}$ es extensión natural de $\C^2$ de la función real $u(x,y)$. Entonces
-\[
-	\begin{array}{ccl}
-		u\left(\dfrac{z}{2},\dfrac{z}{2i}\right)&=&u_{ex}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)\\\\
-		&=&\tilde{u}\left(\dfrac{z}{2},\dfrac{z}{2i}\right)\\\\
-		&=&\dfrac{1}{2}[f(z)+\overline{f(0)}]
-	\end{array}
-\]
-El razonamiento anterior, es un esbozo de la demostración del siguiente teorema.
+El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.
 
 \begin{teor}[Ahlfors-Struble para vecindades en torno al origen]\label{TAS1}
 	Sea $f(z)$ diferenciable en una vecindad del origen, con parte real $u(x, y)$ y parte imaginaria $v(x, y)$, donde 
