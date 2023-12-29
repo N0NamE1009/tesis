@@ -491,7 +491,7 @@ es equivalente a
 	Cualquier función armónica real $g(x,y)$ en un subconjunto abierto $\Omega$ del plano es, en una vecindad de cada punto de $\Omega$, la parte real de una función analítica $f$ que se determina mediante la suma de una constante.\\
 	Sugerimos al lector consultar la demostración en \cite{cartan}, en ella utiliza conceptos de las formas diferenciales, estos conceptos salen del alcance de este trabajo, pero de igual forma sugerimos revisar la discusión en las páginas 123 y 124 de la referencia antes mencionada, desde luego que también sugerimos revisar el capítulo 2 ya que ahí se presentan resultados interesantes relacionados a las formas diferenciales.
 \end{prop}
-\begin{coro}
+\begin{coro}\label{coroarmo}
 	Si $\Omega\subset\C$ es un conjunto abierto y simplemente conexo, entonces cualquier función real armónica $g$ es la parte real de un función analítica $f$ en $\Omega$.  
 \end{coro}
 \section{El Teorema de Ahlfors-Struble}
@@ -520,15 +520,60 @@ Este ejemplo resulta ser muy simple, pero en ocasiones podemos encontrarnos algu
 por ende de $f$ no son tan sencillos, por ejemplo  la función 
 $$u(x,y)=e^{\dfrac{x}{x^2+y^2}}\cos\left(\dfrac{y}{x^2+y^{2}}\right).$$
 El Teorema de Ahlfors-Struble nos proporciona un método donde podemos encontrar $f$ a partir de $u$ (o a partir de $v$) de una manera puramente algebraica. El teorema se presenta en dos versiones, la primera de ellas es cuando $f(z)$ es una función complejo diferenciable en una vecindad en el origen y la segunda,  cuando $f(z)$ es una función complejo diferenciable en una vecindad de $a\neq 0$.\\
-\noindent Antes de enunciar este teorema, debemos de presentar las herramientas que usaremos en el bosquejo de se prueba.\\
-
-
-
-
-\begin{teor}
-	Cualquier función $g(x,y)$ en un conjunto abierto $\Omega\subset\C$ es una función analítica de las variables reales $x$ y $y$ en $\Omega$. En particular, cualquier función armónica es infinitamente diferenciable en $\C$.
+\noindent Antes de enunciar este teorema, debemos de presentar las herramientas que usaremos en el bosquejo de su prueba.\\
+Por serie de potencias nos referimos a una serie de la forma
+\begin{equation}\label{serpot}
+	\sum_{k=0}^{\infty}a_k(z-z_0)^{k},
+\end{equation}
+donde $z_0,a_0,a_1,a_2,\ldots\in \C$.\\
+Si consideramos una serie de potencias como (\ref{serpot}), entonces el radio de convergencia de $f$ en el punto $z_0$ estará dado por
+\begin{equation}
+	{\displaystyle {\frac {1}{R}}=\limsup _{n\to \infty }{\big (}|c_{n}|^{1/n}{\big )}} =\lim_{\rho\rightarrow\infty}\left(\sup_{n\geq \rho}c_n\right).
+\end{equation} 
+La ecuación anterior se conoce como la fórmula de Cauchy-Hadamard.
+\begin{teor}\label{TeorExpA}
+	Sea $f$ una función analítica en un dominio $\Omega$ y sea $z_0\in \Omega$ arbitrario, y sea $\Delta=\Delta(z_0)$ la distancia entre $z_0$ y $\operatorname{Fr }\Omega$. Entonces existe una serie de potencias  
+	$$\sum_{k=0}^{\infty}a_k(z-z_0)^{k},$$
+	que converge a $f(z)$ en el disco $|z-z_0|<\delta$.\\
+	La prueba de este teorema se basa en la fórmula integral de Cauchy y el criterio de la prueba $M$ de  Weierstrass, le sugerimos al lector consultar la demostración del Teorema 10.6 de \cite{silverman}.
 \end{teor}
+\begin{teor}\label{teorserpot1}
+	Cualquier función $g(x,y)$ en un conjunto abierto $\Omega\subset\C$ es una función analítica de las variables reales $x$ y $y$ en $\Omega$. En particular, cualquier función armónica es infinitamente diferenciable en $\C$.\\
+	\textbf{Esbozo.}\\
+	Basta probar que $g$ es analítica en una vecindad de cada punto de $\Omega$. Si suponemos que $g$ es armónica en el disco $x^2+y^2<r^2$, entonces por el Corolario (\ref{coroarmo}) tenemos que $g$ es la parte real de una función analítica $f$ y por el Teorema (\ref{TeorExpA}) podemos expresar $f$ como una serie de potencias
+	\begin{equation}\label{ec1.10}
+		f(z)=\sum_{k=0}^{\infty}a_kz^{k}.
+	\end{equation}
+	Reemplazando $z$ por $x+iy$ en la serie anterior y considerando la serie
+	\begin{equation}\label{ec1.11}
+		\sum_{k=0}^{\infty}a_k(x+iy)^{k}.
+	\end{equation}
+	como una serie en dos  variables $x$ e $y$ y usando del desarrollo de $(x+iy)^k$
+	$$(x+iy)^k=\sum_{p+q=k}\dfrac{k!}{p!q!}x^{p}(iy)^q,$$
+	obtenemos 
+	$$f(z)=\sum_{p+q=k}\dfrac{k!}{p!q!}x^{p}(iy)^q.$$
+	Luego, todos los puntos $z=x+iy$ tales que $|x|+|y|<r$ pertenecen al dominio de convergencia de la serie (\ref{ec1.11}) ya que si $z=+iy$ es uno de estos puntos, entonces existen $r_1>|x|$ y $r_2>|y|$ tales que 
+	$$r_1+r_2=R<r$$
+	y tenemos que 
+	$$\sum_{p\geq0, q\geq0}\dfrac{(p+q)!}{p!q!}|a_{p+q}|(r_1)^p(r_2)^q=\sum_{n\geq0}|a_n|R^n<\infty.$$
+	En particular, la serie \ref{ec1.11} es una función analítica en el producto de los discos 
+	\begin{equation}\label{prodDisc}
+		|x|<\dfrac{r}{2},\;\;\;\;|y|<\dfrac{r}{2}.
+	\end{equation}
+	Sea $\overline{f}(z)=\ds\sum_{k=0}^{\infty}\overline{a_{k}}z^k$ la serie de potencias cuyos coeficientes $\overline{a_k}$ son los conjugados de los coeficientes de la serie $f(z)$. Entonces, 
+	\begin{equation}\label{ec2g(x,y)}
+		2g(x,y)=f(x+iy)+\overline{f}(x-iy).
+	\end{equation}
+	Notemos que siguiendo un análisis similar, se tiene que la función $\overline{f}(x-iy)$ es analítica en el abierto (\ref{prodDisc}), por lo que $g(x,y)$ es analítica en este mismo conjunto. Por tanto, la función $g$ es analítica en alguna vecindad en torno al centro de cualquier disco abierto en el que $g$ sea armónica. Lo cual concluye nuestro esbozo.\endproof
+\end{teor}
+Si $f(z)$ es analítica, entonces podemos expresar a $f$ como serie de potencias. 
+$$f(z)=f(x+iy)=\sum_{k=0}^{\infty}a_k(x+iy)^k$$
+Considerando $$\overline{f}(z)=\overline{f}(x+iy)=\sum_{k=0}^{\infty}\overline{a_k}(x+iy)^k$$ de tal forma que se satisfaga (\ref{prodDisc}). Sea $z\in \C$ tal que $|z|<r$, entonces $$2\operatorname{Re }(f(z))=f(z)+\overline{f}(z)\implies 2u(x,y)=f(z)+\overline{f}(z)$$ siguiendo un procedimiento similar al hecho en (\ref{ec2g(x,y)}) tenemos que
+\begin{equation}\label{ecAS1}
+	2u\left(\dfrac{z}{2},\dfrac{z}{2i}\right)=f(z)+\overline{f}(0)
+\end{equation}
 
+Lo anterior se resume en el siguiente teorema.
 
 \begin{teor}[Ahlfors-Struble para vecindades en torno al origen]\label{TAS1}
 	Sea $f(z)$ diferenciable en una vecindad del origen, con parte real $u(x, y)$ y parte imaginaria $v(x, y)$, donde 
